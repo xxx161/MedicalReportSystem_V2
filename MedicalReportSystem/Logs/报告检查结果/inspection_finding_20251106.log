@@ -1,0 +1,1202 @@
+[2025-11-06 15:23:53] 开始处理报告检查结果
+请求参数: {
+    "input": {
+        "req_info": [
+            {
+                "orderId": 206720447,
+                "dataCode": "210300002T01001",
+                "OrderID": 206720447,
+                "pat_visit_type": 1,
+                "patientId": 4602748,
+                "homePageId": "",
+                "operationType": "02",
+                "treatmentCategory": "D",
+                "sno": 167,
+                "order_expidate_type ": 1,
+                "apply_time": "2025-11-06T04:53:00.000Z",
+                "placer_name": "系统管理员",
+                "apply_dept_id": 518,
+                "citem_id": 253213,
+                "citem_name": "CT检查（来宾HR）",
+                "exedept_id": 467,
+                "emg_sign": 0,
+                "order_drask": "",
+                "fee_source": 1,
+                "citem_type": "D",
+                "parts_name": "鼻咽部-",
+                "rmethod_name": "平扫",
+                "lspcm_name": "鼻咽部-",
+                "rgst_no": "25000881787",
+                "dg1_info": null,
+                "bodyPart": "鼻咽部-",
+                "method": "平扫"
+            }
+        ]
+    }
+} 
+构建的检查结果请求: {
+  "input": {
+    "aud_key": "",
+    "client_ip": "",
+    "pv1_info": {
+      "pid": "4602748",
+      "pat_visit_type": "1",
+      "pvid": "",
+      "rgst_no": "25000881787"
+    },
+    "apply_info": [
+      {
+        "order_class": "5",
+        "sno": "167",
+        "order_expidate_type": "1",
+        "apply_time": "2025-11-06 04:53:00",
+        "order_exe_time_start": "2025-11-06 16:23:54",
+        "placer_name": "系统管理员",
+        "apply_dept_id": "518",
+        "citem_id": "",
+        "citem_name": "CT检查（来宾HR）",
+        "exedept_id": "467",
+        "emg_sign": "0",
+        "order_drask": "",
+        "baby_sno": "",
+        "drug_freq_code": "",
+        "order_once_qunt": "",
+        "order_total_qunt": "",
+        "decoction_method_id": "",
+        "drug_freq_mth": "",
+        "drop_number": "",
+        "lspcm_name": "鼻咽部-",
+        "fee_source": "1",
+        "note": "",
+        "bedside_surcharge": "",
+        "exe_property": "",
+        "qunt_times": "",
+        "recipe_id": "",
+        "high_value_sign": "",
+        "batch": "",
+        "drug_item": [
+          {
+            "fitem_id": "",
+            "fitem_name": "",
+            "dspry_id": "",
+            "order_once_qunt": "",
+            "order_total_qunt": "",
+            "drug_aim": "",
+            "drug_reason": "",
+            "drop_number": "",
+            "order_drask": "",
+            "foot": "",
+            "decoction": ""
+          }
+        ],
+        "apply_item": [],
+        "part_info": [
+          {
+            "parts_name": "",
+            "rmethod_name": ""
+          }
+        ],
+        "blood_info": {
+          "order_type": "",
+          "lscmtd_id": "",
+          "lscmtd_name": "",
+          "exedept_id": "",
+          "abo_blood": "",
+          "rh_blood": ""
+        },
+        "surg_info": {
+          "surg_type": "",
+          "aneitem_id": "",
+          "aneitem_name": "",
+          "exedept_id": ""
+        },
+        "addition_item": [
+          {
+            "item_title": "",
+            "item_value": "",
+            "element_id": "",
+            "required": ""
+          }
+        ]
+      }
+    ],
+    "head": {
+      "bizno": "S3112",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-11-06 15:24:10",
+      "action_no": "818c3a38168047aabb112d212f2d9f35"
+    }
+  }
+}
+错误: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Services.NewStandardService.CallInspectionFindingApi[TRequest](TRequest request) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 1297
+   at MedicalReportSystem.Services.NewStandardService.ReportInspectionFindingAsync(JsonElement requestJson, String serviceMethod) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 123
+[2025-11-06 15:26:06] 开始处理报告检查结果
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 206249899,
+        "dataCode": "002501010150000",
+        "OrderID": 206249899,
+        "pat_visit_type": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-11-06T07:02:00.000Z",
+        "placer_name": "系统管理员",
+        "apply_dept_id": 518,
+        "citem_id": 15288,
+        "citem_name": "全血细胞计数+五分类检测",
+        "exedept_id": 466,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "血液",
+        "rmethod_name": "",
+        "lspcm_name": "血液",
+        "rgst_no": "25000881787",
+        "dg1_info": "1<SPCOLS>头痛<SPCOLS><SPCOLS>R51.x00<SPCOLS>0<SPCOLS>151076",
+        "citem_id_cj": 100162,
+        "citem_name_cj": "检验科采集",
+        "exedept_id_cj": 466
+      }
+    ]
+  }
+} 
+构建的检查结果请求: {
+  "input": {
+    "aud_key": "",
+    "client_ip": "",
+    "pv1_info": {
+      "pid": "4602748",
+      "pat_visit_type": "1",
+      "pvid": "",
+      "rgst_no": "25000881787"
+    },
+    "apply_info": [
+      {
+        "order_class": "4",
+        "sno": "1",
+        "order_expidate_type": "1",
+        "apply_time": "2025-11-06 07:02:00",
+        "order_exe_time_start": "2025-11-06 16:26:06",
+        "placer_name": "系统管理员",
+        "apply_dept_id": "518",
+        "citem_id": "100162",
+        "citem_name": "检验科采集",
+        "exedept_id": "466",
+        "emg_sign": "0",
+        "order_drask": "",
+        "baby_sno": "",
+        "drug_freq_code": "",
+        "order_once_qunt": "",
+        "order_total_qunt": "",
+        "decoction_method_id": "",
+        "drug_freq_mth": "",
+        "drop_number": "",
+        "lspcm_name": "血液",
+        "fee_source": "1",
+        "note": "",
+        "bedside_surcharge": "",
+        "exe_property": "",
+        "qunt_times": "",
+        "recipe_id": "",
+        "high_value_sign": "",
+        "batch": "",
+        "drug_item": [
+          {
+            "fitem_id": "",
+            "fitem_name": "",
+            "dspry_id": "",
+            "order_once_qunt": "",
+            "order_total_qunt": "",
+            "drug_aim": "",
+            "drug_reason": "",
+            "drop_number": "",
+            "order_drask": "",
+            "foot": "",
+            "decoction": ""
+          }
+        ],
+        "apply_item": [
+          {
+            "citem_type": "C",
+            "citem_id": "15288",
+            "citem_name": "全血细胞计数+五分类检测",
+            "exedept_id": "466"
+          }
+        ],
+        "part_info": [],
+        "blood_info": {
+          "order_type": "",
+          "lscmtd_id": "",
+          "lscmtd_name": "",
+          "exedept_id": "",
+          "abo_blood": "",
+          "rh_blood": ""
+        },
+        "surg_info": {
+          "surg_type": "",
+          "aneitem_id": "",
+          "aneitem_name": "",
+          "exedept_id": ""
+        },
+        "addition_item": [
+          {
+            "item_title": "",
+            "item_value": "",
+            "element_id": "",
+            "required": ""
+          }
+        ]
+      }
+    ],
+    "head": {
+      "bizno": "S3112",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-11-06 15:30:18",
+      "action_no": "464c23171cb84e308bb1caf3f9392321"
+    }
+  }
+}
+错误: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Services.NewStandardService.CallInspectionFindingApi[TRequest](TRequest request) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 1297
+   at MedicalReportSystem.Services.NewStandardService.ReportInspectionFindingAsync(JsonElement requestJson, String serviceMethod) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 123
+[2025-11-06 16:39:20] 开始处理报告检查结果
+请求参数: {
+    "input": {
+        "req_info": [
+            {
+                "orderId": 206249899,
+                "dataCode": "002501010150000",
+                "OrderID": 206249899,
+                "pat_visit_type": 1,
+                "patientId": 4602748,
+                "homePageId": "",
+                "operationType": "02",
+                "treatmentCategory": "C",
+                "sno": 1,
+                "order_expidate_type ": 1,
+                "apply_time": "2025-10-28T08:35:00.000Z",
+                "placer_name": "系统管理员",
+                "apply_dept_id": 518,
+                "citem_id": "259015",
+                "citem_name": "(院外结果互认项)全血细胞计数+五分类检测",
+                "exedept_id": "466",
+                "emg_sign": 0,
+                "order_drask": "",
+                "fee_source": 1,
+                "citem_type": "C",
+                "parts_name": "血液",
+                "rmethod_name": "",
+                "lspcm_name": "血液",
+                "rgst_no": "25000881787",
+                "dg1_info": "1<SPCOLS>头痛<SPCOLS><SPCOLS>R51.x00<SPCOLS>0<SPCOLS>151076",
+                "citem_id_cj": 100162,
+                "citem_name_cj": "检验科采集",
+                "exedept_id_cj": "检验科采集"
+            }
+        ]
+    }
+} 
+错误: 构建检查结果请求数据失败: The JSON value could not be converted to System.Nullable`1[System.Int32]. Path: $[0].exedept_id | LineNumber: 17 | BytePositionInLine: 35.
+堆栈:    at MedicalReportSystem.Services.NewStandardService.BuildInspectionFindingRequest(JsonElement requestJson, String serviceMethod) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 902
+   at MedicalReportSystem.Services.NewStandardService.ReportInspectionFindingAsync(JsonElement requestJson, String serviceMethod) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 111
+[2025-11-06 16:39:35] 开始处理报告检查结果
+请求参数: {
+    "input": {
+        "req_info": [
+            {
+                "orderId": 206249899,
+                "dataCode": "002501010150000",
+                "OrderID": 206249899,
+                "pat_visit_type": 1,
+                "patientId": 4602748,
+                "homePageId": "",
+                "operationType": "02",
+                "treatmentCategory": "C",
+                "sno": 1,
+                "order_expidate_type ": 1,
+                "apply_time": "2025-10-28T08:35:00.000Z",
+                "placer_name": "系统管理员",
+                "apply_dept_id": 518,
+                "citem_id": "259015",
+                "citem_name": "(院外结果互认项)全血细胞计数+五分类检测",
+                "exedept_id": "466",
+                "emg_sign": 0,
+                "order_drask": "",
+                "fee_source": 1,
+                "citem_type": "C",
+                "parts_name": "血液",
+                "rmethod_name": "",
+                "lspcm_name": "血液",
+                "rgst_no": "25000881787",
+                "dg1_info": "1<SPCOLS>头痛<SPCOLS><SPCOLS>R51.x00<SPCOLS>0<SPCOLS>151076",
+                "citem_id_cj": 100162,
+                "citem_name_cj": "检验科采集",
+                "exedept_id_cj": "检验科采集"
+            }
+        ]
+    }
+} 
+错误: 构建检查结果请求数据失败: The JSON value could not be converted to System.Nullable`1[System.Int32]. Path: $[0].exedept_id | LineNumber: 17 | BytePositionInLine: 35.
+堆栈:    at MedicalReportSystem.Services.NewStandardService.BuildInspectionFindingRequest(JsonElement requestJson, String serviceMethod) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 902
+   at MedicalReportSystem.Services.NewStandardService.ReportInspectionFindingAsync(JsonElement requestJson, String serviceMethod) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 111
+[2025-11-06 16:47:57] 开始处理报告检查结果
+请求参数: {
+    "input": {
+        "req_info": [
+            {
+                "orderId": 206249899,
+                "dataCode": "002501010150000",
+                "OrderID": 206249899,
+                "pat_visit_type": 1,
+                "patientId": 4602748,
+                "homePageId": "",
+                "operationType": "02",
+                "treatmentCategory": "C",
+                "sno": 1,
+                "order_expidate_type ": 1,
+                "apply_time": "2025-10-28T08:35:00.000Z",
+                "placer_name": "系统管理员",
+                "apply_dept_id": 518,
+                "citem_id": "259015",
+                "citem_name": "(院外结果互认项)全血细胞计数+五分类检测",
+                "exedept_id": "466",
+                "emg_sign": 0,
+                "order_drask": "",
+                "fee_source": 1,
+                "citem_type": "C",
+                "parts_name": "血液",
+                "rmethod_name": "",
+                "lspcm_name": "血液",
+                "rgst_no": "25000881787",
+                "dg1_info": "1<SPCOLS>头痛<SPCOLS><SPCOLS>R51.x00<SPCOLS>0<SPCOLS>151076",
+                "citem_id_cj": 100162,
+                "citem_name_cj": "检验科采集",
+                "exedept_id_cj": "检验科采集"
+            }
+        ]
+    }
+} 
+错误: 构建检查结果请求数据失败: The JSON value could not be converted to System.Nullable`1[System.Int32]. Path: $[0].exedept_id | LineNumber: 17 | BytePositionInLine: 35.
+堆栈:    at MedicalReportSystem.Services.NewStandardService.BuildInspectionFindingRequest(JsonElement requestJson, String serviceMethod) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 902
+   at MedicalReportSystem.Services.NewStandardService.ReportInspectionFindingAsync(JsonElement requestJson, String serviceMethod) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 111
+[2025-11-06 16:48:08] 开始处理报告检查结果
+请求参数: {
+    "input": {
+        "req_info": [
+            {
+                "orderId": 206249899,
+                "dataCode": "002501010150000",
+                "OrderID": 206249899,
+                "pat_visit_type": 1,
+                "patientId": 4602748,
+                "homePageId": "",
+                "operationType": "02",
+                "treatmentCategory": "C",
+                "sno": 1,
+                "order_expidate_type ": 1,
+                "apply_time": "2025-10-28T08:35:00.000Z",
+                "placer_name": "系统管理员",
+                "apply_dept_id": 518,
+                "citem_id": "259015",
+                "citem_name": "(院外结果互认项)全血细胞计数+五分类检测",
+                "exedept_id": "466",
+                "emg_sign": 0,
+                "order_drask": "",
+                "fee_source": 1,
+                "citem_type": "C",
+                "parts_name": "血液",
+                "rmethod_name": "",
+                "lspcm_name": "血液",
+                "rgst_no": "25000881787",
+                "dg1_info": "1<SPCOLS>头痛<SPCOLS><SPCOLS>R51.x00<SPCOLS>0<SPCOLS>151076",
+                "citem_id_cj": 100162,
+                "citem_name_cj": "检验科采集",
+                "exedept_id_cj": "9"
+            }
+        ]
+    }
+} 
+错误: 构建检查结果请求数据失败: The JSON value could not be converted to System.Nullable`1[System.Int32]. Path: $[0].exedept_id | LineNumber: 17 | BytePositionInLine: 35.
+堆栈:    at MedicalReportSystem.Services.NewStandardService.BuildInspectionFindingRequest(JsonElement requestJson, String serviceMethod) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 902
+   at MedicalReportSystem.Services.NewStandardService.ReportInspectionFindingAsync(JsonElement requestJson, String serviceMethod) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 111
+[2025-11-06 16:48:29] 开始处理报告检查结果
+请求参数: {
+    "input": {
+        "req_info": [
+            {
+                "orderId": 206249899,
+                "dataCode": "002501010150000",
+                "OrderID": 206249899,
+                "pat_visit_type": 1,
+                "patientId": 4602748,
+                "homePageId": "",
+                "operationType": "02",
+                "treatmentCategory": "C",
+                "sno": 1,
+                "order_expidate_type ": 1,
+                "apply_time": "2025-10-28T08:35:00.000Z",
+                "placer_name": "系统管理员",
+                "apply_dept_id": 518,
+                "citem_id": "259015",
+                "citem_name": "(院外结果互认项)全血细胞计数+五分类检测",
+                "exedept_id": "466",
+                "emg_sign": 0,
+                "order_drask": "",
+                "fee_source": 1,
+                "citem_type": "C",
+                "parts_name": "血液",
+                "rmethod_name": "",
+                "lspcm_name": "血液",
+                "rgst_no": "25000881787",
+                "dg1_info": "1<SPCOLS>头痛<SPCOLS><SPCOLS>R51.x00<SPCOLS>0<SPCOLS>151076",
+                "citem_id_cj": 100162,
+                "citem_name_cj": "检验科采集",
+                "exedept_id_cj": "9"
+            }
+        ]
+    }
+} 
+错误: 构建检查结果请求数据失败: The JSON value could not be converted to System.Nullable`1[System.Int32]. Path: $[0].exedept_id | LineNumber: 17 | BytePositionInLine: 35.
+堆栈:    at MedicalReportSystem.Services.NewStandardService.BuildInspectionFindingRequest(JsonElement requestJson, String serviceMethod)
+   at MedicalReportSystem.Services.NewStandardService.ReportInspectionFindingAsync(JsonElement requestJson, String serviceMethod)
+[2025-11-06 16:55:25] 开始处理报告检查结果
+请求参数: {
+    "input": {
+        "req_info": [
+            {
+                "orderId": 206249899,
+                "dataCode": "002501010150000",
+                "OrderID": 206249899,
+                "pat_visit_type": 1,
+                "patientId": 4602748,
+                "homePageId": "",
+                "operationType": "02",
+                "treatmentCategory": "C",
+                "sno": 1,
+                "order_expidate_type ": 1,
+                "apply_time": "2025-10-28T08:35:00.000Z",
+                "placer_name": "系统管理员",
+                "apply_dept_id": 518,
+                "citem_id": "259015",
+                "citem_name": "(院外结果互认项)全血细胞计数+五分类检测",
+                "exedept_id": "466",
+                "emg_sign": 0,
+                "order_drask": "",
+                "fee_source": 1,
+                "citem_type": "C",
+                "parts_name": "血液",
+                "rmethod_name": "",
+                "lspcm_name": "血液",
+                "rgst_no": "25000881787",
+                "dg1_info": "1<SPCOLS>头痛<SPCOLS><SPCOLS>R51.x00<SPCOLS>0<SPCOLS>151076",
+                "citem_id_cj": 100162,
+                "citem_name_cj": "检验科采集",
+                "exedept_id_cj": "9"
+            }
+        ]
+    }
+} 
+错误: 构建检查结果请求数据失败: The JSON value could not be converted to System.Nullable`1[System.Int32]. Path: $[0].exedept_id | LineNumber: 17 | BytePositionInLine: 35.
+堆栈:    at MedicalReportSystem.Services.NewStandardService.BuildInspectionFindingRequest(JsonElement requestJson, String serviceMethod)
+   at MedicalReportSystem.Services.NewStandardService.ReportInspectionFindingAsync(JsonElement requestJson, String serviceMethod)
+[2025-11-06 16:58:49] 开始处理报告检查结果
+请求参数: {
+    "input": {
+        "req_info": [
+            {
+                "orderId": 206249899,
+                "dataCode": "002501010150000",
+                "OrderID": 206249899,
+                "pat_visit_type": 1,
+                "patientId": 4602748,
+                "homePageId": "",
+                "operationType": "02",
+                "treatmentCategory": "C",
+                "sno": 1,
+                "order_expidate_type ": 1,
+                "apply_time": "2025-10-28T08:35:00.000Z",
+                "placer_name": "系统管理员",
+                "apply_dept_id": 518,
+                "citem_id": "259015",
+                "citem_name": "(院外结果互认项)全血细胞计数+五分类检测",
+                "exedept_id": "466",
+                "emg_sign": 0,
+                "order_drask": "",
+                "fee_source": 1,
+                "citem_type": "C",
+                "parts_name": "血液",
+                "rmethod_name": "",
+                "lspcm_name": "血液",
+                "rgst_no": "25000881787",
+                "dg1_info": "1<SPCOLS>头痛<SPCOLS><SPCOLS>R51.x00<SPCOLS>0<SPCOLS>151076",
+                "citem_id_cj": 100162,
+                "citem_name_cj": "检验科采集",
+                "exedept_id_cj": "9"
+            }
+        ]
+    }
+} 
+错误: 构建检查结果请求数据失败: The JSON value could not be converted to System.Nullable`1[System.Int32]. Path: $[0].exedept_id | LineNumber: 17 | BytePositionInLine: 35.
+堆栈:    at MedicalReportSystem.Services.NewStandardService.BuildInspectionFindingRequest(JsonElement requestJson, String serviceMethod)
+   at MedicalReportSystem.Services.NewStandardService.ReportInspectionFindingAsync(JsonElement requestJson, String serviceMethod)
+[2025-11-06 16:59:20] 开始处理报告检查结果
+请求参数: {
+    "input": {
+        "req_info": [
+            {
+                "orderId": 206249899,
+                "dataCode": "002501010150000",
+                "OrderID": 206249899,
+                "pat_visit_type": 1,
+                "patientId": 4602748,
+                "homePageId": "",
+                "operationType": "02",
+                "treatmentCategory": "C",
+                "sno": 1,
+                "order_expidate_type ": 1,
+                "apply_time": "2025-10-28T08:35:00.000Z",
+                "placer_name": "系统管理员",
+                "apply_dept_id": 518,
+                "citem_id": "259015",
+                "citem_name": "(院外结果互认项)全血细胞计数+五分类检测",
+                "exedept_id": "466",
+                "emg_sign": 0,
+                "order_drask": "",
+                "fee_source": 1,
+                "citem_type": "C",
+                "parts_name": "血液",
+                "rmethod_name": "",
+                "lspcm_name": "血液",
+                "rgst_no": "25000881787",
+                "dg1_info": "1<SPCOLS>头痛<SPCOLS><SPCOLS>R51.x00<SPCOLS>0<SPCOLS>151076",
+                "citem_id_cj": 100162,
+                "citem_name_cj": "检验科采集",
+                "exedept_id_cj": "9"
+            }
+        ]
+    }
+} 
+错误: 构建检查结果请求数据失败: The JSON value could not be converted to System.Nullable`1[System.Int32]. Path: $[0].exedept_id | LineNumber: 17 | BytePositionInLine: 35.
+堆栈:    at MedicalReportSystem.Services.NewStandardService.BuildInspectionFindingRequest(JsonElement requestJson, String serviceMethod)
+   at MedicalReportSystem.Services.NewStandardService.ReportInspectionFindingAsync(JsonElement requestJson, String serviceMethod)
+[2025-11-06 16:59:29] 开始处理报告检查结果
+请求参数: {
+    "input": {
+        "req_info": [
+            {
+                "orderId": 206249899,
+                "dataCode": "002501010150000",
+                "OrderID": 206249899,
+                "pat_visit_type": 1,
+                "patientId": 4602748,
+                "homePageId": "",
+                "operationType": "02",
+                "treatmentCategory": "C",
+                "sno": 1,
+                "order_expidate_type ": 1,
+                "apply_time": "2025-10-28T08:35:00.000Z",
+                "placer_name": "系统管理员",
+                "apply_dept_id": 518,
+                "citem_id": "259015",
+                "citem_name": "(院外结果互认项)全血细胞计数+五分类检测",
+                "exedept_id": "466",
+                "emg_sign": 0,
+                "order_drask": "",
+                "fee_source": 1,
+                "citem_type": "C",
+                "parts_name": "血液",
+                "rmethod_name": "",
+                "lspcm_name": "血液",
+                "rgst_no": "25000881787",
+                "dg1_info": "1<SPCOLS>头痛<SPCOLS><SPCOLS>R51.x00<SPCOLS>0<SPCOLS>151076",
+                "citem_id_cj": 100162,
+                "citem_name_cj": "检验科采集",
+                "exedept_id_cj": "9"
+            }
+        ]
+    }
+} 
+错误: 构建检查结果请求数据失败: The JSON value could not be converted to System.Nullable`1[System.Int32]. Path: $[0].exedept_id | LineNumber: 17 | BytePositionInLine: 35.
+堆栈:    at MedicalReportSystem.Services.NewStandardService.BuildInspectionFindingRequest(JsonElement requestJson, String serviceMethod)
+   at MedicalReportSystem.Services.NewStandardService.ReportInspectionFindingAsync(JsonElement requestJson, String serviceMethod)
+[2025-11-06 16:59:37] 开始处理报告检查结果
+请求参数: {
+    "input": {
+        "req_info": [
+            {
+                "orderId": 206249899,
+                "dataCode": "002501010150000",
+                "OrderID": 206249899,
+                "pat_visit_type": 1,
+                "patientId": 4602748,
+                "homePageId": "",
+                "operationType": "02",
+                "treatmentCategory": "C",
+                "sno": 1,
+                "order_expidate_type ": 1,
+                "apply_time": "2025-10-28T08:35:00.000Z",
+                "placer_name": "系统管理员",
+                "apply_dept_id": 518,
+                "citem_id": "259015",
+                "citem_name": "(院外结果互认项)全血细胞计数+五分类检测",
+                "exedept_id": "466",
+                "emg_sign": 0,
+                "order_drask": "",
+                "fee_source": 1,
+                "citem_type": "C",
+                "parts_name": "血液",
+                "rmethod_name": "",
+                "lspcm_name": "血液",
+                "rgst_no": "25000881787",
+                "dg1_info": "1<SPCOLS>头痛<SPCOLS><SPCOLS>R51.x00<SPCOLS>0<SPCOLS>151076",
+                "citem_id_cj": 100162,
+                "citem_name_cj": "检验科采集",
+                "exedept_id_cj": "9"
+            }
+        ]
+    }
+} 
+错误: 构建检查结果请求数据失败: The JSON value could not be converted to System.Nullable`1[System.Int32]. Path: $[0].exedept_id | LineNumber: 17 | BytePositionInLine: 35.
+堆栈:    at MedicalReportSystem.Services.NewStandardService.BuildInspectionFindingRequest(JsonElement requestJson, String serviceMethod)
+   at MedicalReportSystem.Services.NewStandardService.ReportInspectionFindingAsync(JsonElement requestJson, String serviceMethod)
+[2025-11-06 16:59:47] 开始处理报告检查结果
+请求参数: {
+    "input": {
+        "req_info": [
+            {
+                "orderId": 206249899,
+                "dataCode": "002501010150000",
+                "OrderID": 206249899,
+                "pat_visit_type": 1,
+                "patientId": 4602748,
+                "homePageId": "",
+                "operationType": "02",
+                "treatmentCategory": "C",
+                "sno": 1,
+                "order_expidate_type ": 1,
+                "apply_time": "2025-10-28T08:35:00.000Z",
+                "placer_name": "系统管理员",
+                "apply_dept_id": 518,
+                "citem_id": "259015",
+                "citem_name": "(院外结果互认项)全血细胞计数+五分类检测",
+                "exedept_id": "466",
+                "emg_sign": 0,
+                "order_drask": "",
+                "fee_source": 1,
+                "citem_type": "C",
+                "parts_name": "血液",
+                "rmethod_name": "",
+                "lspcm_name": "血液",
+                "rgst_no": "25000881787",
+                "dg1_info": "1<SPCOLS>头痛<SPCOLS><SPCOLS>R51.x00<SPCOLS>0<SPCOLS>151076",
+                "citem_id_cj": 100162,
+                "citem_name_cj": "检验科采集",
+                "exedept_id_cj": "9"
+            }
+        ]
+    }
+} 
+错误: 构建检查结果请求数据失败: The JSON value could not be converted to System.Nullable`1[System.Int32]. Path: $[0].exedept_id | LineNumber: 17 | BytePositionInLine: 35.
+堆栈:    at MedicalReportSystem.Services.NewStandardService.BuildInspectionFindingRequest(JsonElement requestJson, String serviceMethod)
+   at MedicalReportSystem.Services.NewStandardService.ReportInspectionFindingAsync(JsonElement requestJson, String serviceMethod)
+[2025-11-06 17:01:23] 开始处理报告检查结果
+请求参数: {
+    "input": {
+        "req_info": [
+            {
+                "orderId": 206249899,
+                "dataCode": "002501010150000",
+                "OrderID": 206249899,
+                "pat_visit_type": 1,
+                "patientId": 4602748,
+                "homePageId": "",
+                "operationType": "02",
+                "treatmentCategory": "C",
+                "sno": 1,
+                "order_expidate_type ": 1,
+                "apply_time": "2025-10-28T08:35:00.000Z",
+                "placer_name": "系统管理员",
+                "apply_dept_id": 518,
+                "citem_id": "259015",
+                "citem_name": "(院外结果互认项)全血细胞计数+五分类检测",
+                "exedept_id": "466",
+                "emg_sign": 0,
+                "order_drask": "",
+                "fee_source": 1,
+                "citem_type": "C",
+                "parts_name": "血液",
+                "rmethod_name": "",
+                "lspcm_name": "血液",
+                "rgst_no": "25000881787",
+                "dg1_info": "1<SPCOLS>头痛<SPCOLS><SPCOLS>R51.x00<SPCOLS>0<SPCOLS>151076",
+                "citem_id_cj": 100162,
+                "citem_name_cj": "检验科采集",
+                "exedept_id_cj": "检验科采集"
+            }
+        ]
+    }
+} 
+错误: 构建检查结果请求数据失败: The JSON value could not be converted to System.Nullable`1[System.Int32]. Path: $[0].exedept_id | LineNumber: 17 | BytePositionInLine: 35.
+堆栈:    at MedicalReportSystem.Services.NewStandardService.BuildInspectionFindingRequest(JsonElement requestJson, String serviceMethod)
+   at MedicalReportSystem.Services.NewStandardService.ReportInspectionFindingAsync(JsonElement requestJson, String serviceMethod)
+[2025-11-06 17:02:19] 开始处理报告检查结果
+请求参数: {
+    "input": {
+        "req_info": [
+            {
+                "orderId": 206249899,
+                "dataCode": "002501010150000",
+                "OrderID": 206249899,
+                "pat_visit_type": 1,
+                "patientId": 4602748,
+                "homePageId": "",
+                "operationType": "02",
+                "treatmentCategory": "C",
+                "sno": 1,
+                "order_expidate_type ": 1,
+                "apply_time": "2025-10-28T08:35:00.000Z",
+                "placer_name": "系统管理员",
+                "apply_dept_id": 518,
+                "citem_id": "259015",
+                "citem_name": "(院外结果互认项)全血细胞计数+五分类检测",
+                "exedept_id": 466,
+                "emg_sign": 0,
+                "order_drask": "",
+                "fee_source": 1,
+                "citem_type": "C",
+                "parts_name": "血液",
+                "rmethod_name": "",
+                "lspcm_name": "血液",
+                "rgst_no": "25000881787",
+                "dg1_info": "1<SPCOLS>头痛<SPCOLS><SPCOLS>R51.x00<SPCOLS>0<SPCOLS>151076",
+                "citem_id_cj": 100162,
+                "citem_name_cj": "检验科采集",
+                "exedept_id_cj": "检验科采集"
+            }
+        ]
+    }
+} 
+构建的检查结果请求: {
+  "input": {
+    "aud_key": "",
+    "client_ip": "",
+    "pv1_info": {
+      "pid": "4602748",
+      "pat_visit_type": "1",
+      "pvid": "",
+      "rgst_no": "25000881787"
+    },
+    "apply_info": [
+      {
+        "order_class": "4",
+        "sno": "1",
+        "order_expidate_type": "1",
+        "apply_time": "2025-10-28 08:35:00",
+        "order_exe_time_start": "2025-11-06 18:04:14",
+        "placer_name": "系统管理员",
+        "apply_dept_id": "518",
+        "citem_id": "100162",
+        "citem_name": "检验科采集",
+        "exedept_id": "466",
+        "emg_sign": "0",
+        "order_drask": "",
+        "baby_sno": "",
+        "drug_freq_code": "",
+        "order_once_qunt": "",
+        "order_total_qunt": "",
+        "decoction_method_id": "",
+        "drug_freq_mth": "",
+        "drop_number": "",
+        "lspcm_name": "血液",
+        "fee_source": "1",
+        "note": "",
+        "bedside_surcharge": "",
+        "exe_property": "",
+        "qunt_times": "",
+        "recipe_id": "",
+        "high_value_sign": "",
+        "batch": "",
+        "drug_item": [
+          {
+            "fitem_id": "",
+            "fitem_name": "",
+            "dspry_id": "",
+            "order_once_qunt": "",
+            "order_total_qunt": "",
+            "drug_aim": "",
+            "drug_reason": "",
+            "drop_number": "",
+            "order_drask": "",
+            "foot": "",
+            "decoction": ""
+          }
+        ],
+        "apply_item": [
+          {
+            "citem_type": "C",
+            "citem_id": "259015",
+            "citem_name": "(院外结果互认项)全血细胞计数+五分类检测",
+            "exedept_id": "466"
+          }
+        ],
+        "part_info": [],
+        "blood_info": {
+          "order_type": "",
+          "lscmtd_id": "",
+          "lscmtd_name": "",
+          "exedept_id": "",
+          "abo_blood": "",
+          "rh_blood": ""
+        },
+        "surg_info": {
+          "surg_type": "",
+          "aneitem_id": "",
+          "aneitem_name": "",
+          "exedept_id": ""
+        },
+        "addition_item": [
+          {
+            "item_title": "",
+            "item_value": "",
+            "element_id": "",
+            "required": ""
+          }
+        ]
+      }
+    ],
+    "head": {
+      "bizno": "S3112",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-11-06 17:04:16",
+      "action_no": "782d0a7ab7924737bf5f31a4eceef122"
+    }
+  }
+}
+错误: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Services.NewStandardService.CallInspectionFindingApi[TRequest](TRequest request)
+   at MedicalReportSystem.Services.NewStandardService.ReportInspectionFindingAsync(JsonElement requestJson, String serviceMethod)
+[2025-11-06 17:11:33] 开始处理报告检查结果
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 206598579,
+        "dataCode": "210300002T01001",
+        "OrderID": 206598579,
+        "pat_visit_type": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "D",
+        "sno": 124,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-11-03T16:21:00.000Z",
+        "placer_name": "系统管理员",
+        "apply_dept_id": 518,
+        "citem_id": 253213,
+        "citem_name": "CT检查（来宾HR）",
+        "exedept_id": 467,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "D",
+        "parts_name": "鼻咽部-",
+        "rmethod_name": "平扫",
+        "lspcm_name": "鼻咽部-",
+        "rgst_no": "25000881787",
+        "dg1_info": null,
+        "bodyPart": "鼻咽部-",
+        "method": "平扫",
+        "citem_id_cj": 253213,
+        "citem_name_cj": "CT检查（来宾HR）",
+        "exedept_id_cj": 467
+      }
+    ]
+  }
+} 
+构建的检查结果请求: {
+  "input": {
+    "aud_key": "",
+    "client_ip": "",
+    "pv1_info": {
+      "pid": "4602748",
+      "pat_visit_type": "1",
+      "pvid": "",
+      "rgst_no": "25000881787"
+    },
+    "apply_info": [
+      {
+        "order_class": "5",
+        "sno": "124",
+        "order_expidate_type": "1",
+        "apply_time": "2025-11-03 16:21:00",
+        "order_exe_time_start": "2025-11-06 18:11:33",
+        "placer_name": "系统管理员",
+        "apply_dept_id": "518",
+        "citem_id": "253213",
+        "citem_name": "CT检查（来宾HR）",
+        "exedept_id": "467",
+        "emg_sign": "0",
+        "order_drask": "",
+        "baby_sno": "",
+        "drug_freq_code": "",
+        "order_once_qunt": "",
+        "order_total_qunt": "",
+        "decoction_method_id": "",
+        "drug_freq_mth": "",
+        "drop_number": "",
+        "lspcm_name": "鼻咽部-",
+        "fee_source": "1",
+        "note": "",
+        "bedside_surcharge": "",
+        "exe_property": "",
+        "qunt_times": "",
+        "recipe_id": "",
+        "high_value_sign": "",
+        "batch": "",
+        "drug_item": [
+          {
+            "fitem_id": "",
+            "fitem_name": "",
+            "dspry_id": "",
+            "order_once_qunt": "",
+            "order_total_qunt": "",
+            "drug_aim": "",
+            "drug_reason": "",
+            "drop_number": "",
+            "order_drask": "",
+            "foot": "",
+            "decoction": ""
+          }
+        ],
+        "apply_item": [],
+        "part_info": [
+          {
+            "parts_name": "",
+            "rmethod_name": ""
+          }
+        ],
+        "blood_info": {
+          "order_type": "",
+          "lscmtd_id": "",
+          "lscmtd_name": "",
+          "exedept_id": "",
+          "abo_blood": "",
+          "rh_blood": ""
+        },
+        "surg_info": {
+          "surg_type": "",
+          "aneitem_id": "",
+          "aneitem_name": "",
+          "exedept_id": ""
+        },
+        "addition_item": [
+          {
+            "item_title": "",
+            "item_value": "",
+            "element_id": "",
+            "required": ""
+          }
+        ]
+      }
+    ],
+    "head": {
+      "bizno": "S3112",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-11-06 17:11:34",
+      "action_no": "909aeb7e2725402eb22fbeb87e501249"
+    }
+  }
+}
+错误: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Services.NewStandardService.CallInspectionFindingApi[TRequest](TRequest request)
+   at MedicalReportSystem.Services.NewStandardService.ReportInspectionFindingAsync(JsonElement requestJson, String serviceMethod)
+[2025-11-06 17:27:15] 开始处理报告检查结果
+请求参数: {
+    "input": {
+        "req_info": [
+            {
+                "orderId": 206249899,
+                "dataCode": "002501010150000",
+                "OrderID": 206249899,
+                "pat_visit_type": 1,
+                "patientId": 4602748,
+                "homePageId": "",
+                "operationType": "02",
+                "treatmentCategory": "C",
+                "sno": 1,
+                "order_expidate_type ": 1,
+                "apply_time": "2025-11-06T09:06:00.000Z",
+                "placer_name": "系统管理员",
+                "apply_dept_id": 518,
+                "citem_id": "259015",
+                "citem_name": "(院外结果互认项)全血细胞计数+五分类检测",
+                "exedept_id": 466,
+                "emg_sign": 0,
+                "order_drask": "",
+                "fee_source": 1,
+                "citem_type": "C",
+                "parts_name": "血液",
+                "rmethod_name": "",
+                "lspcm_name": "血液",
+                "rgst_no": "25000881787",
+                "dg1_info": "1<SPCOLS>头痛<SPCOLS><SPCOLS>R51.x00<SPCOLS>0<SPCOLS>151076",
+                "citem_id_cj": 100162,
+                "citem_name_cj": "检验科采集",
+                "exedept_id_cj": 466
+            }
+        ]
+    }
+} 
+构建的检查结果请求: {
+  "input": {
+    "aud_key": "",
+    "client_ip": "",
+    "pv1_info": {
+      "pid": "4602748",
+      "pat_visit_type": "1",
+      "pvid": "",
+      "rgst_no": "25000881787"
+    },
+    "apply_info": [
+      {
+        "order_class": "4",
+        "sno": "1",
+        "order_expidate_type": "1",
+        "apply_time": "2025-11-06 09:06:00",
+        "order_exe_time_start": "2025-11-06 18:27:16",
+        "placer_name": "系统管理员",
+        "apply_dept_id": "518",
+        "citem_id": "100162",
+        "citem_name": "检验科采集",
+        "exedept_id": "466",
+        "emg_sign": "0",
+        "order_drask": "",
+        "baby_sno": "",
+        "drug_freq_code": "",
+        "order_once_qunt": "",
+        "order_total_qunt": "",
+        "decoction_method_id": "",
+        "drug_freq_mth": "",
+        "drop_number": "",
+        "lspcm_name": "血液",
+        "fee_source": "1",
+        "note": "",
+        "bedside_surcharge": "",
+        "exe_property": "",
+        "qunt_times": "",
+        "recipe_id": "",
+        "high_value_sign": "",
+        "batch": "",
+        "drug_item": [
+          {
+            "fitem_id": "",
+            "fitem_name": "",
+            "dspry_id": "",
+            "order_once_qunt": "",
+            "order_total_qunt": "",
+            "drug_aim": "",
+            "drug_reason": "",
+            "drop_number": "",
+            "order_drask": "",
+            "foot": "",
+            "decoction": ""
+          }
+        ],
+        "apply_item": [
+          {
+            "citem_type": "C",
+            "citem_id": "259015",
+            "citem_name": "(院外结果互认项)全血细胞计数+五分类检测",
+            "exedept_id": "466"
+          }
+        ],
+        "part_info": [],
+        "blood_info": {
+          "order_type": "",
+          "lscmtd_id": "",
+          "lscmtd_name": "",
+          "exedept_id": "",
+          "abo_blood": "",
+          "rh_blood": ""
+        },
+        "surg_info": {
+          "surg_type": "",
+          "aneitem_id": "",
+          "aneitem_name": "",
+          "exedept_id": ""
+        },
+        "addition_item": [
+          {
+            "item_title": "",
+            "item_value": "",
+            "element_id": "",
+            "required": ""
+          }
+        ]
+      }
+    ],
+    "head": {
+      "bizno": "S3112",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-11-06 17:27:41",
+      "action_no": "2fda437967e54d7baadc11cc7362dd9c"
+    }
+  }
+}
+错误: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Services.NewStandardService.CallInspectionFindingApi[TRequest](TRequest request) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 1298
+   at MedicalReportSystem.Services.NewStandardService.ReportInspectionFindingAsync(JsonElement requestJson, String serviceMethod) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 123
+[2025-11-06 17:28:48] 开始处理报告检查结果
+请求参数: {
+    "input": {
+        "req_info": [
+            {
+                "orderId": 206249899,
+                "dataCode": "002501010150000",
+                "OrderID": 206249899,
+                "pat_visit_type": 1,
+                "patientId": 4602748,
+                "homePageId": "",
+                "operationType": "02",
+                "treatmentCategory": "C",
+                "sno": 1,
+                "order_expidate_type ": 1,
+                "apply_time": "2025-11-06T09:06:00.000Z",
+                "placer_name": "系统管理员",
+                "apply_dept_id": 518,
+                "citem_id": "259015",
+                "citem_name": "(院外结果互认项)全血细胞计数+五分类检测",
+                "exedept_id": "466",
+                "emg_sign": 0,
+                "order_drask": "",
+                "fee_source": 1,
+                "citem_type": "C",
+                "parts_name": "血液",
+                "rmethod_name": "",
+                "lspcm_name": "血液",
+                "rgst_no": "25000881787",
+                "dg1_info": "1<SPCOLS>头痛<SPCOLS><SPCOLS>R51.x00<SPCOLS>0<SPCOLS>151076",
+                "citem_id_cj": 100162,
+                "citem_name_cj": "检验科采集",
+                "exedept_id_cj": 466
+            }
+        ]
+    }
+} 
+错误: 构建检查结果请求数据失败: The JSON value could not be converted to System.Nullable`1[System.Int32]. Path: $[0].exedept_id | LineNumber: 17 | BytePositionInLine: 35.
+堆栈:    at MedicalReportSystem.Services.NewStandardService.BuildInspectionFindingRequest(JsonElement requestJson, String serviceMethod) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 903
+   at MedicalReportSystem.Services.NewStandardService.ReportInspectionFindingAsync(JsonElement requestJson, String serviceMethod) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 111

@@ -1,0 +1,50 @@
+[2025-11-03 10:41:44] 开始S5008操作
+申请单ID: 206405000
+报告人: 张医生, 审核人: 李主任
+报告结果项数: 3
+文件项数: 0
+构建的S5008请求: {
+  "input": {
+    "apply_info": [
+      {
+        "apply_id": "206405000",
+        "apply_status": "1",
+        "rpt_ps": "张医生",
+        "chkin_ps": "李主任",
+        "rpt_path": "",
+        "oaflag": "",
+        "rpt_time": "2025-11-03 10:42:20",
+        "chkin_time": "2025-11-03 10:42:20",
+        "check_no": "206405000"
+      }
+    ],
+    "rpt_info": [
+      {
+        "title_type": "1",
+        "loitem_cname": "检查所见",
+        "order_rpt_result": "胸部正位片显示双肺纹理清晰，心影大小形态正常，膈面光滑，肋膈角锐利。"
+      },
+      {
+        "title_type": "1",
+        "loitem_cname": "诊断意见",
+        "order_rpt_result": "心肺膈未见明显异常"
+      },
+      {
+        "title_type": "1",
+        "loitem_cname": "诊断建议",
+        "order_rpt_result": "建议定期复查"
+      }
+    ],
+    "rpt_file": [],
+    "head": {
+      "bizno": "S5008",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-11-03 10:44:32",
+      "action_no": "eefc14a1-3d85-4114-97f6-1374e4f76af9"
+    }
+  }
+}
+错误: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Services.NewStandardService.CallInspectionFindingApi[TRequest](TRequest request) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 1187
+   at MedicalReportSystem.Services.NewStandardService.S5008(String serviceMethod, String applyId, String applyStatus, String reporterName, String checkerName, List`1 reportResults, List`1 reportFiles) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 321

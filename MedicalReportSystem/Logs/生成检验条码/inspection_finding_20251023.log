@@ -1,0 +1,168 @@
+[2025-10-23 09:29:48] 开始生成检验条码
+请求参数: {
+    "input": {
+        "ack_info": {
+            "exe_status": "A",
+            "err_msg": ""
+        },
+        "apply_info": [
+            {
+                "apply_id": "205995580",
+                "sno": "8"
+            }
+        ],
+        "bill_list": [
+            {
+                "order_id": "205995579",
+                "apply_id": "205995580",
+                "citem_id": "15348",
+                "receipt_no": "25003087768",
+                "parts_name": "血液",
+                "rmethod_name": "",
+                "fitem_id": "",
+                "fee_id": "516205845"
+            },
+            {
+                "order_id": "205995580",
+                "apply_id": "",
+                "citem_id": "14533",
+                "receipt_no": "25003087769",
+                "parts_name": "血液",
+                "rmethod_name": "",
+                "fitem_id": "",
+                "fee_id": "516205844"
+            }
+        ],
+        "res_info": {
+            "send_no": "29250639"
+        }
+    }
+} 
+构建的检查结果请求: {
+  "input": {
+    "apply_info": {
+      "apply_id": "205995580",
+      "pat_visit_type": "1",
+      "oprtr_id": "2355",
+      "oprtr_name": "系统管理员",
+      "outpno": "",
+      "idno": "",
+      "start_date": "",
+      "end_date": ""
+    },
+    "head": {
+      "bizno": "S4024",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-10-23 09:30:40",
+      "action_no": "b9bdddb6-231f-42fe-8352-f41abbe33114"
+    }
+  }
+}
+错误: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Services.NewStandardService.CallInspectionFindingApi[TRequest](TRequest request) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 533
+   at MedicalReportSystem.Services.NewStandardService.S4024(JsonElement requestJson, String serviceMethod, String patVisitType, String operatorId, String operatorName, String outpno, String idno, String startDate, String endDate) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 152
+[2025-10-23 09:40:14] 开始生成检验条码
+请求参数: {
+    "input": {
+        "ack_info": {
+            "exe_status": "A",
+            "err_msg": ""
+        },
+        "apply_info": [
+            {
+                "apply_id": "205995580",
+                "sno": "8"
+            }
+        ],
+        "bill_list": [
+            {
+                "order_id": "205995579",
+                "apply_id": "205995580",
+                "citem_id": "15348",
+                "receipt_no": "25003087768",
+                "parts_name": "血液",
+                "rmethod_name": "",
+                "fitem_id": "",
+                "fee_id": "516205845"
+            },
+            {
+                "order_id": "205995580",
+                "apply_id": "",
+                "citem_id": "14533",
+                "receipt_no": "25003087769",
+                "parts_name": "血液",
+                "rmethod_name": "",
+                "fitem_id": "",
+                "fee_id": "516205844"
+            }
+        ],
+        "res_info": {
+            "send_no": "29250639"
+        }
+    }
+} 
+[2025-10-23 09:44:53] 开始生成检验条码
+请求参数: {
+    "input": {
+        "ack_info": {
+            "exe_status": "A",
+            "err_msg": ""
+        },
+        "apply_info": [
+            {
+                "apply_id": "205995580",
+                "sno": "8"
+            }
+        ],
+        "bill_list": [
+            {
+                "order_id": "205995579",
+                "apply_id": "205995580",
+                "citem_id": "15348",
+                "receipt_no": "25003087768",
+                "parts_name": "血液",
+                "rmethod_name": "",
+                "fitem_id": "",
+                "fee_id": "516205845"
+            },
+            {
+                "order_id": "205995580",
+                "apply_id": "",
+                "citem_id": "14533",
+                "receipt_no": "25003087769",
+                "parts_name": "血液",
+                "rmethod_name": "",
+                "fitem_id": "",
+                "fee_id": "516205844"
+            }
+        ],
+        "res_info": {
+            "send_no": "29250639"
+        }
+    }
+} 
+构建的检查结果请求: {
+  "input": {
+    "apply_info": {
+      "apply_id": "205995580",
+      "pat_visit_type": "1",
+      "oprtr_id": "518",
+      "oprtr_name": "系统管理员",
+      "outpno": "",
+      "idno": "",
+      "start_date": "",
+      "end_date": ""
+    },
+    "head": {
+      "bizno": "S4024",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-10-23 09:47:04",
+      "action_no": "56d414f7-74e7-4951-82cc-ba32bc5140e5"
+    }
+  }
+}
+错误: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Services.NewStandardService.CallInspectionFindingApi[TRequest](TRequest request) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 533
+   at MedicalReportSystem.Services.NewStandardService.S4024(JsonElement requestJson, String serviceMethod, String patVisitType, String operatorId, String operatorName, String outpno, String idno, String startDate, String endDate) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 152

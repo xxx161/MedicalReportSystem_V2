@@ -1,0 +1,960 @@
+[2025-11-06 09:16:45] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "req_info": [
+    {
+      "orderId": 206598579,
+      "dataCode": "210300002T01001",
+      "OrderID": 206598579,
+      "pat_visit_type": 1,
+      "patientId": 4602748,
+      "homePageId": "",
+      "operationType": "02",
+      "treatmentCategory": "D",
+      "sno": 124,
+      "order_expidate_type ": 1,
+      "apply_time": "2025-11-03T16:21:00.000Z",
+      "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+      "apply_dept_id": 518,
+      "citem_id": "259015",
+      "citem_name": "(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B",
+      "exedept_id": 467,
+      "emg_sign": 0,
+      "order_drask": "",
+      "fee_source": 1,
+      "citem_type": "D",
+      "parts_name": "\u9F3B\u54BD\u90E8-",
+      "rmethod_name": "\u5E73\u626B",
+      "lspcm_name": "\u9F3B\u54BD\u90E8-",
+      "rgst_no": "25000881787",
+      "dg1_info": null,
+      "bodyPart": "\u9F3B\u54BD\u90E8-",
+      "method": "\u5E73\u626B",
+      "citem_id_cj": 253213,
+      "citem_name_cj": "CT\u68C0\u67E5\uFF08\u6765\u5BBEHR\uFF09",
+      "exedept_id_cj": 467
+    }
+  ]
+}
+处理完成，结果: {"Value":{"ServiceMethod":"S3112","Success":false,"ResultCode":"500","ResultMessage":"\u5904\u7406\u8BF7\u6C42\u5931\u8D25: \u7F3A\u5C11input\u5B57\u6BB5","Timestamp":"2025-11-06 09:17:05"},"Formatters":[],"ContentTypes":[],"DeclaredType":null,"StatusCode":500}
+=========================================================================================================================================
+[2025-11-06 09:18:35] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 206598579,
+        "dataCode": "210300002T01001",
+        "OrderID": 206598579,
+        "pat_visit_type": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "D",
+        "sno": 124,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-11-03T16:21:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 518,
+        "citem_id": "259015",
+        "citem_name": "(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B",
+        "exedept_id": 467,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "D",
+        "parts_name": "\u9F3B\u54BD\u90E8-",
+        "rmethod_name": "\u5E73\u626B",
+        "lspcm_name": "\u9F3B\u54BD\u90E8-",
+        "rgst_no": "25000881787",
+        "dg1_info": null,
+        "bodyPart": "\u9F3B\u54BD\u90E8-",
+        "method": "\u5E73\u626B",
+        "citem_id_cj": 253213,
+        "citem_name_cj": "CT\u68C0\u67E5\uFF08\u6765\u5BBEHR\uFF09",
+        "exedept_id_cj": 467
+      }
+    ]
+  }
+}
+处理完成，结果: {"Value":{"ServiceMethod":"S3112","Success":false,"ResultCode":"500","ResultMessage":"\u5904\u7406\u8BF7\u6C42\u5931\u8D25: \u62A5\u544A\u68C0\u67E5\u7ED3\u679C\u4E0A\u4F20\u5931\u8D25: \u8C03\u7528\u68C0\u67E5\u7ED3\u679CAPI\u5931\u8D25: \u7531\u4E8E\u8FDE\u63A5\u65B9\u5728\u4E00\u6BB5\u65F6\u95F4\u540E\u6CA1\u6709\u6B63\u786E\u7B54\u590D\u6216\u8FDE\u63A5\u7684\u4E3B\u673A\u6CA1\u6709\u53CD\u5E94\uFF0C\u8FDE\u63A5\u5C1D\u8BD5\u5931\u8D25\u3002 (10.10.1.46:8077)","Timestamp":"2025-11-06 09:24:35"},"Formatters":[],"ContentTypes":[],"DeclaredType":null,"StatusCode":500}
+=========================================================================================================================================
+[2025-11-06 09:27:16] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 206598579,
+        "dataCode": "210300002T01001",
+        "OrderID": 206598579,
+        "pat_visit_type": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "D",
+        "sno": 124,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-11-03T16:21:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 518,
+        "citem_id": "259015",
+        "citem_name": "(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B",
+        "exedept_id": 467,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "D",
+        "parts_name": "\u9F3B\u54BD\u90E8-",
+        "rmethod_name": "\u5E73\u626B",
+        "lspcm_name": "\u9F3B\u54BD\u90E8-",
+        "rgst_no": "25000881787",
+        "dg1_info": null,
+        "bodyPart": "\u9F3B\u54BD\u90E8-",
+        "method": "\u5E73\u626B",
+        "citem_id_cj": 253213,
+        "citem_name_cj": "CT\u68C0\u67E5\uFF08\u6765\u5BBEHR\uFF09",
+        "exedept_id_cj": 467
+      }
+    ]
+  }
+}
+处理完成，结果: {"Value":{"ServiceMethod":"S3112","Success":false,"ResultCode":"500","ResultMessage":"\u5904\u7406\u8BF7\u6C42\u5931\u8D25: \u62A5\u544A\u68C0\u67E5\u7ED3\u679C\u4E0A\u4F20\u5931\u8D25: \u8C03\u7528\u68C0\u67E5\u7ED3\u679CAPI\u5931\u8D25: \u7531\u4E8E\u8FDE\u63A5\u65B9\u5728\u4E00\u6BB5\u65F6\u95F4\u540E\u6CA1\u6709\u6B63\u786E\u7B54\u590D\u6216\u8FDE\u63A5\u7684\u4E3B\u673A\u6CA1\u6709\u53CD\u5E94\uFF0C\u8FDE\u63A5\u5C1D\u8BD5\u5931\u8D25\u3002 (10.10.1.46:8077)","Timestamp":"2025-11-06 09:30:30"},"Formatters":[],"ContentTypes":[],"DeclaredType":null,"StatusCode":500}
+=========================================================================================================================================
+[2025-11-06 14:13:30] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 206720447,
+        "dataCode": "210300002T01001",
+        "OrderID": 206720447,
+        "pat_visit_type": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "D",
+        "sno": 167,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-11-06T04:53:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 518,
+        "citem_id": 253213,
+        "citem_name": "CT\u68C0\u67E5\uFF08\u6765\u5BBEHR\uFF09",
+        "exedept_id": 467,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "D",
+        "parts_name": "\u9F3B\u54BD\u90E8-",
+        "rmethod_name": "\u5E73\u626B",
+        "lspcm_name": "\u9F3B\u54BD\u90E8-",
+        "rgst_no": "25000881787",
+        "dg1_info": null,
+        "bodyPart": "\u9F3B\u54BD\u90E8-",
+        "method": "\u5E73\u626B"
+      }
+    ]
+  }
+}
+处理完成，结果: {"Value":{"ServiceMethod":"S3112","Success":false,"ResultCode":"500","ResultMessage":"\u5904\u7406\u8BF7\u6C42\u5931\u8D25: \u62A5\u544A\u68C0\u67E5\u7ED3\u679C\u4E0A\u4F20\u5931\u8D25: \u8C03\u7528\u68C0\u67E5\u7ED3\u679CAPI\u5931\u8D25: \u7531\u4E8E\u8FDE\u63A5\u65B9\u5728\u4E00\u6BB5\u65F6\u95F4\u540E\u6CA1\u6709\u6B63\u786E\u7B54\u590D\u6216\u8FDE\u63A5\u7684\u4E3B\u673A\u6CA1\u6709\u53CD\u5E94\uFF0C\u8FDE\u63A5\u5C1D\u8BD5\u5931\u8D25\u3002 (10.10.1.46:8077)","Timestamp":"2025-11-06 14:41:26"},"Formatters":[],"ContentTypes":[],"DeclaredType":null,"StatusCode":500}
+=========================================================================================================================================
+[2025-11-06 14:41:33] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 206720447,
+        "dataCode": "210300002T01001",
+        "OrderID": 206720447,
+        "pat_visit_type": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "D",
+        "sno": 167,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-11-06T04:53:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 518,
+        "citem_id": 253213,
+        "citem_name": "CT\u68C0\u67E5\uFF08\u6765\u5BBEHR\uFF09",
+        "exedept_id": 467,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "D",
+        "parts_name": "\u9F3B\u54BD\u90E8-",
+        "rmethod_name": "\u5E73\u626B",
+        "lspcm_name": "\u9F3B\u54BD\u90E8-",
+        "rgst_no": "25000881787",
+        "dg1_info": null,
+        "bodyPart": "\u9F3B\u54BD\u90E8-",
+        "method": "\u5E73\u626B"
+      }
+    ]
+  }
+}
+处理完成，结果: {"Value":{"ServiceMethod":"S3112","Success":false,"ResultCode":"500","ResultMessage":"\u5904\u7406\u8BF7\u6C42\u5931\u8D25: \u62A5\u544A\u68C0\u67E5\u7ED3\u679C\u4E0A\u4F20\u5931\u8D25: \u8C03\u7528\u68C0\u67E5\u7ED3\u679CAPI\u5931\u8D25: \u7531\u4E8E\u8FDE\u63A5\u65B9\u5728\u4E00\u6BB5\u65F6\u95F4\u540E\u6CA1\u6709\u6B63\u786E\u7B54\u590D\u6216\u8FDE\u63A5\u7684\u4E3B\u673A\u6CA1\u6709\u53CD\u5E94\uFF0C\u8FDE\u63A5\u5C1D\u8BD5\u5931\u8D25\u3002 (10.10.1.46:8077)","Timestamp":"2025-11-06 14:41:59"},"Formatters":[],"ContentTypes":[],"DeclaredType":null,"StatusCode":500}
+=========================================================================================================================================
+[2025-11-06 14:43:13] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 205658417,
+        "dataCode": "002501010150000",
+        "OrderID": 205658417,
+        "pat_visit_type": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-10-20T07:03:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 518,
+        "citem_id": 259015,
+        "citem_name": "(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879\u76EE)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B",
+        "exedept_id": 466,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "rgst_no": 12891999,
+        "citem_id_cj": 147861,
+        "citem_name_cj": "\u79D1\u5BA4\u91C7\u96C6",
+        "exedept_id_cj": 582
+      }
+    ]
+  }
+}
+处理完成，结果: {"Value":{"ServiceMethod":"S3112","Success":false,"ResultCode":"500","ResultMessage":"\u5904\u7406\u8BF7\u6C42\u5931\u8D25: \u62A5\u544A\u68C0\u67E5\u7ED3\u679C\u4E0A\u4F20\u5931\u8D25: \u8C03\u7528\u68C0\u67E5\u7ED3\u679CAPI\u5931\u8D25: \u7531\u4E8E\u8FDE\u63A5\u65B9\u5728\u4E00\u6BB5\u65F6\u95F4\u540E\u6CA1\u6709\u6B63\u786E\u7B54\u590D\u6216\u8FDE\u63A5\u7684\u4E3B\u673A\u6CA1\u6709\u53CD\u5E94\uFF0C\u8FDE\u63A5\u5C1D\u8BD5\u5931\u8D25\u3002 (10.10.1.46:8077)","Timestamp":"2025-11-06 14:59:39"},"Formatters":[],"ContentTypes":[],"DeclaredType":null,"StatusCode":500}
+=========================================================================================================================================
+[2025-11-06 15:23:52] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 206720447,
+        "dataCode": "210300002T01001",
+        "OrderID": 206720447,
+        "pat_visit_type": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "D",
+        "sno": 167,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-11-06T04:53:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 518,
+        "citem_id": 253213,
+        "citem_name": "CT\u68C0\u67E5\uFF08\u6765\u5BBEHR\uFF09",
+        "exedept_id": 467,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "D",
+        "parts_name": "\u9F3B\u54BD\u90E8-",
+        "rmethod_name": "\u5E73\u626B",
+        "lspcm_name": "\u9F3B\u54BD\u90E8-",
+        "rgst_no": "25000881787",
+        "dg1_info": null,
+        "bodyPart": "\u9F3B\u54BD\u90E8-",
+        "method": "\u5E73\u626B"
+      }
+    ]
+  }
+}
+处理完成，结果: {"Value":{"ServiceMethod":"S3112","Success":false,"ResultCode":"500","ResultMessage":"\u5904\u7406\u8BF7\u6C42\u5931\u8D25: \u62A5\u544A\u68C0\u67E5\u7ED3\u679C\u4E0A\u4F20\u5931\u8D25: \u8C03\u7528\u68C0\u67E5\u7ED3\u679CAPI\u5931\u8D25: \u7531\u4E8E\u8FDE\u63A5\u65B9\u5728\u4E00\u6BB5\u65F6\u95F4\u540E\u6CA1\u6709\u6B63\u786E\u7B54\u590D\u6216\u8FDE\u63A5\u7684\u4E3B\u673A\u6CA1\u6709\u53CD\u5E94\uFF0C\u8FDE\u63A5\u5C1D\u8BD5\u5931\u8D25\u3002 (10.10.1.46:8077)","Timestamp":"2025-11-06 15:24:33"},"Formatters":[],"ContentTypes":[],"DeclaredType":null,"StatusCode":500}
+=========================================================================================================================================
+[2025-11-06 15:26:05] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 206249899,
+        "dataCode": "002501010150000",
+        "OrderID": 206249899,
+        "pat_visit_type": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-11-06T07:02:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 518,
+        "citem_id": 15288,
+        "citem_name": "\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B",
+        "exedept_id": 466,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "rgst_no": "25000881787",
+        "dg1_info": "1\u003CSPCOLS\u003E\u5934\u75DB\u003CSPCOLS\u003E\u003CSPCOLS\u003ER51.x00\u003CSPCOLS\u003E0\u003CSPCOLS\u003E151076",
+        "citem_id_cj": 100162,
+        "citem_name_cj": "\u68C0\u9A8C\u79D1\u91C7\u96C6",
+        "exedept_id_cj": 466
+      }
+    ]
+  }
+}
+处理完成，结果: {"Value":{"ServiceMethod":"S3112","Success":false,"ResultCode":"500","ResultMessage":"\u5904\u7406\u8BF7\u6C42\u5931\u8D25: \u62A5\u544A\u68C0\u67E5\u7ED3\u679C\u4E0A\u4F20\u5931\u8D25: \u8C03\u7528\u68C0\u67E5\u7ED3\u679CAPI\u5931\u8D25: \u7531\u4E8E\u8FDE\u63A5\u65B9\u5728\u4E00\u6BB5\u65F6\u95F4\u540E\u6CA1\u6709\u6B63\u786E\u7B54\u590D\u6216\u8FDE\u63A5\u7684\u4E3B\u673A\u6CA1\u6709\u53CD\u5E94\uFF0C\u8FDE\u63A5\u5C1D\u8BD5\u5931\u8D25\u3002 (10.10.1.46:8077)","Timestamp":"2025-11-06 15:30:40"},"Formatters":[],"ContentTypes":[],"DeclaredType":null,"StatusCode":500}
+=========================================================================================================================================
+[2025-11-06 16:39:18] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 206249899,
+        "dataCode": "002501010150000",
+        "OrderID": 206249899,
+        "pat_visit_type": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-10-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 518,
+        "citem_id": "259015",
+        "citem_name": "(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B",
+        "exedept_id": "466",
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "rgst_no": "25000881787",
+        "dg1_info": "1\u003CSPCOLS\u003E\u5934\u75DB\u003CSPCOLS\u003E\u003CSPCOLS\u003ER51.x00\u003CSPCOLS\u003E0\u003CSPCOLS\u003E151076",
+        "citem_id_cj": 100162,
+        "citem_name_cj": "\u68C0\u9A8C\u79D1\u91C7\u96C6",
+        "exedept_id_cj": "\u68C0\u9A8C\u79D1\u91C7\u96C6"
+      }
+    ]
+  }
+}
+处理完成，结果: {"Value":{"ServiceMethod":"S3112","Success":false,"ResultCode":"500","ResultMessage":"\u5904\u7406\u8BF7\u6C42\u5931\u8D25: \u62A5\u544A\u68C0\u67E5\u7ED3\u679C\u4E0A\u4F20\u5931\u8D25: \u6784\u5EFA\u68C0\u67E5\u7ED3\u679C\u8BF7\u6C42\u6570\u636E\u5931\u8D25: The JSON value could not be converted to System.Nullable\u00601[System.Int32]. Path: $[0].exedept_id | LineNumber: 17 | BytePositionInLine: 35.","Timestamp":"2025-11-06 16:39:22"},"Formatters":[],"ContentTypes":[],"DeclaredType":null,"StatusCode":500}
+=========================================================================================================================================
+[2025-11-06 16:39:32] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 206249899,
+        "dataCode": "002501010150000",
+        "OrderID": 206249899,
+        "pat_visit_type": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-10-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 518,
+        "citem_id": "259015",
+        "citem_name": "(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B",
+        "exedept_id": "466",
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "rgst_no": "25000881787",
+        "dg1_info": "1\u003CSPCOLS\u003E\u5934\u75DB\u003CSPCOLS\u003E\u003CSPCOLS\u003ER51.x00\u003CSPCOLS\u003E0\u003CSPCOLS\u003E151076",
+        "citem_id_cj": 100162,
+        "citem_name_cj": "\u68C0\u9A8C\u79D1\u91C7\u96C6",
+        "exedept_id_cj": "\u68C0\u9A8C\u79D1\u91C7\u96C6"
+      }
+    ]
+  }
+}
+处理完成，结果: {"Value":{"ServiceMethod":"S3112","Success":false,"ResultCode":"500","ResultMessage":"\u5904\u7406\u8BF7\u6C42\u5931\u8D25: \u62A5\u544A\u68C0\u67E5\u7ED3\u679C\u4E0A\u4F20\u5931\u8D25: \u6784\u5EFA\u68C0\u67E5\u7ED3\u679C\u8BF7\u6C42\u6570\u636E\u5931\u8D25: The JSON value could not be converted to System.Nullable\u00601[System.Int32]. Path: $[0].exedept_id | LineNumber: 17 | BytePositionInLine: 35.","Timestamp":"2025-11-06 16:47:15"},"Formatters":[],"ContentTypes":[],"DeclaredType":null,"StatusCode":500}
+=========================================================================================================================================
+[2025-11-06 16:47:56] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 206249899,
+        "dataCode": "002501010150000",
+        "OrderID": 206249899,
+        "pat_visit_type": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-10-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 518,
+        "citem_id": "259015",
+        "citem_name": "(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B",
+        "exedept_id": "466",
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "rgst_no": "25000881787",
+        "dg1_info": "1\u003CSPCOLS\u003E\u5934\u75DB\u003CSPCOLS\u003E\u003CSPCOLS\u003ER51.x00\u003CSPCOLS\u003E0\u003CSPCOLS\u003E151076",
+        "citem_id_cj": 100162,
+        "citem_name_cj": "\u68C0\u9A8C\u79D1\u91C7\u96C6",
+        "exedept_id_cj": "\u68C0\u9A8C\u79D1\u91C7\u96C6"
+      }
+    ]
+  }
+}
+处理完成，结果: {"Value":{"ServiceMethod":"S3112","Success":false,"ResultCode":"500","ResultMessage":"\u5904\u7406\u8BF7\u6C42\u5931\u8D25: \u62A5\u544A\u68C0\u67E5\u7ED3\u679C\u4E0A\u4F20\u5931\u8D25: \u6784\u5EFA\u68C0\u67E5\u7ED3\u679C\u8BF7\u6C42\u6570\u636E\u5931\u8D25: The JSON value could not be converted to System.Nullable\u00601[System.Int32]. Path: $[0].exedept_id | LineNumber: 17 | BytePositionInLine: 35.","Timestamp":"2025-11-06 16:47:57"},"Formatters":[],"ContentTypes":[],"DeclaredType":null,"StatusCode":500}
+=========================================================================================================================================
+[2025-11-06 16:48:07] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 206249899,
+        "dataCode": "002501010150000",
+        "OrderID": 206249899,
+        "pat_visit_type": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-10-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 518,
+        "citem_id": "259015",
+        "citem_name": "(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B",
+        "exedept_id": "466",
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "rgst_no": "25000881787",
+        "dg1_info": "1\u003CSPCOLS\u003E\u5934\u75DB\u003CSPCOLS\u003E\u003CSPCOLS\u003ER51.x00\u003CSPCOLS\u003E0\u003CSPCOLS\u003E151076",
+        "citem_id_cj": 100162,
+        "citem_name_cj": "\u68C0\u9A8C\u79D1\u91C7\u96C6",
+        "exedept_id_cj": "9"
+      }
+    ]
+  }
+}
+处理完成，结果: {"Value":{"ServiceMethod":"S3112","Success":false,"ResultCode":"500","ResultMessage":"\u5904\u7406\u8BF7\u6C42\u5931\u8D25: \u62A5\u544A\u68C0\u67E5\u7ED3\u679C\u4E0A\u4F20\u5931\u8D25: \u6784\u5EFA\u68C0\u67E5\u7ED3\u679C\u8BF7\u6C42\u6570\u636E\u5931\u8D25: The JSON value could not be converted to System.Nullable\u00601[System.Int32]. Path: $[0].exedept_id | LineNumber: 17 | BytePositionInLine: 35.","Timestamp":"2025-11-06 16:48:08"},"Formatters":[],"ContentTypes":[],"DeclaredType":null,"StatusCode":500}
+=========================================================================================================================================
+[2025-11-06 16:48:26] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 206249899,
+        "dataCode": "002501010150000",
+        "OrderID": 206249899,
+        "pat_visit_type": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-10-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 518,
+        "citem_id": "259015",
+        "citem_name": "(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B",
+        "exedept_id": "466",
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "rgst_no": "25000881787",
+        "dg1_info": "1\u003CSPCOLS\u003E\u5934\u75DB\u003CSPCOLS\u003E\u003CSPCOLS\u003ER51.x00\u003CSPCOLS\u003E0\u003CSPCOLS\u003E151076",
+        "citem_id_cj": 100162,
+        "citem_name_cj": "\u68C0\u9A8C\u79D1\u91C7\u96C6",
+        "exedept_id_cj": "9"
+      }
+    ]
+  }
+}
+处理完成，结果: {"Value":{"ServiceMethod":"S3112","Success":false,"ResultCode":"500","ResultMessage":"\u5904\u7406\u8BF7\u6C42\u5931\u8D25: \u62A5\u544A\u68C0\u67E5\u7ED3\u679C\u4E0A\u4F20\u5931\u8D25: \u6784\u5EFA\u68C0\u67E5\u7ED3\u679C\u8BF7\u6C42\u6570\u636E\u5931\u8D25: The JSON value could not be converted to System.Nullable\u00601[System.Int32]. Path: $[0].exedept_id | LineNumber: 17 | BytePositionInLine: 35.","Timestamp":"2025-11-06 16:55:16"},"Formatters":[],"ContentTypes":[],"DeclaredType":null,"StatusCode":500}
+=========================================================================================================================================
+[2025-11-06 16:55:24] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 206249899,
+        "dataCode": "002501010150000",
+        "OrderID": 206249899,
+        "pat_visit_type": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-10-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 518,
+        "citem_id": "259015",
+        "citem_name": "(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B",
+        "exedept_id": "466",
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "rgst_no": "25000881787",
+        "dg1_info": "1\u003CSPCOLS\u003E\u5934\u75DB\u003CSPCOLS\u003E\u003CSPCOLS\u003ER51.x00\u003CSPCOLS\u003E0\u003CSPCOLS\u003E151076",
+        "citem_id_cj": 100162,
+        "citem_name_cj": "\u68C0\u9A8C\u79D1\u91C7\u96C6",
+        "exedept_id_cj": "9"
+      }
+    ]
+  }
+}
+处理完成，结果: {"Value":{"ServiceMethod":"S3112","Success":false,"ResultCode":"500","ResultMessage":"\u5904\u7406\u8BF7\u6C42\u5931\u8D25: \u62A5\u544A\u68C0\u67E5\u7ED3\u679C\u4E0A\u4F20\u5931\u8D25: \u6784\u5EFA\u68C0\u67E5\u7ED3\u679C\u8BF7\u6C42\u6570\u636E\u5931\u8D25: The JSON value could not be converted to System.Nullable\u00601[System.Int32]. Path: $[0].exedept_id | LineNumber: 17 | BytePositionInLine: 35.","Timestamp":"2025-11-06 16:58:41"},"Formatters":[],"ContentTypes":[],"DeclaredType":null,"StatusCode":500}
+=========================================================================================================================================
+[2025-11-06 16:58:47] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 206249899,
+        "dataCode": "002501010150000",
+        "OrderID": 206249899,
+        "pat_visit_type": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-10-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 518,
+        "citem_id": "259015",
+        "citem_name": "(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B",
+        "exedept_id": "466",
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "rgst_no": "25000881787",
+        "dg1_info": "1\u003CSPCOLS\u003E\u5934\u75DB\u003CSPCOLS\u003E\u003CSPCOLS\u003ER51.x00\u003CSPCOLS\u003E0\u003CSPCOLS\u003E151076",
+        "citem_id_cj": 100162,
+        "citem_name_cj": "\u68C0\u9A8C\u79D1\u91C7\u96C6",
+        "exedept_id_cj": "9"
+      }
+    ]
+  }
+}
+处理完成，结果: {"Value":{"ServiceMethod":"S3112","Success":false,"ResultCode":"500","ResultMessage":"\u5904\u7406\u8BF7\u6C42\u5931\u8D25: \u62A5\u544A\u68C0\u67E5\u7ED3\u679C\u4E0A\u4F20\u5931\u8D25: \u6784\u5EFA\u68C0\u67E5\u7ED3\u679C\u8BF7\u6C42\u6570\u636E\u5931\u8D25: The JSON value could not be converted to System.Nullable\u00601[System.Int32]. Path: $[0].exedept_id | LineNumber: 17 | BytePositionInLine: 35.","Timestamp":"2025-11-06 16:59:13"},"Formatters":[],"ContentTypes":[],"DeclaredType":null,"StatusCode":500}
+=========================================================================================================================================
+[2025-11-06 16:59:18] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 206249899,
+        "dataCode": "002501010150000",
+        "OrderID": 206249899,
+        "pat_visit_type": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-10-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 518,
+        "citem_id": "259015",
+        "citem_name": "(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B",
+        "exedept_id": "466",
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "rgst_no": "25000881787",
+        "dg1_info": "1\u003CSPCOLS\u003E\u5934\u75DB\u003CSPCOLS\u003E\u003CSPCOLS\u003ER51.x00\u003CSPCOLS\u003E0\u003CSPCOLS\u003E151076",
+        "citem_id_cj": 100162,
+        "citem_name_cj": "\u68C0\u9A8C\u79D1\u91C7\u96C6",
+        "exedept_id_cj": "9"
+      }
+    ]
+  }
+}
+处理完成，结果: {"Value":{"ServiceMethod":"S3112","Success":false,"ResultCode":"500","ResultMessage":"\u5904\u7406\u8BF7\u6C42\u5931\u8D25: \u62A5\u544A\u68C0\u67E5\u7ED3\u679C\u4E0A\u4F20\u5931\u8D25: \u6784\u5EFA\u68C0\u67E5\u7ED3\u679C\u8BF7\u6C42\u6570\u636E\u5931\u8D25: The JSON value could not be converted to System.Nullable\u00601[System.Int32]. Path: $[0].exedept_id | LineNumber: 17 | BytePositionInLine: 35.","Timestamp":"2025-11-06 16:59:21"},"Formatters":[],"ContentTypes":[],"DeclaredType":null,"StatusCode":500}
+=========================================================================================================================================
+[2025-11-06 16:59:27] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 206249899,
+        "dataCode": "002501010150000",
+        "OrderID": 206249899,
+        "pat_visit_type": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-10-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 518,
+        "citem_id": "259015",
+        "citem_name": "(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B",
+        "exedept_id": "466",
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "rgst_no": "25000881787",
+        "dg1_info": "1\u003CSPCOLS\u003E\u5934\u75DB\u003CSPCOLS\u003E\u003CSPCOLS\u003ER51.x00\u003CSPCOLS\u003E0\u003CSPCOLS\u003E151076",
+        "citem_id_cj": 100162,
+        "citem_name_cj": "\u68C0\u9A8C\u79D1\u91C7\u96C6",
+        "exedept_id_cj": "9"
+      }
+    ]
+  }
+}
+处理完成，结果: {"Value":{"ServiceMethod":"S3112","Success":false,"ResultCode":"500","ResultMessage":"\u5904\u7406\u8BF7\u6C42\u5931\u8D25: \u62A5\u544A\u68C0\u67E5\u7ED3\u679C\u4E0A\u4F20\u5931\u8D25: \u6784\u5EFA\u68C0\u67E5\u7ED3\u679C\u8BF7\u6C42\u6570\u636E\u5931\u8D25: The JSON value could not be converted to System.Nullable\u00601[System.Int32]. Path: $[0].exedept_id | LineNumber: 17 | BytePositionInLine: 35.","Timestamp":"2025-11-06 16:59:30"},"Formatters":[],"ContentTypes":[],"DeclaredType":null,"StatusCode":500}
+=========================================================================================================================================
+[2025-11-06 16:59:36] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 206249899,
+        "dataCode": "002501010150000",
+        "OrderID": 206249899,
+        "pat_visit_type": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-10-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 518,
+        "citem_id": "259015",
+        "citem_name": "(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B",
+        "exedept_id": "466",
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "rgst_no": "25000881787",
+        "dg1_info": "1\u003CSPCOLS\u003E\u5934\u75DB\u003CSPCOLS\u003E\u003CSPCOLS\u003ER51.x00\u003CSPCOLS\u003E0\u003CSPCOLS\u003E151076",
+        "citem_id_cj": 100162,
+        "citem_name_cj": "\u68C0\u9A8C\u79D1\u91C7\u96C6",
+        "exedept_id_cj": "9"
+      }
+    ]
+  }
+}
+处理完成，结果: {"Value":{"ServiceMethod":"S3112","Success":false,"ResultCode":"500","ResultMessage":"\u5904\u7406\u8BF7\u6C42\u5931\u8D25: \u62A5\u544A\u68C0\u67E5\u7ED3\u679C\u4E0A\u4F20\u5931\u8D25: \u6784\u5EFA\u68C0\u67E5\u7ED3\u679C\u8BF7\u6C42\u6570\u636E\u5931\u8D25: The JSON value could not be converted to System.Nullable\u00601[System.Int32]. Path: $[0].exedept_id | LineNumber: 17 | BytePositionInLine: 35.","Timestamp":"2025-11-06 16:59:38"},"Formatters":[],"ContentTypes":[],"DeclaredType":null,"StatusCode":500}
+=========================================================================================================================================
+[2025-11-06 16:59:43] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 206249899,
+        "dataCode": "002501010150000",
+        "OrderID": 206249899,
+        "pat_visit_type": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-10-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 518,
+        "citem_id": "259015",
+        "citem_name": "(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B",
+        "exedept_id": "466",
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "rgst_no": "25000881787",
+        "dg1_info": "1\u003CSPCOLS\u003E\u5934\u75DB\u003CSPCOLS\u003E\u003CSPCOLS\u003ER51.x00\u003CSPCOLS\u003E0\u003CSPCOLS\u003E151076",
+        "citem_id_cj": 100162,
+        "citem_name_cj": "\u68C0\u9A8C\u79D1\u91C7\u96C6",
+        "exedept_id_cj": "9"
+      }
+    ]
+  }
+}
+处理完成，结果: {"Value":{"ServiceMethod":"S3112","Success":false,"ResultCode":"500","ResultMessage":"\u5904\u7406\u8BF7\u6C42\u5931\u8D25: \u62A5\u544A\u68C0\u67E5\u7ED3\u679C\u4E0A\u4F20\u5931\u8D25: \u6784\u5EFA\u68C0\u67E5\u7ED3\u679C\u8BF7\u6C42\u6570\u636E\u5931\u8D25: The JSON value could not be converted to System.Nullable\u00601[System.Int32]. Path: $[0].exedept_id | LineNumber: 17 | BytePositionInLine: 35.","Timestamp":"2025-11-06 17:00:07"},"Formatters":[],"ContentTypes":[],"DeclaredType":null,"StatusCode":500}
+=========================================================================================================================================
+[2025-11-06 17:01:22] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 206249899,
+        "dataCode": "002501010150000",
+        "OrderID": 206249899,
+        "pat_visit_type": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-10-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 518,
+        "citem_id": "259015",
+        "citem_name": "(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B",
+        "exedept_id": "466",
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "rgst_no": "25000881787",
+        "dg1_info": "1\u003CSPCOLS\u003E\u5934\u75DB\u003CSPCOLS\u003E\u003CSPCOLS\u003ER51.x00\u003CSPCOLS\u003E0\u003CSPCOLS\u003E151076",
+        "citem_id_cj": 100162,
+        "citem_name_cj": "\u68C0\u9A8C\u79D1\u91C7\u96C6",
+        "exedept_id_cj": "\u68C0\u9A8C\u79D1\u91C7\u96C6"
+      }
+    ]
+  }
+}
+处理完成，结果: {"Value":{"ServiceMethod":"S3112","Success":false,"ResultCode":"500","ResultMessage":"\u5904\u7406\u8BF7\u6C42\u5931\u8D25: \u62A5\u544A\u68C0\u67E5\u7ED3\u679C\u4E0A\u4F20\u5931\u8D25: \u6784\u5EFA\u68C0\u67E5\u7ED3\u679C\u8BF7\u6C42\u6570\u636E\u5931\u8D25: The JSON value could not be converted to System.Nullable\u00601[System.Int32]. Path: $[0].exedept_id | LineNumber: 17 | BytePositionInLine: 35.","Timestamp":"2025-11-06 17:01:23"},"Formatters":[],"ContentTypes":[],"DeclaredType":null,"StatusCode":500}
+=========================================================================================================================================
+[2025-11-06 17:02:17] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 206249899,
+        "dataCode": "002501010150000",
+        "OrderID": 206249899,
+        "pat_visit_type": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-10-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 518,
+        "citem_id": "259015",
+        "citem_name": "(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B",
+        "exedept_id": 466,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "rgst_no": "25000881787",
+        "dg1_info": "1\u003CSPCOLS\u003E\u5934\u75DB\u003CSPCOLS\u003E\u003CSPCOLS\u003ER51.x00\u003CSPCOLS\u003E0\u003CSPCOLS\u003E151076",
+        "citem_id_cj": 100162,
+        "citem_name_cj": "\u68C0\u9A8C\u79D1\u91C7\u96C6",
+        "exedept_id_cj": "\u68C0\u9A8C\u79D1\u91C7\u96C6"
+      }
+    ]
+  }
+}
+处理完成，结果: {"Value":{"ServiceMethod":"S3112","Success":false,"ResultCode":"500","ResultMessage":"\u5904\u7406\u8BF7\u6C42\u5931\u8D25: \u62A5\u544A\u68C0\u67E5\u7ED3\u679C\u4E0A\u4F20\u5931\u8D25: \u8C03\u7528\u68C0\u67E5\u7ED3\u679CAPI\u5931\u8D25: \u7531\u4E8E\u8FDE\u63A5\u65B9\u5728\u4E00\u6BB5\u65F6\u95F4\u540E\u6CA1\u6709\u6B63\u786E\u7B54\u590D\u6216\u8FDE\u63A5\u7684\u4E3B\u673A\u6CA1\u6709\u53CD\u5E94\uFF0C\u8FDE\u63A5\u5C1D\u8BD5\u5931\u8D25\u3002 (10.10.1.46:8077)","Timestamp":"2025-11-06 17:04:40"},"Formatters":[],"ContentTypes":[],"DeclaredType":null,"StatusCode":500}
+=========================================================================================================================================
+[2025-11-06 17:11:32] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 206598579,
+        "dataCode": "210300002T01001",
+        "OrderID": 206598579,
+        "pat_visit_type": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "D",
+        "sno": 124,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-11-03T16:21:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 518,
+        "citem_id": 253213,
+        "citem_name": "CT\u68C0\u67E5\uFF08\u6765\u5BBEHR\uFF09",
+        "exedept_id": 467,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "D",
+        "parts_name": "\u9F3B\u54BD\u90E8-",
+        "rmethod_name": "\u5E73\u626B",
+        "lspcm_name": "\u9F3B\u54BD\u90E8-",
+        "rgst_no": "25000881787",
+        "dg1_info": null,
+        "bodyPart": "\u9F3B\u54BD\u90E8-",
+        "method": "\u5E73\u626B",
+        "citem_id_cj": 253213,
+        "citem_name_cj": "CT\u68C0\u67E5\uFF08\u6765\u5BBEHR\uFF09",
+        "exedept_id_cj": 467
+      }
+    ]
+  }
+}
+[2025-11-06 17:27:14] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 206249899,
+        "dataCode": "002501010150000",
+        "OrderID": 206249899,
+        "pat_visit_type": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-11-06T09:06:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 518,
+        "citem_id": "259015",
+        "citem_name": "(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B",
+        "exedept_id": 466,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "rgst_no": "25000881787",
+        "dg1_info": "1\u003CSPCOLS\u003E\u5934\u75DB\u003CSPCOLS\u003E\u003CSPCOLS\u003ER51.x00\u003CSPCOLS\u003E0\u003CSPCOLS\u003E151076",
+        "citem_id_cj": 100162,
+        "citem_name_cj": "\u68C0\u9A8C\u79D1\u91C7\u96C6",
+        "exedept_id_cj": 466
+      }
+    ]
+  }
+}
+处理完成，结果: {"Value":{"ServiceMethod":"S3112","Success":false,"ResultCode":"500","ResultMessage":"\u5904\u7406\u8BF7\u6C42\u5931\u8D25: \u62A5\u544A\u68C0\u67E5\u7ED3\u679C\u4E0A\u4F20\u5931\u8D25: \u8C03\u7528\u68C0\u67E5\u7ED3\u679CAPI\u5931\u8D25: \u7531\u4E8E\u8FDE\u63A5\u65B9\u5728\u4E00\u6BB5\u65F6\u95F4\u540E\u6CA1\u6709\u6B63\u786E\u7B54\u590D\u6216\u8FDE\u63A5\u7684\u4E3B\u673A\u6CA1\u6709\u53CD\u5E94\uFF0C\u8FDE\u63A5\u5C1D\u8BD5\u5931\u8D25\u3002 (10.10.1.46:8077)","Timestamp":"2025-11-06 17:28:04"},"Formatters":[],"ContentTypes":[],"DeclaredType":null,"StatusCode":500}
+=========================================================================================================================================
+[2025-11-06 17:28:46] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 206249899,
+        "dataCode": "002501010150000",
+        "OrderID": 206249899,
+        "pat_visit_type": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-11-06T09:06:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 518,
+        "citem_id": "259015",
+        "citem_name": "(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B",
+        "exedept_id": "466",
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "rgst_no": "25000881787",
+        "dg1_info": "1\u003CSPCOLS\u003E\u5934\u75DB\u003CSPCOLS\u003E\u003CSPCOLS\u003ER51.x00\u003CSPCOLS\u003E0\u003CSPCOLS\u003E151076",
+        "citem_id_cj": 100162,
+        "citem_name_cj": "\u68C0\u9A8C\u79D1\u91C7\u96C6",
+        "exedept_id_cj": 466
+      }
+    ]
+  }
+}
+处理完成，结果: {"Value":{"ServiceMethod":"S3112","Success":false,"ResultCode":"500","ResultMessage":"\u5904\u7406\u8BF7\u6C42\u5931\u8D25: \u62A5\u544A\u68C0\u67E5\u7ED3\u679C\u4E0A\u4F20\u5931\u8D25: \u6784\u5EFA\u68C0\u67E5\u7ED3\u679C\u8BF7\u6C42\u6570\u636E\u5931\u8D25: The JSON value could not be converted to System.Nullable\u00601[System.Int32]. Path: $[0].exedept_id | LineNumber: 17 | BytePositionInLine: 35.","Timestamp":"2025-11-06 17:28:48"},"Formatters":[],"ContentTypes":[],"DeclaredType":null,"StatusCode":500}
+=========================================================================================================================================

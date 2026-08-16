@@ -1,0 +1,15 @@
+[2026-08-16 21:15:24.165] 开始表结构验证和同步
+[2026-08-16 21:15:24.166] 需要检查的表: t_test_rec, t_testr_res_indicate, t_microbe_bacteria_res, t_microbe_suscept_res, t_check_rec
+[2026-08-16 21:15:24.415] 正在连接到GBase数据库...
+[2026-08-16 21:15:39.464] 表结构验证和同步过程中发生错误: Npgsql.NpgsqlException (0x80004005): Failed to connect to 172.17.35.46:15400
+ ---> System.TimeoutException: The operation has timed out.
+   at Npgsql.TaskTimeoutAndCancellation.ExecuteAsync(Func`2 getTaskFunc, NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.ConnectAsync(NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.ConnectAsync(NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|216_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|28_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|45_0(Boolean async, CancellationToken cancellationToken)
+   at MedicalReportSystem.Services.OracleSyncService.ValidateAndSyncTableStructure(CancellationToken cancellationToken) in E:\MedicalReportSystem\MedicalReportSystem\Services\OracleSyncService.cs:line 1400

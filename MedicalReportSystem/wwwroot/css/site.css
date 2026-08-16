@@ -1,0 +1,951 @@
+﻿body {
+    font-family: 'Microsoft YaHei', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 顶部患者信息栏 */
+.patient-header {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+
+
+
+/* 报告容器 */
+.report-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* 左侧列表 */
+.report-list {
+    flex: 1;
+    min-width: 350px; /* 增加最小宽度以适应更多按钮 */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.items-container {
+    max-height: calc(100vh - 300px);
+    overflow-y: auto;
+}
+
+/* 报告项布局调整 */
+.report-item {
+    display: flex;
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    align-items: flex-start; /* 改为顶部对齐 */
+    gap: 8px;
+}
+
+    .report-item:hover {
+        background-color: #f8f9fa;
+    }
+
+    .report-item.active {
+        background-color: #e3f2fd;
+        border-left: 4px solid #3498db;
+    }
+    /*.report-item-content {
+    flex: 1;
+    min-width: 0;
+}
+*/
+    /* 医院名称样式 */
+    .report-item .hospital {
+        font-weight: bold;
+        color: #2c3e50;
+        margin-bottom: 3px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    /* 项目名称样式 - 添加自动换行 */
+    .report-item .project {
+        color: #3498db;
+        margin-bottom: 3px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* 限制最多2行 */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-all; /* 允许单词内换行 */
+        line-height: 1.4;
+        max-height: 2.8em; /* 2行高度 */
+    }
+
+    .report-item .project {
+        color: #3498db;
+        margin-bottom: 3px;
+        /*white-space: nowrap;*/
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+
+    /* 时间样式 */
+    .report-item .time {
+        color: #7f8c8d;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+.recognition-status {
+    font-size: 12px;
+    color: #e74c3c;
+    margin-top: 3px;
+}
+
+    .recognition-status.recognized {
+        color: #27ae60;
+    }
+
+/* 按钮区域调整 */
+.report-actions {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column; /* 改为垂直排列 */
+    gap: 5px; /* 减少按钮间距 */
+    margin-left: 5px;
+    align-items: flex-end; /* 右对齐 */
+}
+
+/* 按钮样式调整 */
+.recognition-btn {
+    padding: 3px 8px; /* 减小内边距 */
+    font-size: 11px; /* 减小字体 */
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+    min-width: 55px; /* 减小最小宽度 */
+    text-align: center;
+    line-height: 1.2;
+}
+/* 引用按钮特定样式 */
+.btn-quote {
+    background-color: #9b59b6; /* 紫色 */
+    color: white;
+}
+
+    .btn-quote:hover {
+        background-color: #8e44ad;
+        opacity: 0.9;
+    }
+
+.btn-quoted {
+    background-color: #9b59b6; /* 紫色 */
+    color: white;
+    cursor: default;
+    opacity: 0.7;
+}
+
+    .recognition-btn:hover {
+        opacity: 0.9;
+        transform: translateY(-1px);
+    }
+/* ========== 右侧检验详情容器 ========== */
+.report-details {
+    flex: 3;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    overflow-y: auto;
+    max-height: calc(100vh - 200px);
+}
+/* ========== 报告头部 ========== */
+.report-header {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+    .report-header h2 {
+        color: #2c3e50;
+        margin: 0;
+        font-size: 22px;
+        display: inline-block;
+    }
+
+    .report-header h3 {
+        color: #3498db;
+        margin: 10px 0 0 0;
+        font-size: 18px;
+    }
+
+.details-container {
+    padding: 0;
+}
+
+/* ========== 患者信息区域 ========== */
+.patient-info {
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.info-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    min-width: 30%;
+    margin-bottom: 8px;
+}
+
+.info-label {
+    font-weight: bold;
+    color: #7f8c8d;
+    min-width: 80px;
+    margin-right: 5px;
+}
+
+.info-value {
+    color: #333;
+}
+/* ========== 检验结果表格 ========== */
+.test-results {
+    margin-bottom: 25px;
+}
+
+    .test-results h3 {
+        color: #2c3e50;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 8px;
+        margin-top: 0;
+    }
+
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+    .result-table th {
+        background-color: #3498db;
+        color: white;
+        padding: 12px 15px;
+        text-align: left;
+    }
+
+    .result-table td {
+        padding: 12px 15px;
+        border-bottom: 1px solid #eee;
+        vertical-align: top;
+    }
+
+    .result-table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .result-table tr:hover {
+        background-color: #f1f7fd;
+    }
+
+/* ========== 状态标识 ========== */
+.normal {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.abnormal {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.hospital-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+    .hospital-info h2 {
+        margin: 0;
+        color: #2c3e50;
+    }
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: opacity 0.2s;
+}
+
+    .btn:hover {
+        opacity: 0.9;
+    }
+
+/*按钮状态*/
+.btn-recognize {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-reject {
+    background-color: #e74c3c;
+    color: white;
+}
+
+
+
+.patient-detail-info {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.detail-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.detail-col {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.detail-label {
+    font-weight: bold;
+    color: #7f8c8d;
+    min-width: 80px;
+}
+
+.detail-value {
+    color: #333;
+}
+
+/* ========== 报告页脚 ========== */
+.report-footer {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.footer-label {
+    font-weight: bold;
+    color: #7f8c8d;
+    min-width: 80px;
+}
+
+.footer-value {
+    color: #333;
+}
+
+/* 响应式调整 */
+@media (max-width: 1200px) {
+    .report-list {
+        min-width: 320px;
+    }
+
+    .report-actions {
+        flex-direction: column;
+    }
+
+    .recognition-btn {
+        min-width: 50px;
+        padding: 2px 6px;
+        font-size: 10px;
+    }
+}
+@media (max-width: 992px) {
+    .report-list {
+        min-width: 280px;
+    }
+
+    .report-actions {
+        gap: 3px;
+    }
+}
+@media (max-width: 768px) {
+    .report-container {
+        flex-direction: column;
+    }
+
+    .info-item {
+        min-width: 100%;
+    }
+
+    .result-table th,
+    .result-table td {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+}
+/* 报告类型切换按钮样式 */
+.report-type-switcher {
+    display: flex;
+    margin: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+    .report-type-switcher button {
+        padding: 8px 20px;
+        margin-right: 5px;
+        background: none;
+        border: none;
+        border-bottom: 3px solid transparent;
+        cursor: pointer;
+        font-size: 16px;
+        color: #666;
+    }
+
+        .report-type-switcher button.active {
+            color: #1890ff;
+            border-bottom-color: #1890ff;
+            font-weight: bold;
+        }
+/* 微生物药敏报告特殊样式 */
+.microbial-section, .drug-section {
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+    .section-header h3 {
+        margin: 0;
+        color: #2c3e50;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+    }
+
+        .section-header h3 i {
+            margin-right: 10px;
+            color: #3498db;
+        }
+
+.drug-legend {
+    display: flex;
+    gap: 15px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.legend-color {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+
+.sensitive .legend-color {
+    background-color: #27ae60;
+}
+
+.intermediate .legend-color {
+    background-color: #f39c12;
+}
+/* 添加微生物图例样式 */
+.contaminated .legend-color {
+    background-color: #9b59b6;
+}
+
+.not-done .legend-color {
+    background-color: #95a5a6;
+}
+
+.negative .legend-color {
+    background-color: #3498db;
+}
+
+.positive .legend-color {
+    background-color: #e67e22;
+}
+
+/*微生物报告样式*/
+.resistant td:last-child::before {
+    background-color: #e74c3c; /* 耐药 - 红色 */
+}
+
+.sensitive td:last-child::before {
+    background-color: #27ae60; /* 敏感 - 绿色 */
+}
+
+.contaminated td:last-child::before {
+    background-color: #9b59b6; /* 污染 - 紫色 */
+}
+
+.not-done td:last-child::before {
+    background-color: #95a5a6; /* 未做 - 灰色 */
+}
+
+.intermediate td:last-child::before {
+    background-color: #f39c12; /* 中介 - 橙色 */
+}
+
+.negative td:last-child::before {
+    background-color: #3498db; /* 阴性 - 蓝色 */
+}
+
+.positive td:last-child::before {
+    background-color: #e67e22; /* 阳性 - 深橙色 */
+}
+
+
+.resistant .legend-color {
+    background-color: #e74c3c;
+}
+
+.drug-table td {
+    position: relative;
+}
+
+    .drug-table td:last-child::before {
+        content: "";
+        position: absolute;
+        left: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+    }
+
+.sensitive td:last-child::before {
+    background-color: #27ae60;
+}
+
+.intermediate td:last-child::before {
+    background-color: #f39c12;
+}
+
+.resistant td:last-child::before {
+    background-color: #e74c3c;
+}
+
+.microbial-notes, .drug-notes {
+    margin-top: 15px;
+    padding: 12px 15px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #555;
+}
+
+    .microbial-notes p, .drug-notes p {
+        margin: 5px 0;
+    }
+
+/* 医院分组样式 */
+.hospital-group {
+    //margin-bottom: 15px;
+    //border: 1px solid #e0e0e0;
+    //border-radius: 6px;
+    //overflow: hidden;
+    overflow: visible; /* 确保不裁剪子元素 */
+}
+
+.hospital-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background-color: #f5f7fa;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+    .hospital-header:hover {
+        background-color: #ebeff5;
+    }
+
+.hospital-title {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.hospital-count {
+    background-color: #3498db;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.hospital-reports {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.hospital-group.expanded .hospital-reports {
+    max-height: 5000px; /* 远大于实际需要的高度 */
+}
+/* 无数据提示样式 */
+.no-data-message {
+    padding: 40px;
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 16px;
+}
+
+/* 确保报告项内容区域可点击 */
+.report-item-content {
+    flex: 1;
+    pointer-events: none; /* 让点击穿透到父元素 */
+    min-width: 0; /* 关键属性，允许内容区域收缩 */
+    overflow: hidden; /* 防止内容溢出 */
+}
+
+.report-item-actions {
+    pointer-events: auto; /* 按钮需要响应点击 */
+}
+/* 互认操作按钮区域 */
+.recognition-actions {
+    /* display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    padding: 8px 15px;
+    border-top: 1px solid #eee;
+    background-color: #f9f9f9;*/
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f5f7fa;
+    border-top: 1px solid #e0e0e0;
+}
+
+.recognition-btn {
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+    .recognition-btn:hover {
+        opacity: 0.9;
+    }
+
+.btn-recognize {
+    background-color: #27ae60;
+    color: white;
+}
+
+.btn-reject {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-revoke {
+    background-color: #f39c12;
+    color: white;
+}
+/* 已查阅按钮样式（不可点击状态） */
+.btn-viewed {
+    background-color: #3498db; /* 蓝色背景 */
+    color: white;
+    cursor: not-allowed; /* 显示不可点击光标 */
+    opacity: 0.7; /* 降低透明度表示禁用状态 */
+    pointer-events: none; /* 阻止点击事件 */
+    font-size: 11px;
+    padding: 3px 8px;
+}
+.btn-recognized {
+    background-color: #3498db;
+    color: white;
+    cursor: default;
+}
+/* 批量操作按钮样式 */
+.btn-recognize-all {
+    background-color: #27ae60;
+    color: white;
+}
+/* 批量操作按钮样式 */
+.btn-reject-all {
+    background-color: #e74c3c;
+    color: white;
+}
+/* 加载状态 */
+.batch-processing {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(52, 152, 219, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* 状态标签 */
+.report-status {
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+    .report-status.recognized {
+        background-color: #27ae60;
+        color: white;
+    }
+
+    .report-status.rejected {
+        background-color: #e74c3c;
+        color: white;
+    }
+
+/* 禁用已处理项目 */
+.hospital-reports .processed {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+    .hospital-reports .processed .report-item-content {
+        filter: grayscale(50%);
+    }
+
+
+
+/* 中央通知样式 */
+/* 左侧固定通知样式 */
+.left-toast-container {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 99999;
+    max-width: 350px;
+    width: 100%;
+}
+
+.left-toast {
+    background: #fff;
+    color: #333;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    margin-bottom: 10px;
+    transform: translateX(-120%);
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    position: relative;
+    border-left: 4px solid;
+    display: flex;
+    align-items: center;
+}
+
+    .left-toast.show {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+.toast-message {
+    flex: 1;
+    line-height: 1.5;
+    padding-right: 15px;
+    font-size: 14px;
+}
+
+.toast-close {
+    font-size: 20px;
+    cursor: pointer;
+    color: #999;
+    transition: color 0.2s;
+    line-height: 1;
+    margin-left: 10px;
+}
+
+    .toast-close:hover {
+        color: #666;
+    }
+
+/* 不同类型样式 */
+.toast-info {
+    border-color: #3498db;
+}
+
+.toast-success {
+    border-color: #27ae60;
+}
+
+.toast-warning {
+    border-color: #f39c12;
+}
+
+.toast-error {
+    border-color: #e74c3c;
+}
+
+/* 基础进度条样式 */
+.toast-progress {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    height: 3px;
+    background: rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 0 0 4px 4px;
+}
+
+
+
+/* 原因选择弹窗样式 */
+.reason-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    z-index: 10000;
+    max-width: 500px;
+    width: 90%;
+}
+
+    .reason-dialog h3 {
+        margin-top: 0;
+        color: #2c3e50;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+    }
+
+.reason-options {
+    margin: 20px 0;
+}
+
+.reason-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+    .reason-option:hover {
+        background: #f5f7fa;
+    }
+
+    .reason-option input {
+        margin-right: 10px;
+    }
+
+    .reason-option label {
+        flex: 1;
+        cursor: pointer;
+    }
+
+.disease-input {
+    margin-top: 15px;
+    display: none;
+}
+
+    .disease-input input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+.dialog-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+    .dialog-buttons button {
+        padding: 8px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .dialog-buttons .confirm-btn {
+        background: #3498db;
+        color: white;
+    }
+
+    .dialog-buttons .cancel-btn {
+        background: #f5f5f5;
+        color: #333;
+    }
+
+.dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 9999;
+}
+/* 原因选择弹窗样式 */

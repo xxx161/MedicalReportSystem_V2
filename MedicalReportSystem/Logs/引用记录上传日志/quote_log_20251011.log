@@ -1,0 +1,169 @@
+[2025-10-11 11:49:46] 开始处理引用记录上传请求 | 请求体: [{"PatientId":"4602748","GHId":"12822303","ReportId":"23cc2fe0e2d447d8adf5071cfb07c00f","ReportType":"lab","OrgCode":"450000100582","OrgName":"\u5E7F\u897F\u56FD\u9645\u58EE\u533B\u533B\u9662","ReportName":"\u5927\u4FBF\u6807\u672C\u7EC6\u83CC\u53CA\u771F\u83CC\u57F9\u517B\u9274\u5B9A(\u5927\u4FBF)","ReportTime":"2024-08-23 08:00:00","SearchType":"2","ReportNo":"7206531","dataCode":null,"projCategoryName":null,"checkProjNameExp":null,"reasonCode":null,"reasonName":null,"diagName":null,"idCardTypeCode":"01","message":null,"msg":null,"code":null,"request_id":null,"doctorId":"135","OrderId":"","CitemId":null}]
+传入数据: [{"PatientId":"4602748","GHId":"12822303","ReportId":"23cc2fe0e2d447d8adf5071cfb07c00f","ReportType":"lab","OrgCode":"450000100582","OrgName":"\u5E7F\u897F\u56FD\u9645\u58EE\u533B\u533B\u9662","ReportName":"\u5927\u4FBF\u6807\u672C\u7EC6\u83CC\u53CA\u771F\u83CC\u57F9\u517B\u9274\u5B9A(\u5927\u4FBF)","ReportTime":"2024-08-23 08:00:00","SearchType":"2","ReportNo":"7206531","dataCode":null,"projCategoryName":null,"checkProjNameExp":null,"reasonCode":null,"reasonName":null,"diagName":null,"idCardTypeCode":"01","message":null,"msg":null,"code":null,"request_id":null,"doctorId":"135","OrderId":"","CitemId":null}]
+[2025-10-11 11:49:46] 开始处理引用记录 | 共: 1条
+数据处理平台接口请求数据: {"patientId":"4602748","GHId":"12822303","reportId":"23cc2fe0e2d447d8adf5071cfb07c00f","itemType":"LIS","itemCode":null,"clientType":2,"idCardTypeCode":"01","doctorId":"135","reviewId":"29ea485576fa4a29928432eba109295d","citem_id":null}
+错误: System.Net.Http.HttpRequestException: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8092)
+ ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at MedicalReportSystem.Controllers.PersonController.UploadQuoteLog(List`1 requests) in E:\MedicalReportSystem\MedicalReportSystem\Controllers\PersonController.cs:line 1063
+堆栈:    at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at MedicalReportSystem.Controllers.PersonController.UploadQuoteLog(List`1 requests) in E:\MedicalReportSystem\MedicalReportSystem\Controllers\PersonController.cs:line 1063
+[2025-10-11 11:50:33] 开始处理引用记录上传请求 | 请求体: [{"PatientId":"4602748","GHId":"12822303","ReportId":"23cc2fe0e2d447d8adf5071cfb07c00f","ReportType":"lab","OrgCode":"450000100582","OrgName":"\u5E7F\u897F\u56FD\u9645\u58EE\u533B\u533B\u9662","ReportName":"\u5927\u4FBF\u6807\u672C\u7EC6\u83CC\u53CA\u771F\u83CC\u57F9\u517B\u9274\u5B9A(\u5927\u4FBF)","ReportTime":"2024-08-23 08:00:00","SearchType":"2","ReportNo":"7206531","dataCode":null,"projCategoryName":null,"checkProjNameExp":null,"reasonCode":null,"reasonName":null,"diagName":null,"idCardTypeCode":"01","message":null,"msg":null,"code":null,"request_id":null,"doctorId":"135","OrderId":"","CitemId":null}]
+传入数据: [{"PatientId":"4602748","GHId":"12822303","ReportId":"23cc2fe0e2d447d8adf5071cfb07c00f","ReportType":"lab","OrgCode":"450000100582","OrgName":"\u5E7F\u897F\u56FD\u9645\u58EE\u533B\u533B\u9662","ReportName":"\u5927\u4FBF\u6807\u672C\u7EC6\u83CC\u53CA\u771F\u83CC\u57F9\u517B\u9274\u5B9A(\u5927\u4FBF)","ReportTime":"2024-08-23 08:00:00","SearchType":"2","ReportNo":"7206531","dataCode":null,"projCategoryName":null,"checkProjNameExp":null,"reasonCode":null,"reasonName":null,"diagName":null,"idCardTypeCode":"01","message":null,"msg":null,"code":null,"request_id":null,"doctorId":"135","OrderId":"","CitemId":null}]
+[2025-10-11 11:50:44] 开始处理引用记录 | 共: 1条
+数据处理平台接口请求数据: {"patientId":"4602748","GHId":"12822303","reportId":"23cc2fe0e2d447d8adf5071cfb07c00f","itemType":"LIS","itemCode":null,"clientType":2,"idCardTypeCode":"01","doctorId":"135","reviewId":"42c625db6ea14231ae209e2b90cdc66e","citem_id":null}
+错误: System.Net.Http.HttpRequestException: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8092)
+ ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at MedicalReportSystem.Controllers.PersonController.UploadQuoteLog(List`1 requests) in E:\MedicalReportSystem\MedicalReportSystem\Controllers\PersonController.cs:line 1063
+堆栈:    at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at MedicalReportSystem.Controllers.PersonController.UploadQuoteLog(List`1 requests) in E:\MedicalReportSystem\MedicalReportSystem\Controllers\PersonController.cs:line 1063
+[2025-10-11 11:55:46] 开始处理引用记录上传请求 | 请求体: [{"PatientId":"4602748","GHId":"12822303","ReportId":"23cc2fe0e2d447d8adf5071cfb07c00f","ReportType":"lab","OrgCode":"450000100582","OrgName":"\u5E7F\u897F\u56FD\u9645\u58EE\u533B\u533B\u9662","ReportName":"\u5927\u4FBF\u6807\u672C\u7EC6\u83CC\u53CA\u771F\u83CC\u57F9\u517B\u9274\u5B9A(\u5927\u4FBF)","ReportTime":"2024-08-23 08:00:00","SearchType":"2","ReportNo":"7206531","dataCode":null,"projCategoryName":null,"checkProjNameExp":null,"reasonCode":null,"reasonName":null,"diagName":null,"idCardTypeCode":"01","message":null,"msg":null,"code":null,"request_id":null,"doctorId":"135","OrderId":"","CitemId":"176724"}]
+传入数据: [{"PatientId":"4602748","GHId":"12822303","ReportId":"23cc2fe0e2d447d8adf5071cfb07c00f","ReportType":"lab","OrgCode":"450000100582","OrgName":"\u5E7F\u897F\u56FD\u9645\u58EE\u533B\u533B\u9662","ReportName":"\u5927\u4FBF\u6807\u672C\u7EC6\u83CC\u53CA\u771F\u83CC\u57F9\u517B\u9274\u5B9A(\u5927\u4FBF)","ReportTime":"2024-08-23 08:00:00","SearchType":"2","ReportNo":"7206531","dataCode":null,"projCategoryName":null,"checkProjNameExp":null,"reasonCode":null,"reasonName":null,"diagName":null,"idCardTypeCode":"01","message":null,"msg":null,"code":null,"request_id":null,"doctorId":"135","OrderId":"","CitemId":"176724"}]
+[2025-10-11 11:55:46] 开始处理引用记录 | 共: 1条
+数据处理平台接口请求数据: {"patientId":"4602748","GHId":"12822303","reportId":"23cc2fe0e2d447d8adf5071cfb07c00f","itemType":"LIS","itemCode":null,"clientType":2,"idCardTypeCode":"01","doctorId":"135","reviewId":"75d600128287414b82621567b1446a84","citem_id":"176724"}
+错误: System.Net.Http.HttpRequestException: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8092)
+ ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at MedicalReportSystem.Controllers.PersonController.UploadQuoteLog(List`1 requests) in E:\MedicalReportSystem\MedicalReportSystem\Controllers\PersonController.cs:line 1063
+堆栈:    at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at MedicalReportSystem.Controllers.PersonController.UploadQuoteLog(List`1 requests) in E:\MedicalReportSystem\MedicalReportSystem\Controllers\PersonController.cs:line 1063
+[2025-10-11 14:36:15] 开始处理引用记录上传请求 | 请求体: [{"PatientId":"4602748","GHId":"12822303","ReportId":"23cc2fe0e2d447d8adf5071cfb07c00f","ReportType":"lab","OrgCode":"450000100582","OrgName":"\u5E7F\u897F\u56FD\u9645\u58EE\u533B\u533B\u9662","ReportName":"\u5927\u4FBF\u6807\u672C\u7EC6\u83CC\u53CA\u771F\u83CC\u57F9\u517B\u9274\u5B9A(\u5927\u4FBF)","ReportTime":"2024-08-23 08:00:00","SearchType":"2","ReportNo":"7206531","dataCode":null,"projCategoryName":null,"checkProjNameExp":null,"reasonCode":null,"reasonName":null,"diagName":null,"idCardTypeCode":"01","message":null,"msg":null,"code":null,"request_id":null,"doctorId":"135","OrderId":"","CitemId":"176724"}]
+传入数据: [{"PatientId":"4602748","GHId":"12822303","ReportId":"23cc2fe0e2d447d8adf5071cfb07c00f","ReportType":"lab","OrgCode":"450000100582","OrgName":"\u5E7F\u897F\u56FD\u9645\u58EE\u533B\u533B\u9662","ReportName":"\u5927\u4FBF\u6807\u672C\u7EC6\u83CC\u53CA\u771F\u83CC\u57F9\u517B\u9274\u5B9A(\u5927\u4FBF)","ReportTime":"2024-08-23 08:00:00","SearchType":"2","ReportNo":"7206531","dataCode":null,"projCategoryName":null,"checkProjNameExp":null,"reasonCode":null,"reasonName":null,"diagName":null,"idCardTypeCode":"01","message":null,"msg":null,"code":null,"request_id":null,"doctorId":"135","OrderId":"","CitemId":"176724"}]
+[2025-10-11 14:36:15] 开始处理引用记录 | 共: 1条
+数据处理平台接口请求数据: {"patientId":"4602748","GHId":"12822303","reportId":"23cc2fe0e2d447d8adf5071cfb07c00f","itemType":"LIS","itemCode":null,"clientType":2,"idCardTypeCode":"01","doctorId":"135","reviewId":"e93c57140c3f4947bcf0a749110cd792","citem_id":"176724"}
+错误: System.Net.Http.HttpRequestException: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8092)
+ ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at MedicalReportSystem.Controllers.PersonController.UploadQuoteLog(List`1 requests) in E:\MedicalReportSystem\MedicalReportSystem\Controllers\PersonController.cs:line 1063
+堆栈:    at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at MedicalReportSystem.Controllers.PersonController.UploadQuoteLog(List`1 requests) in E:\MedicalReportSystem\MedicalReportSystem\Controllers\PersonController.cs:line 1063
+[2025-10-11 14:37:23] 开始处理引用记录上传请求 | 请求体: [{"PatientId":"4602748","GHId":"12822303","ReportId":"23cc2fe0e2d447d8adf5071cfb07c00f","ReportType":"lab","OrgCode":"450000100582","OrgName":"\u5E7F\u897F\u56FD\u9645\u58EE\u533B\u533B\u9662","ReportName":"\u5927\u4FBF\u6807\u672C\u7EC6\u83CC\u53CA\u771F\u83CC\u57F9\u517B\u9274\u5B9A(\u5927\u4FBF)","ReportTime":"2024-08-23 08:00:00","SearchType":"2","ReportNo":"7206531","dataCode":null,"projCategoryName":null,"checkProjNameExp":null,"reasonCode":null,"reasonName":null,"diagName":null,"idCardTypeCode":"01","message":null,"msg":null,"code":null,"request_id":null,"doctorId":"135","OrderId":"","CitemId":"176724"}]
+传入数据: [{"PatientId":"4602748","GHId":"12822303","ReportId":"23cc2fe0e2d447d8adf5071cfb07c00f","ReportType":"lab","OrgCode":"450000100582","OrgName":"\u5E7F\u897F\u56FD\u9645\u58EE\u533B\u533B\u9662","ReportName":"\u5927\u4FBF\u6807\u672C\u7EC6\u83CC\u53CA\u771F\u83CC\u57F9\u517B\u9274\u5B9A(\u5927\u4FBF)","ReportTime":"2024-08-23 08:00:00","SearchType":"2","ReportNo":"7206531","dataCode":null,"projCategoryName":null,"checkProjNameExp":null,"reasonCode":null,"reasonName":null,"diagName":null,"idCardTypeCode":"01","message":null,"msg":null,"code":null,"request_id":null,"doctorId":"135","OrderId":"","CitemId":"176724"}]
+[2025-10-11 14:39:27] 开始处理引用记录 | 共: 1条
+数据处理平台接口请求数据: {"patientId":"4602748","GHId":"12822303","reportId":"23cc2fe0e2d447d8adf5071cfb07c00f","itemType":"LIS","itemCode":null,"clientType":2,"idCardTypeCode":"01","doctorId":"135","reviewId":"5ad06a609abf45e1a7315e2ffb58017c","citem_id":"176724"}
+错误: System.Net.Http.HttpRequestException: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8092)
+ ---> System.Net.Sockets.SocketException (10060): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at MedicalReportSystem.Controllers.PersonController.UploadQuoteLog(List`1 requests)
+堆栈:    at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at MedicalReportSystem.Controllers.PersonController.UploadQuoteLog(List`1 requests)
+[2025-10-11 14:57:36] 开始处理引用记录上传请求 | 请求体: [{"PatientId":"4602748","GHId":"12822303","ReportId":"23cc2fe0e2d447d8adf5071cfb07c00f","ReportType":"lab","OrgCode":"450000100582","OrgName":"\u5E7F\u897F\u56FD\u9645\u58EE\u533B\u533B\u9662","ReportName":"\u5927\u4FBF\u6807\u672C\u7EC6\u83CC\u53CA\u771F\u83CC\u57F9\u517B\u9274\u5B9A(\u5927\u4FBF)","ReportTime":"2024-08-23 08:00:00","SearchType":"2","ReportNo":"7206531","dataCode":null,"projCategoryName":null,"checkProjNameExp":null,"reasonCode":null,"reasonName":null,"diagName":null,"idCardTypeCode":"01","message":null,"msg":null,"code":null,"request_id":null,"doctorId":"135","OrderId":"","CitemId":"176724"}]
+传入数据: [{"PatientId":"4602748","GHId":"12822303","ReportId":"23cc2fe0e2d447d8adf5071cfb07c00f","ReportType":"lab","OrgCode":"450000100582","OrgName":"\u5E7F\u897F\u56FD\u9645\u58EE\u533B\u533B\u9662","ReportName":"\u5927\u4FBF\u6807\u672C\u7EC6\u83CC\u53CA\u771F\u83CC\u57F9\u517B\u9274\u5B9A(\u5927\u4FBF)","ReportTime":"2024-08-23 08:00:00","SearchType":"2","ReportNo":"7206531","dataCode":null,"projCategoryName":null,"checkProjNameExp":null,"reasonCode":null,"reasonName":null,"diagName":null,"idCardTypeCode":"01","message":null,"msg":null,"code":null,"request_id":null,"doctorId":"135","OrderId":"","CitemId":"176724"}]
+[2025-10-11 14:57:39] 开始处理引用记录 | 共: 1条
+数据处理平台接口请求数据: {"patientId":"4602748","GHId":"12822303","reportId":"23cc2fe0e2d447d8adf5071cfb07c00f","itemType":"LIS","itemCode":null,"clientType":2,"idCardTypeCode":"01","doctorId":"135","reviewId":"7c83d986cc8e4b19adc3a15f72b2857d","CitemId":"176724"}

@@ -1,0 +1,95 @@
+[2025-11-05 09:35:57] 开始S5008操作
+申请单ID: 206655344
+报告人: 系统管理员, 审核人: 系统管理员
+报告结果项数: 3
+文件项数: 0
+构建的S5008请求: {
+  "input": {
+    "apply_info": [
+      {
+        "apply_id": "206655344",
+        "apply_status": "1",
+        "rpt_ps": "系统管理员",
+        "chkin_ps": "系统管理员",
+        "rpt_path": "",
+        "oaflag": "",
+        "rpt_time": "2025-11-05 09:36:22",
+        "chkin_time": "2025-11-05 09:36:22",
+        "check_no": "206655344"
+      }
+    ],
+    "rpt_info": [
+      {
+        "title_type": "1",
+        "loitem_cname": "检查所见",
+        "order_rpt_result": "    两侧筛窦、上颌窦粘膜增厚，可见斑片状软组织密度影填充。窦壁骨质未见异常。鼻中隔居中。双侧下鼻甲粘膜未见明显异常。     两侧胸廓对称，两肺纹理增多。两肺上叶部分支气管壁增厚。两肺见散在沿肺纹理走行区散在分布斑片状密度增高影，边缘不清，密度不均。肺门结构清晰，气管通畅，纵隔无移位，其内气管形态、大小未见异常。纵隔内未见肿大淋巴结。骨性胸廓未见异常。"
+      },
+      {
+        "title_type": "1",
+        "loitem_cname": "诊断意见",
+        "order_rpt_result": "    1.鼻窦炎。    2.支气管肺炎。"
+      },
+      {
+        "title_type": "1",
+        "loitem_cname": "诊断建议",
+        "order_rpt_result": "    两侧筛窦、上颌窦粘膜增厚，可见斑片状软组织密度影填充。窦壁骨质未见异常。鼻中隔居中。双侧下鼻甲粘膜未见明显异常。     两侧胸廓对称，两肺纹理增多。两肺上叶部分支气管壁增厚。两肺见散在沿肺纹理走行区散在分布斑片状密度增高影，边缘不清，密度不均。肺门结构清晰，气管通畅，纵隔无移位，其内气管形态、大小未见异常。纵隔内未见肿大淋巴结。骨性胸廓未见异常。"
+      }
+    ],
+    "rpt_file": [],
+    "head": {
+      "bizno": "S5008",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-11-05 09:37:20",
+      "action_no": "87bd010d-682d-485a-83a0-b1ae9677ffb8"
+    }
+  }
+}
+错误: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Services.NewStandardService.CallInspectionFindingApi[TRequest](TRequest request) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 1206
+   at MedicalReportSystem.Services.NewStandardService.S5008(String serviceMethod, String applyId, String applyStatus, String reporterName, String checkerName, List`1 reportResults, List`1 reportFiles) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 332
+[2025-11-05 09:39:22] 开始S5008操作
+申请单ID: 206655344
+报告人: 系统管理员, 审核人: 系统管理员
+报告结果项数: 2
+文件项数: 0
+构建的S5008请求: {
+  "input": {
+    "apply_info": [
+      {
+        "apply_id": "206655344",
+        "apply_status": "1",
+        "rpt_ps": "系统管理员",
+        "chkin_ps": "系统管理员",
+        "rpt_path": "",
+        "oaflag": "",
+        "rpt_time": "2025-11-05 09:39:22",
+        "chkin_time": "2025-11-05 09:39:22",
+        "check_no": "206655344"
+      }
+    ],
+    "rpt_info": [
+      {
+        "title_type": "1",
+        "loitem_cname": "检查所见",
+        "order_rpt_result": "    两侧筛窦、上颌窦粘膜增厚，可见斑片状软组织密度影填充。窦壁骨质未见异常。鼻中隔居中。双侧下鼻甲粘膜未见明显异常。     两侧胸廓对称，两肺纹理增多。两肺上叶部分支气管壁增厚。两肺见散在沿肺纹理走行区散在分布斑片状密度增高影，边缘不清，密度不均。肺门结构清晰，气管通畅，纵隔无移位，其内气管形态、大小未见异常。纵隔内未见肿大淋巴结。骨性胸廓未见异常。"
+      },
+      {
+        "title_type": "1",
+        "loitem_cname": "诊断意见",
+        "order_rpt_result": "    1.鼻窦炎。    2.支气管肺炎。"
+      }
+    ],
+    "rpt_file": [],
+    "head": {
+      "bizno": "S5008",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-11-05 09:39:23",
+      "action_no": "ffe3b8d9-3ed7-4130-bf2c-cfb8e0bfc433"
+    }
+  }
+}
+错误: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Services.NewStandardService.CallInspectionFindingApi[TRequest](TRequest request) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 1206
+   at MedicalReportSystem.Services.NewStandardService.S5008(String serviceMethod, String applyId, String applyStatus, String reporterName, String checkerName, List`1 reportResults, List`1 reportFiles) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 332

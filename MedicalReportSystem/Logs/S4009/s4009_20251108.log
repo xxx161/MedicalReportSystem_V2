@@ -1,0 +1,225 @@
+[2025-11-08 00:39:11] 开始S4009操作
+请求参数: {
+    "input": {
+        "ack_info": {
+            "exe_status": "A",
+            "err_msg": ""
+        },
+        "apply_info": [
+            {
+                "apply_id": "99742094,99742095",
+                "spcm_bc_no": "103099742094",
+                "pid": "1182207",
+                "outpno": "2507150032",
+                "pat_name": "卢志远",
+                "pat_sex": "男",
+                "pat_age": "70岁",
+                "apply_dept_id": "4134",
+                "apply_dept_name": "儿少心理一病区门诊",
+                "exedept_id": "101",
+                "exedept_name": "检验科",
+                "order_content": "（院外结果互认项）全血细胞计数+五分类检测",
+                "citem_id": "167083",
+                "lspcm_name": "静脉血",
+                "emg_sign": "0",
+                "tube_code": "103",
+                "tube_name": "互认",
+                "label_test_color": "8355839",
+                "coll_taken": "",
+                "tube_spec": ""
+            }
+        ],
+        "head": {
+            "bizno": "S4024",
+            "sysno": "JKPT",
+            "tarno": "ZLHIS",
+            "time": "2025-11-08 00:20:18",
+            "action_no": "fcefc7ee-541d-46d2-8109-76b845062667"
+        }
+    }
+} 
+操作类型: 2, 操作员: 这里
+构建的S4009请求: {
+  "input": {
+    "apply_info": [
+      {
+        "system": "",
+        "apply_id": "99742094,99742095",
+        "oprtr_type": "2",
+        "spcm_bc_no": "103099742094",
+        "oprtr_name": "这里",
+        "organization_id": "4134",
+        "organization_code": "",
+        "organization_name": "检验科",
+        "oprtr_time": "2025-11-08 00:39:11",
+        "rejection_no": "",
+        "rejection_content": "",
+        "rejection_note": "",
+        "verify_chrg": "",
+        "submission": "",
+        "submission_time": "",
+        "eq_id": "1741"
+      }
+    ],
+    "head": {
+      "bizno": "S4009",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-11-08 00:39:11",
+      "action_no": "932149a9-e473-4e01-88a4-39c3e00e599c"
+    }
+  }
+}
+错误: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Services.NewStandardService.CallInspectionFindingApi[TRequest](TRequest request) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 1303
+   at MedicalReportSystem.Services.NewStandardService.S4009(JsonElement requestJson, String serviceMethod, String operatorType, String operatorName, String organizationName, String equipmentId) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 198
+[2025-11-08 00:39:44] 开始S4009操作
+请求参数: {
+    "input": {
+        "ack_info": {
+            "exe_status": "A",
+            "err_msg": ""
+        },
+        "apply_info": [
+            {
+                "apply_id": "99742094,99742095",
+                "spcm_bc_no": "103099742094",
+                "pid": "1182207",
+                "outpno": "2507150032",
+                "pat_name": "卢志远",
+                "pat_sex": "男",
+                "pat_age": "70岁",
+                "apply_dept_id": "4134",
+                "apply_dept_name": "儿少心理一病区门诊",
+                "exedept_id": "101",
+                "exedept_name": "检验科",
+                "order_content": "（院外结果互认项）全血细胞计数+五分类检测",
+                "citem_id": "167083",
+                "lspcm_name": "静脉血",
+                "emg_sign": "0",
+                "tube_code": "103",
+                "tube_name": "互认",
+                "label_test_color": "8355839",
+                "coll_taken": "",
+                "tube_spec": ""
+            }
+        ],
+        "head": {
+            "bizno": "S4024",
+            "sysno": "JKPT",
+            "tarno": "ZLHIS",
+            "time": "2025-11-08 00:20:18",
+            "action_no": "fcefc7ee-541d-46d2-8109-76b845062667"
+        }
+    }
+} 
+操作类型: 2, 操作员: 这里
+构建的S4009请求: {
+  "input": {
+    "apply_info": [
+      {
+        "system": "",
+        "apply_id": "99742094,99742095",
+        "oprtr_type": "2",
+        "spcm_bc_no": "103099742094",
+        "oprtr_name": "这里",
+        "organization_id": "4134",
+        "organization_code": "",
+        "organization_name": "检验科",
+        "oprtr_time": "2025-11-08 00:39:44",
+        "rejection_no": "",
+        "rejection_content": "",
+        "rejection_note": "",
+        "verify_chrg": "",
+        "submission": "",
+        "submission_time": "",
+        "eq_id": "1741"
+      }
+    ],
+    "head": {
+      "bizno": "S4009",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-11-08 00:39:44",
+      "action_no": "2d69fa2c-0651-4181-b84c-6dd1260c8dfe"
+    }
+  }
+}
+错误: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Services.NewStandardService.CallInspectionFindingApi[TRequest](TRequest request) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 1303
+   at MedicalReportSystem.Services.NewStandardService.S4009(JsonElement requestJson, String serviceMethod, String operatorType, String operatorName, String organizationName, String equipmentId) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 198
+[2025-11-08 00:40:11] 开始S4009操作
+请求参数: {
+    "input": {
+        "ack_info": {
+            "exe_status": "A",
+            "err_msg": ""
+        },
+        "apply_info": [
+            {
+                "apply_id": "99742094,99742095",
+                "spcm_bc_no": "103099742094",
+                "pid": "1182207",
+                "outpno": "2507150032",
+                "pat_name": "卢志远",
+                "pat_sex": "男",
+                "pat_age": "70岁",
+                "apply_dept_id": "4134",
+                "apply_dept_name": "儿少心理一病区门诊",
+                "exedept_id": "101",
+                "exedept_name": "检验科",
+                "order_content": "（院外结果互认项）全血细胞计数+五分类检测",
+                "citem_id": "167083",
+                "lspcm_name": "静脉血",
+                "emg_sign": "0",
+                "tube_code": "103",
+                "tube_name": "互认",
+                "label_test_color": "8355839",
+                "coll_taken": "",
+                "tube_spec": ""
+            }
+        ],
+        "head": {
+            "bizno": "S4024",
+            "sysno": "JKPT",
+            "tarno": "ZLHIS",
+            "time": "2025-11-08 00:20:18",
+            "action_no": "fcefc7ee-541d-46d2-8109-76b845062667"
+        }
+    }
+} 
+操作类型: 2, 操作员: 这里
+构建的S4009请求: {
+  "input": {
+    "apply_info": [
+      {
+        "system": "",
+        "apply_id": "99742094,99742095",
+        "oprtr_type": "2",
+        "spcm_bc_no": "103099742094",
+        "oprtr_name": "这里",
+        "organization_id": "4134",
+        "organization_code": "",
+        "organization_name": "检验科",
+        "oprtr_time": "2025-11-08 00:40:56",
+        "rejection_no": "",
+        "rejection_content": "",
+        "rejection_note": "",
+        "verify_chrg": "",
+        "submission": "",
+        "submission_time": "",
+        "eq_id": "1741"
+      }
+    ],
+    "head": {
+      "bizno": "S4009",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-11-08 00:40:56",
+      "action_no": "0ba99d89-e7f9-4ac2-9b2f-a4e31c7d2c1f"
+    }
+  }
+}
+错误: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Services.NewStandardService.CallInspectionFindingApi[TRequest](TRequest request) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 1303
+   at MedicalReportSystem.Services.NewStandardService.S4009(JsonElement requestJson, String serviceMethod, String operatorType, String operatorName, String organizationName, String equipmentId) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 198

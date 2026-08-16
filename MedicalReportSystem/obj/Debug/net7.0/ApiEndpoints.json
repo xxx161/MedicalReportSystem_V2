@@ -1,0 +1,1924 @@
+[
+  {
+    "ContainingType": "ConfigController",
+    "Method": "GetAppConfig",
+    "RelativePath": "api/config/app-config",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ConfigController",
+    "Method": "GetReminderSettings",
+    "RelativePath": "api/config/reminder-settings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ConfigController",
+    "Method": "GetThirdPartyConfig",
+    "RelativePath": "api/config/thirdparty",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ConfigController",
+    "Method": "UpdateThirdPartyConfig",
+    "RelativePath": "api/config/thirdparty",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ThirdPartyConfigDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ConfigController",
+    "Method": "GetValidationConfig",
+    "RelativePath": "api/config/validation-config",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.FileStorageController",
+    "Method": "GetStatistics",
+    "RelativePath": "api/FileStorage/statistics",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.FileStorageController",
+    "Method": "TriggerCleanup",
+    "RelativePath": "api/FileStorage/trigger-cleanup",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.OrderCopyController",
+    "Method": "GetExamDetails",
+    "RelativePath": "api/OrderCopy/exam-details/{businessNo}/{reportId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "businessNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "reportId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MedicalReportSystem.Models.T_CHECK_REC_oracle",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.OrderCopyController",
+    "Method": "GetExamReports",
+    "RelativePath": "api/OrderCopy/exam-reports/{idCard}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCard",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MedicalReportSystem.Models.T_CHECK_REC_oracle, MedicalReportSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.OrderCopyController",
+    "Method": "GetLabDetails",
+    "RelativePath": "api/OrderCopy/lab-details/{businessNo}/{reportId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "businessNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "reportId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MedicalReportSystem.Models.Test_Detail_oracle",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.OrderCopyController",
+    "Method": "GetLabReports",
+    "RelativePath": "api/OrderCopy/lab-reports/{idCard}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCard",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MedicalReportSystem.Models.T_TEST_REC_oracle, MedicalReportSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.OrderCopyController",
+    "Method": "RecordReference",
+    "RelativePath": "api/OrderCopy/record-reference",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MedicalReportSystem.Controllers.OrderCopyController\u002BReferenceRecordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MedicalReportSystem.Controllers.OrderCopyController\u002BApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "Get",
+    "RelativePath": "api/Person",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MedicalReportSystem.Models.Person, MedicalReportSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "GetApplyId",
+    "RelativePath": "api/Person/apply-id/{patientId}/{reportId}/{doctorId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "patientId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "reportId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "doctorId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "S3112V2",
+    "RelativePath": "api/Person/call-new-S3112-v2/{serviceMethod}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MedicalReportSystem.Controllers.PersonController\u002BS3112V2Request",
+        "IsRequired": true
+      },
+      {
+        "Name": "serviceMethod",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "S4008",
+    "RelativePath": "api/Person/call-new-S4008/{serviceMethod}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MedicalReportSystem.Controllers.PersonController\u002BS4008Request",
+        "IsRequired": true
+      },
+      {
+        "Name": "serviceMethod",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "S4009V2",
+    "RelativePath": "api/Person/call-new-S4009-v2/{serviceMethod}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MedicalReportSystem.Controllers.PersonController\u002BS4009V2Request",
+        "IsRequired": true
+      },
+      {
+        "Name": "serviceMethod",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "S4009",
+    "RelativePath": "api/Person/call-new-S4009/{serviceMethod}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestJson",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      },
+      {
+        "Name": "serviceMethod",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "operatorType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "operatorName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "applyId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "organizationName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "equipmentId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "S4010",
+    "RelativePath": "api/Person/call-new-S4010/{serviceMethod}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MedicalReportSystem.Controllers.PersonController\u002BS4010Request",
+        "IsRequired": true
+      },
+      {
+        "Name": "serviceMethod",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "applyId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "checker",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "reporter",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "equipmentId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "reportId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "doctorId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "patientId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "S4011",
+    "RelativePath": "api/Person/call-new-S4011/{serviceMethod}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MedicalReportSystem.Controllers.PersonController\u002BS4011Request",
+        "IsRequired": true
+      },
+      {
+        "Name": "serviceMethod",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "S4024",
+    "RelativePath": "api/Person/call-new-S4024/{serviceMethod}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestJson",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      },
+      {
+        "Name": "serviceMethod",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "patVisitType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "operatorId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "operatorName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "outpno",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "idno",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "startDate",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "endDate",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "S5006",
+    "RelativePath": "api/Person/call-new-S5006/{serviceMethod}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestJson",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      },
+      {
+        "Name": "serviceMethod",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "operatorName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "applyStatus",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "exeProcess",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "exeRoom",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "S5008",
+    "RelativePath": "api/Person/call-new-S5008/{serviceMethod}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MedicalReportSystem.Controllers.PersonController\u002BS5008Request",
+        "IsRequired": true
+      },
+      {
+        "Name": "serviceMethod",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "S5009",
+    "RelativePath": "api/Person/call-new-S5009/{serviceMethod}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MedicalReportSystem.Controllers.PersonController\u002BS5009Request",
+        "IsRequired": true
+      },
+      {
+        "Name": "serviceMethod",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "CallNewStandardService",
+    "RelativePath": "api/Person/call-new-standard/{serviceMethod}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "serviceMethod",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "requestJson",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MedicalReportSystem.Controllers.ApiResponse\u00601[[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "CheckGLHRMappingExists",
+    "RelativePath": "api/Person/check-glhr-mapping-exists",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mutualCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "treatmentCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "part",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "method",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MedicalReportSystem.Controllers.ApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "GetDetails",
+    "RelativePath": "api/Person/detail/{reportId}/{ID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reportId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "ID",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MedicalReportSystem.Models.Test_Detail_oracle, MedicalReportSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "GetDetailisDetail",
+    "RelativePath": "api/Person/detailLis/{ReportId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reportId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "CheckReportExistsOracle",
+    "RelativePath": "api/Person/exists-oracle",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "dataCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MedicalReportSystem.Controllers.ApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "GetDetailis",
+    "RelativePath": "api/Person/List/{UserID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserID",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MedicalReportSystem.Models.Test_Detail_oracle, MedicalReportSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "GetCombinedMicrobialReportOracle",
+    "RelativePath": "api/Person/microbial-report-oracle/{businessNo}/{reportId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "businessNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "reportId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MedicalReportSystem.Models.Test_Detail_oracle",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "GetPatientDetails",
+    "RelativePath": "api/Person/PatientDetails/{patientId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "patientId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MedicalReportSystem.Models.PatientInfo, MedicalReportSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "PLUploadViewRecord",
+    "RelativePath": "api/Person/PLupload-view-record",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestS",
+        "Type": "System.Collections.Generic.List\u00601[[MedicalReportSystem.Controllers.ViewRecordRequest, MedicalReportSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "QueryGLHRMapping",
+    "RelativePath": "api/Person/query-glhr-mapping",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "mutualCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "treatmentCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "part",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "method",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MedicalReportSystem.Controllers.ApiResponse\u00601[[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "QueryGLHRMappingForExam",
+    "RelativePath": "api/Person/query-glhr-mapping-exam",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mutualCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "treatmentCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "part",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "method",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MedicalReportSystem.Controllers.ApiResponse\u00601[[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "QueryGLHRMappingForLab",
+    "RelativePath": "api/Person/query-glhr-mapping-lab",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "mutualCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "treatmentCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MedicalReportSystem.Controllers.ApiResponse\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "QueryPatientInfo",
+    "RelativePath": "api/Person/query-patient-info",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "GHID",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MedicalReportSystem.Controllers.ApiResponse\u00601[[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "GetRecognitionStatus",
+    "RelativePath": "api/Person/recognition-status/{patientId}/{reportId}/{doctorId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "patientId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "reportId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "doctorId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "GetReportDetailsOracle",
+    "RelativePath": "api/Person/report-details-oracle/{businessNo}/{reportId}/{currentMode}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "businessNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "reportId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "currentMode",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MedicalReportSystem.Models.Test_Detail_oracle, MedicalReportSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "GetReportDetailsOracle2",
+    "RelativePath": "api/Person/report-details-oracle2/{businessNo}/{reportId}/{currentMode}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "businessNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "reportId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "currentMode",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MedicalReportSystem.Models.Test_Detail_oracle, MedicalReportSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "GetReportDetailsOracle3",
+    "RelativePath": "api/Person/report-details-oracle3/{businessNo}/{reportId}/{currentMode}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "businessNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "reportId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "currentMode",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MedicalReportSystem.Models.Test_Detail_oracle, MedicalReportSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "GetReportDetailsOracle4",
+    "RelativePath": "api/Person/report-details-oracle4/{businessNo}/{reportId}/{currentMode}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "businessNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "reportId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "currentMode",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MedicalReportSystem.Models.Test_Detail_oracle, MedicalReportSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "GetReportHeadersOracle",
+    "RelativePath": "api/Person/report-headers-oracle",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reportId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "dataCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MedicalReportSystem.Models.Test_Detail_oracle, MedicalReportSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "GetReportHeadersOracleReminder",
+    "RelativePath": "api/Person/report-headers-oracleReminder",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reportId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "days",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MedicalReportSystem.Models.Test_Detail_oracle, MedicalReportSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "RevokeNonRecognition",
+    "RelativePath": "api/Person/revoke-action",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestS",
+        "Type": "System.Collections.Generic.List\u00601[[MedicalReportSystem.Controllers.ReminderRecordRequest, MedicalReportSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "GetSpcmbcNo",
+    "RelativePath": "api/Person/Spcmbc-No/{ApplyID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ApplyID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "SubmitBatchRecognition",
+    "RelativePath": "api/Person/submit-batch-recognition",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requests",
+        "Type": "System.Collections.Generic.List\u00601[[MedicalReportSystem.Controllers.ReminderRecordRequest, MedicalReportSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "SubmitRecognition",
+    "RelativePath": "api/Person/submit-recognition",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MedicalReportSystem.Controllers.RecognitionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "TestConnection",
+    "RelativePath": "api/Person/test-connection",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "TestLogOnly",
+    "RelativePath": "api/Person/test-log-only/{reportId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reportId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "RecognitionRevokeCommand",
+    "RelativePath": "api/Person/undo-Recognition",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requests",
+        "Type": "System.Collections.Generic.List\u00601[[MedicalReportSystem.Controllers.RecognitionRequest, MedicalReportSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "UploadQuoteLog",
+    "RelativePath": "api/Person/upload-quote-log",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requests",
+        "Type": "System.Collections.Generic.List\u00601[[MedicalReportSystem.Controllers.ReminderRecordRequest, MedicalReportSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "UploadReminderRecords",
+    "RelativePath": "api/Person/upload-reminder-records",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requests",
+        "Type": "System.Collections.Generic.List\u00601[[MedicalReportSystem.Controllers.ReminderRecordRequest, MedicalReportSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.PersonController",
+    "Method": "UploadViewRecord",
+    "RelativePath": "api/Person/upload-view-record",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestS",
+        "Type": "MedicalReportSystem.Controllers.ViewRecordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.ProductsController",
+    "Method": "PostProduct",
+    "RelativePath": "api/Products",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "product",
+        "Type": "MedicalReportSystem.Models.T_TEST_REC",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MedicalReportSystem.Models.T_TEST_REC",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.ProductsController",
+    "Method": "GetProduct",
+    "RelativePath": "api/Products/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MedicalReportSystem.Models.T_TEST_REC",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.ProductsController",
+    "Method": "PutProduct",
+    "RelativePath": "api/Products/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "product",
+        "Type": "MedicalReportSystem.Models.T_TEST_REC",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.ProductsController",
+    "Method": "DeleteProduct",
+    "RelativePath": "api/Products/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.ProductsController",
+    "Method": "GetProductsDapper",
+    "RelativePath": "api/Products/dapper",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MedicalReportSystem.Models.T_TEST_REC, MedicalReportSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.ProductsController",
+    "Method": "DapperTest",
+    "RelativePath": "api/Products/dapper-test",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.ProductsController",
+    "Method": "GetProducts",
+    "RelativePath": "api/Products/detail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reportId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.ProductsController",
+    "Method": "GenerateDrugSensitivityReport",
+    "RelativePath": "api/Products/drug-sensitivity-reports/{TestReportNo}/{reportId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TestReportNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "reportId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.ProductsController",
+    "Method": "CheckReportExists",
+    "RelativePath": "api/Products/exists",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "dataCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.ProductsController",
+    "Method": "GetCombinedMicrobialReport",
+    "RelativePath": "api/Products/microbial-combined-report/{TestReportNo}/{reportId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TestReportNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "reportId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.ProductsController",
+    "Method": "GetBacterialCultureResult",
+    "RelativePath": "api/Products/microbial-culture/{TestReportNo}/{reportId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TestReportNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "reportId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.ProductsController",
+    "Method": "RawQuery",
+    "RelativePath": "api/Products/raw-query",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.ProductsController",
+    "Method": "GetDetailsAsync",
+    "RelativePath": "api/Products/report-details/{TestReportNo}/{reportId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TestReportNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "reportId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.ProductsController",
+    "Method": "TestConnectionWithTimeout",
+    "RelativePath": "api/Products/test-connection-with-timeout",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.ProductsController",
+    "Method": "TestOracleSync",
+    "RelativePath": "api/Products/test-sync",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tableName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "idColumn",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "timestampColumn",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.ProductsController",
+    "Method": "ValidateTableStructure",
+    "RelativePath": "api/Products/validate-sync-structure",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.ReportsController",
+    "Method": "CleanupFile",
+    "RelativePath": "api/Reports/cleanup-file",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.ReportsController",
+    "Method": "GetReportDetail",
+    "RelativePath": "api/Reports/detail/{reportId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reportId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.ReportsController",
+    "Method": "GetUserReportDetail",
+    "RelativePath": "api/Reports/detail/{userId}/{reportId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "reportId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.ReportsController",
+    "Method": "GetDataFromFile",
+    "RelativePath": "api/Reports/get-data",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.ReportsController",
+    "Method": "GetReportList",
+    "RelativePath": "api/Reports/list/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.ReportsController",
+    "Method": "OpenReview",
+    "RelativePath": "api/Reports/open",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "GHId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PatientID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "mode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "searchType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "doctorId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "feeSource",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "idCard",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "dataCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "json",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalReportSystem.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MedicalReportSystem.WeatherForecast, MedicalReportSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

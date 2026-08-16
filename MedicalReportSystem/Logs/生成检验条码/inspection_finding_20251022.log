@@ -1,0 +1,36 @@
+[2025-10-22 15:15:54] 开始生成检验条码
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 205658417,
+        "dataCode": "002501010150000",
+        "OrderID": 205658417,
+        "pat_visit_type": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-10-20T07:03:00.000Z",
+        "placer_name": "系统管理员",
+        "apply_dept_id": 518,
+        "citem_id": 259015,
+        "citem_name": "(院外结果互认项目)全血细胞计数+五分类检测",
+        "exedept_id": 466,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "血液",
+        "rmethod_name": "",
+        "lspcm_name": "血液",
+        "rgst_no": 25000843379,
+        "citem_id_cj": 14533,
+        "citem_name_cj": "采血室采血",
+        "exedept_id_cj": 582
+      }
+    ]
+  }
+} 

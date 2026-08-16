@@ -1,0 +1,154 @@
+错误: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Services.NewStandardService.CallInspectionFindingApi(InspectionFindingRequest request)
+   at MedicalReportSystem.Services.NewStandardService.ReportInspectionFindingAsync(JsonElement requestJson)
+[2025-10-17 23:07:30] 开始处理报告检查结果
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 205658417,
+        "dataCode": "002501010150000",
+        "OrderID": 205658417,
+        "pat_visit_type": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-10-17T14:38:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 518,
+        "citem_id": 15288,
+        "citem_name": "\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B",
+        "exedept_id": 466,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "rgst_no": 12891999,
+        "citem_id_cj": 14533,
+        "citem_name_cj": "\u91C7\u8840\u5BA4\u91C7\u8840",
+        "exedept_id_cj": 582
+      }
+    ]
+  }
+}
+构建的检查结果请求: {
+  "input": {
+    "aud_key": "",
+    "client_ip": "",
+    "pv1_info": {
+      "pid": "4602748",
+      "pat_visit_type": "1",
+      "pvid": "",
+      "rgst_no": "12891999"
+    },
+    "apply_info": [
+      {
+        "order_class": "4",
+        "sno": "1",
+        "order_expidate_type": "1",
+        "apply_time": "2025-10-17 14:38:00",
+        "order_exe_time_start": "2025-10-18 00:07:31",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": "518",
+        "citem_id": "14533",
+        "citem_name": "\u91C7\u8840\u5BA4\u91C7\u8840",
+        "exedept_id": "582",
+        "emg_sign": "0",
+        "order_drask": "",
+        "baby_sno": "",
+        "drug_freq_code": "",
+        "order_once_qunt": "",
+        "order_total_qunt": "",
+        "decoction_method_id": "",
+        "drug_freq_mth": "",
+        "drop_number": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "fee_source": "1",
+        "note": "",
+        "bedside_surcharge": "",
+        "exe_property": "",
+        "qunt_times": "",
+        "recipe_id": "",
+        "high_value_sign": "",
+        "batch": "",
+        "drug_item": [
+          {
+            "fitem_id": "",
+            "fitem_name": "",
+            "dspry_id": "",
+            "order_once_qunt": "",
+            "order_total_qunt": "",
+            "drug_aim": "",
+            "drug_reason": "",
+            "drop_number": "",
+            "order_drask": "",
+            "foot": "",
+            "decoction": ""
+          }
+        ],
+        "apply_item": [
+          {
+            "citem_type": "C",
+            "citem_id": "15288",
+            "citem_name": "\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B",
+            "exedept_id": "466"
+          }
+        ],
+        "part_info": [
+          {
+            "parts_name": "\u8840\u6DB2",
+            "rmethod_name": ""
+          }
+        ],
+        "blood_info": {
+          "order_type": "",
+          "lscmtd_id": "",
+          "lscmtd_name": "",
+          "exedept_id": "",
+          "abo_blood": "",
+          "rh_blood": ""
+        },
+        "surg_info": {
+          "surg_type": "",
+          "aneitem_id": "",
+          "aneitem_name": "",
+          "exedept_id": ""
+        },
+        "addition_item": [
+          {
+            "item_title": "",
+            "item_value": "",
+            "element_id": "",
+            "required": ""
+          }
+        ]
+      }
+    ],
+    "dg1_info": [
+      {
+        "dz_sno": "1",
+        "dz_type": "",
+        "csd_code": "",
+        "dz_content": "",
+        "symptom_code": "",
+        "symptom_name": ""
+      }
+    ],
+    "head": {
+      "bizno": "S3112",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-10-17 23:07:31",
+      "action_no": "a90a00e3754e4bc9b596cf25f109b08a"
+    }
+  }
+}
+错误: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Services.NewStandardService.CallInspectionFindingApi(InspectionFindingRequest request)
+   at MedicalReportSystem.Services.NewStandardService.ReportInspectionFindingAsync(JsonElement requestJson)

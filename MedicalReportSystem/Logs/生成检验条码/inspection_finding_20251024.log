@@ -1,0 +1,79 @@
+[2025-10-24 20:42:21] 开始生成检验条码
+请求参数: {
+  "input": {
+    "ack_info": {
+      "exe_status": "A",
+      "err_msg": ""
+    },
+    "apply_info": [
+      {
+        "apply_id": "206111088",
+        "sno": "8"
+      }
+    ],
+    "billDiagnose": [
+      {
+        "diagnoseId": "150688",
+        "diagnoseName": "(R05.x00)咳嗽",
+        "csd_code": "R05.x00",
+        "diag_id": "25736960"
+      }
+    ],
+    "bill_list": [
+      {
+        "order_id": "206111087",
+        "apply_id": "206111088",
+        "citem_id": "259015",
+        "receipt_no": "25003114878",
+        "parts_name": "血液",
+        "rmethod_name": "",
+        "fitem_id": "",
+        "fee_id": "516437642"
+      },
+      {
+        "order_id": "206111088",
+        "apply_id": "",
+        "citem_id": "147861",
+        "receipt_no": "25003114879",
+        "parts_name": "血液",
+        "rmethod_name": "",
+        "fitem_id": "",
+        "fee_id": ""
+      }
+    ],
+    "res_info": {
+      "send_no": "29275239"
+    },
+    "head": {
+      "bizno": "S3112",
+      "sysno": "FGN-FGN",
+      "tarno": "ZLHIS",
+      "time": "2025-10-21 15:52:23",
+      "action_no": "3ecf54d7-d9ec-41ec-a39c-851e18a1e9c7"
+    }
+  }
+} 
+构建的检查结果请求: {
+  "input": {
+    "apply_info": {
+      "apply_id": "206111088",
+      "pat_visit_type": "1",
+      "oprtr_id": "518",
+      "oprtr_name": "系统管理员",
+      "outpno": "",
+      "idno": "",
+      "start_date": "",
+      "end_date": ""
+    },
+    "head": {
+      "bizno": "S4024",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-10-24 20:42:21",
+      "action_no": "364d5d59-24d1-4e64-8386-9d9b5902165b"
+    }
+  }
+}
+错误: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Services.NewStandardService.CallInspectionFindingApi[TRequest](TRequest request)
+   at MedicalReportSystem.Services.NewStandardService.S4024(JsonElement requestJson, String serviceMethod, String patVisitType, String operatorId, String operatorName, String outpno, String idno, String startDate, String endDate)

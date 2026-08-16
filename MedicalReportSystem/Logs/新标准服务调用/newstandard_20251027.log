@@ -1,0 +1,82 @@
+[2025-10-27 23:10:04] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 206249899,
+        "dataCode": "002501010150000",
+        "OrderID": 206249899,
+        "pat_visit_type": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-10-27T11:48:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 518,
+        "citem_id": "259015",
+        "citem_name": "(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B",
+        "exedept_id": 466,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "rgst_no": "25000881787",
+        "dg1_info": "1\u003CSPCOLS\u003E\u5934\u75DB\u003CSPCOLS\u003E\u003CSPCOLS\u003ER51.x00\u003CSPCOLS\u003E0\u003CSPCOLS\u003E151076",
+        "citem_id_cj": 14533,
+        "citem_name_cj": "\u91C7\u8840\u5BA4\u91C7\u8840",
+        "exedept_id_cj": 582
+      }
+    ]
+  }
+}
+错误: 处理订单信息失败: 报告检查结果上传失败: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Controllers.PersonController.S3112(JsonElement requestJson, String serviceMethod) in E:\MedicalReportSystem\MedicalReportSystem\Controllers\PersonController.cs:line 1458
+   at MedicalReportSystem.Controllers.PersonController.CallNewStandardService(String serviceMethod, JsonElement requestJson) in E:\MedicalReportSystem\MedicalReportSystem\Controllers\PersonController.cs:line 1368
+[2025-10-27 23:11:36] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 206249899,
+        "dataCode": "002501010150000",
+        "OrderID": 206249899,
+        "pat_visit_type": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-10-27T11:48:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 518,
+        "citem_id": "259015",
+        "citem_name": "(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B",
+        "exedept_id": 466,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "rgst_no": "25000881787",
+        "dg1_info": "1\u003CSPCOLS\u003E\u5934\u75DB\u003CSPCOLS\u003E\u003CSPCOLS\u003ER51.x00\u003CSPCOLS\u003E0\u003CSPCOLS\u003E151076",
+        "citem_id_cj": 14533,
+        "citem_name_cj": "\u91C7\u8840\u5BA4\u91C7\u8840",
+        "exedept_id_cj": 582
+      }
+    ]
+  }
+}
+错误: 处理订单信息失败: 报告检查结果上传失败: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Controllers.PersonController.S3112(JsonElement requestJson, String serviceMethod)
+   at MedicalReportSystem.Controllers.PersonController.CallNewStandardService(String serviceMethod, JsonElement requestJson)

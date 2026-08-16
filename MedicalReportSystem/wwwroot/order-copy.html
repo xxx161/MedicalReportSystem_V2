@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>医嘱复制 - 病历引用</title>
+    <link rel="stylesheet" href="css/order-copy.css">
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+    <div class="container order-copy-container">
+        <!-- 医嘱复制主体 -->
+        <div class="order-container">
+            <!-- 左侧：医嘱列表 -->
+            <div class="order-list-panel">
+                <div class="order-list-header">
+                    <h3 id="pageTitle">📋 医嘱列表</h3>
+                    <p>点击选择检验或检查项目</p>
+                </div>
+                <div class="order-items-container" id="orderGroupsContainer">
+                    <div class="loading-state">⏳ 加载中...</div>
+                </div>
+            </div>
+
+            <!-- 右侧：医嘱明细 -->
+            <div class="order-detail-panel">
+                <div class="detail-header">
+                    <h3 id="selectedOrderName">请选择医嘱项目</h3>
+                    <p id="selectedOrderType">点击左侧检验或检查项目查看明细</p>
+                </div>
+                <div class="detail-content" id="detailContent">
+                    <div class="empty-state">⬅ 请从左侧选择检验或检查项目</div>
+                </div>
+                <div class="detail-footer">
+                    <div class="selected-count">
+                        已选择 <strong id="selectedDetailCount">0</strong> 条明细
+                    </div>
+                    <div class="action-buttons">
+                        <button class="btn-secondary" id="clearSelectionBtn">清空选择</button>
+                        <button class="btn-primary" id="copyToRecordBtn">📄 复制到病历</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/order-copy.js"></script>
+</body>
+</html>

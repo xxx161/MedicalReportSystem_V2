@@ -1,0 +1,95 @@
+[2025-11-12 22:46:27] 开始处理报告检查结果
+请求参数: {"input":{"req_info":[{"orderId":206249899,"dataCode":"002501010150000","OrderID":206249899,"pat_visit_type":1,"patientId":4602748,"homePageId":"","operationType":"02","treatmentCategory":"C","sno":1,"order_expidate_type ":1,"apply_time":"2025-11-06T09:06:00.000Z","placer_name":"系统管理员","apply_dept_id":518,"citem_id":"259013","citem_name":"(院外结果互认项)CT检查","exedept_id":467,"emg_sign":0,"order_drask":"","fee_source":1,"citem_type":"D","parts_name":"血液","rmethod_name":"","lspcm_name":"","rgst_no":"25000881787","dg1_info":"1<SPCOLS>头痛<SPCOLS><SPCOLS>R51.x00<SPCOLS>0<SPCOLS>151076","citem_id_cj":100162,"citem_name_cj":null,"exedept_id_cj":466}]}} 
+构建的检查结果请求: {
+  "input": {
+    "aud_key": "",
+    "client_ip": "",
+    "pv1_info": {
+      "pid": "4602748",
+      "pat_visit_type": "1",
+      "pvid": "",
+      "rgst_no": "25000881787"
+    },
+    "apply_info": [
+      {
+        "order_class": "5",
+        "sno": "1",
+        "order_expidate_type": "1",
+        "apply_time": "2025-11-06 09:06:00",
+        "order_exe_time_start": "2025-11-12 23:49:08",
+        "placer_name": "系统管理员",
+        "apply_dept_id": "518",
+        "citem_id": "259013",
+        "citem_name": "(院外结果互认项)CT检查",
+        "exedept_id": "467",
+        "emg_sign": "0",
+        "order_drask": "",
+        "baby_sno": "",
+        "drug_freq_code": "",
+        "order_once_qunt": "",
+        "order_total_qunt": "",
+        "decoction_method_id": "",
+        "drug_freq_mth": "",
+        "drop_number": "",
+        "lspcm_name": "",
+        "fee_source": "2",
+        "note": "",
+        "bedside_surcharge": "",
+        "exe_property": "",
+        "qunt_times": "",
+        "recipe_id": "",
+        "high_value_sign": "",
+        "batch": "",
+        "drug_item": [
+          {
+            "fitem_id": "",
+            "fitem_name": "",
+            "dspry_id": "",
+            "order_once_qunt": "",
+            "order_total_qunt": "",
+            "drug_aim": "",
+            "drug_reason": "",
+            "drop_number": "",
+            "order_drask": "",
+            "foot": "",
+            "decoction": ""
+          }
+        ],
+        "apply_item": [],
+        "part_info": [],
+        "blood_info": {
+          "order_type": "",
+          "lscmtd_id": "",
+          "lscmtd_name": "",
+          "exedept_id": "",
+          "abo_blood": "",
+          "rh_blood": ""
+        },
+        "surg_info": {
+          "surg_type": "",
+          "aneitem_id": "",
+          "aneitem_name": "",
+          "exedept_id": ""
+        },
+        "addition_item": [
+          {
+            "item_title": "",
+            "item_value": "",
+            "element_id": "",
+            "required": ""
+          }
+        ]
+      }
+    ],
+    "head": {
+      "bizno": "S3112",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-11-12 22:49:11",
+      "action_no": "e642b7a9c6114a478eb40dfef54be5af"
+    }
+  }
+}
+错误: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Services.NewStandardService.CallInspectionFindingApi[TRequest](TRequest request) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 1850
+   at MedicalReportSystem.Services.NewStandardService.ReportInspectionFindingAsync(JsonElement requestJson, String serviceMethod) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 123

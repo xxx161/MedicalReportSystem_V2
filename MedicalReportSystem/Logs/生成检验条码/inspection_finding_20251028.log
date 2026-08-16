@@ -1,0 +1,210 @@
+[2025-10-28 19:42:42] 开始生成检验条码
+请求参数: {
+    "input": {
+        "ack_info": {
+            "exe_status": "A",
+            "err_msg": ""
+        },
+        "apply_info": [
+            {
+                "apply_id": "206294017",
+                "sno": "1"
+            }
+        ],
+        "bill_list": [
+            {
+                "order_id": "206294016",
+                "apply_id": "206294017",
+                "citem_id": "259015",
+                "receipt_no": "25003157252",
+                "parts_name": "血液",
+                "rmethod_name": "",
+                "fitem_id": "",
+                "fee_id": "516783146"
+            },
+            {
+                "order_id": "206294017",
+                "apply_id": "",
+                "citem_id": "100162",
+                "receipt_no": "25003157253",
+                "parts_name": "血液",
+                "rmethod_name": "",
+                "fitem_id": "",
+                "fee_id": ""
+            }
+        ],
+        "res_info": {
+            "send_no": "29311350"
+        },
+        "head": {
+            "bizno": "S3112",
+            "sysno": "JKPT",
+            "tarno": "ZLHIS",
+            "time": "2025-10-28 19:27:26",
+            "action_no": "781a359a16e845cc8fed1479e3e4fe13"
+        }
+    }
+} 
+构建的检查结果请求: MedicalReportSystem.Models.InspectionFindingRequestDto
+构建的检查结果请求: {
+  "input": {
+    "apply_info": {
+      "apply_id": "206294017",
+      "pat_visit_type": "1",
+      "oprtr_id": "2355",
+      "oprtr_name": "系统管理员",
+      "outpno": "",
+      "idno": "",
+      "start_date": "",
+      "end_date": ""
+    },
+    "head": {
+      "bizno": "S4024",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-10-28 19:42:42",
+      "action_no": "85aad93f-8b34-44b3-8570-95aabbdf9b0d"
+    }
+  }
+}
+[2025-10-28 19:44:18] 开始生成检验条码
+请求参数: {
+    "input": {
+        "ack_info": {
+            "exe_status": "A",
+            "err_msg": ""
+        },
+        "apply_info": [
+            {
+                "apply_id": "206294017",
+                "sno": "1"
+            }
+        ],
+        "bill_list": [
+            {
+                "order_id": "206294016",
+                "apply_id": "206294017",
+                "citem_id": "259015",
+                "receipt_no": "25003157252",
+                "parts_name": "血液",
+                "rmethod_name": "",
+                "fitem_id": "",
+                "fee_id": "516783146"
+            },
+            {
+                "order_id": "206294017",
+                "apply_id": "",
+                "citem_id": "100162",
+                "receipt_no": "25003157253",
+                "parts_name": "血液",
+                "rmethod_name": "",
+                "fitem_id": "",
+                "fee_id": ""
+            }
+        ],
+        "res_info": {
+            "send_no": "29311350"
+        },
+        "head": {
+            "bizno": "S3112",
+            "sysno": "JKPT",
+            "tarno": "ZLHIS",
+            "time": "2025-10-28 19:27:26",
+            "action_no": "781a359a16e845cc8fed1479e3e4fe13"
+        }
+    }
+} 
+构建的检查结果请求: MedicalReportSystem.Models.InspectionFindingRequestDto
+构建的检查结果请求: {
+  "input": {
+    "apply_info": {
+      "apply_id": "206294017",
+      "pat_visit_type": "1",
+      "oprtr_id": "2355",
+      "oprtr_name": "系统管理员",
+      "outpno": "",
+      "idno": "",
+      "start_date": "",
+      "end_date": ""
+    },
+    "head": {
+      "bizno": "S4024",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-10-28 19:44:18",
+      "action_no": "0cf842ca-e6e1-4409-ae36-ebf78f557b12"
+    }
+  }
+}
+错误: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Services.NewStandardService.CallInspectionFindingApi[TRequest](TRequest request) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 856
+   at MedicalReportSystem.Services.NewStandardService.S4024(JsonElement requestJson, String serviceMethod, String patVisitType, String operatorId, String operatorName, String outpno, String idno, String startDate, String endDate) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 155
+[2025-10-28 19:56:44] 开始生成检验条码
+请求参数: {
+    "input": {
+        "ack_info": {
+            "exe_status": "A",
+            "err_msg": ""
+        },
+        "apply_info": [
+            {
+                "apply_id": "206294017",
+                "sno": "1"
+            }
+        ],
+        "bill_list": [
+            {
+                "order_id": "206294016",
+                "apply_id": "206294017",
+                "citem_id": "259015",
+                "receipt_no": "25003157252",
+                "parts_name": "血液",
+                "rmethod_name": "",
+                "fitem_id": "",
+                "fee_id": "516783146"
+            },
+            {
+                "order_id": "206294017",
+                "apply_id": "",
+                "citem_id": "100162",
+                "receipt_no": "25003157253",
+                "parts_name": "血液",
+                "rmethod_name": "",
+                "fitem_id": "",
+                "fee_id": ""
+            }
+        ],
+        "res_info": {
+            "send_no": "29311350"
+        },
+        "head": {
+            "bizno": "S3112",
+            "sysno": "JKPT",
+            "tarno": "ZLHIS",
+            "time": "2025-10-28 19:27:26",
+            "action_no": "781a359a16e845cc8fed1479e3e4fe13"
+        }
+    }
+} 
+构建的检查结果请求: MedicalReportSystem.Models.InspectionFindingRequestDto
+构建的检查结果请求: {
+  "input": {
+    "apply_info": {
+      "apply_id": "206294017",
+      "pat_visit_type": "1",
+      "oprtr_id": "2355",
+      "oprtr_name": "系统管理员",
+      "outpno": "",
+      "idno": "",
+      "start_date": "",
+      "end_date": ""
+    },
+    "head": {
+      "bizno": "S4024",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-10-28 19:56:44",
+      "action_no": "96bb0006-d4fa-42e8-a1bd-e1b6b2d70f1f"
+    }
+  }
+}

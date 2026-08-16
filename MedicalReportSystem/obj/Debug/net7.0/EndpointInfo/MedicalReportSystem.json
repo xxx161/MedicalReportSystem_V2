@@ -1,0 +1,6103 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "检验检查互认系统API",
+    "contact": {
+      "name": "技术支持"
+    },
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/config/thirdparty": {
+      "get": {
+        "tags": [
+          "Config"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Config"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ThirdPartyConfigDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ThirdPartyConfigDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ThirdPartyConfigDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/config/validation-config": {
+      "get": {
+        "tags": [
+          "Config"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/config/reminder-settings": {
+      "get": {
+        "tags": [
+          "Config"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/config/app-config": {
+      "get": {
+        "tags": [
+          "Config"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/FileStorage/statistics": {
+      "get": {
+        "tags": [
+          "FileStorage"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/FileStorage/trigger-cleanup": {
+      "post": {
+        "tags": [
+          "FileStorage"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/OrderCopy/lab-reports/{idCard}": {
+      "get": {
+        "tags": [
+          "OrderCopy"
+        ],
+        "parameters": [
+          {
+            "name": "idCard",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.T_TEST_REC_oracle"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.T_TEST_REC_oracle"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.T_TEST_REC_oracle"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/OrderCopy/lab-details/{businessNo}/{reportId}": {
+      "get": {
+        "tags": [
+          "OrderCopy"
+        ],
+        "parameters": [
+          {
+            "name": "businessNo",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "reportId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Models.Test_Detail_oracle"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Models.Test_Detail_oracle"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Models.Test_Detail_oracle"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/OrderCopy/exam-reports/{idCard}": {
+      "get": {
+        "tags": [
+          "OrderCopy"
+        ],
+        "parameters": [
+          {
+            "name": "idCard",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.T_CHECK_REC_oracle"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.T_CHECK_REC_oracle"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.T_CHECK_REC_oracle"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/OrderCopy/exam-details/{businessNo}/{reportId}": {
+      "get": {
+        "tags": [
+          "OrderCopy"
+        ],
+        "parameters": [
+          {
+            "name": "businessNo",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "reportId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Models.T_CHECK_REC_oracle"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Models.T_CHECK_REC_oracle"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Models.T_CHECK_REC_oracle"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/OrderCopy/record-reference": {
+      "post": {
+        "tags": [
+          "OrderCopy"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Controllers.OrderCopyController_ReferenceRecordRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Controllers.OrderCopyController_ReferenceRecordRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Controllers.OrderCopyController_ReferenceRecordRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.OrderCopyController_ApiResponse`1[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.OrderCopyController_ApiResponse`1[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.OrderCopyController_ApiResponse`1[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Person/exists-oracle": {
+      "get": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "userID",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "default": "lab"
+            }
+          },
+          {
+            "name": "dataCode",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ApiResponse`1[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ApiResponse`1[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ApiResponse`1[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Person/query-glhr-mapping": {
+      "get": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "type",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "mutualCode",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "treatmentCode",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "part",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "method",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Person/query-patient-info": {
+      "get": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "GHID",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Person/check-glhr-mapping-exists": {
+      "get": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "mutualCode",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "treatmentCode",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "part",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "method",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ApiResponse`1[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ApiResponse`1[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ApiResponse`1[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Person/query-glhr-mapping-lab": {
+      "get": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "type",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "mutualCode",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "treatmentCode",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ApiResponse`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ApiResponse`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ApiResponse`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Person/query-glhr-mapping-exam": {
+      "get": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "mutualCode",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "treatmentCode",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "part",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "method",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Person/report-headers-oracle": {
+      "get": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "reportId",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "userID",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "dataCode",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "default": "lab"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.Test_Detail_oracle"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.Test_Detail_oracle"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.Test_Detail_oracle"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Person/report-headers-oracleReminder": {
+      "get": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "reportId",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "userID",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "default": "lab"
+            }
+          },
+          {
+            "name": "days",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.Test_Detail_oracle"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.Test_Detail_oracle"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.Test_Detail_oracle"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Person/report-details-oracle/{businessNo}/{reportId}/{currentMode}": {
+      "get": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "businessNo",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "reportId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "currentMode",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.Test_Detail_oracle"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.Test_Detail_oracle"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.Test_Detail_oracle"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Person/report-details-oracle4/{businessNo}/{reportId}/{currentMode}": {
+      "get": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "businessNo",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "reportId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "currentMode",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.Test_Detail_oracle"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.Test_Detail_oracle"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.Test_Detail_oracle"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Person/report-details-oracle2/{businessNo}/{reportId}/{currentMode}": {
+      "get": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "businessNo",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "reportId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "currentMode",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.Test_Detail_oracle"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.Test_Detail_oracle"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.Test_Detail_oracle"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Person/test-log-only/{reportId}": {
+      "get": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "reportId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Person/report-details-oracle3/{businessNo}/{reportId}/{currentMode}": {
+      "get": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "businessNo",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "reportId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "currentMode",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.Test_Detail_oracle"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.Test_Detail_oracle"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.Test_Detail_oracle"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Person/microbial-report-oracle/{businessNo}/{reportId}": {
+      "get": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "businessNo",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "reportId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Models.Test_Detail_oracle"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Models.Test_Detail_oracle"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Models.Test_Detail_oracle"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Person": {
+      "get": {
+        "tags": [
+          "Person"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.Person"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.Person"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.Person"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Person/detail/{reportId}/{ID}": {
+      "get": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "reportId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ID",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.Test_Detail_oracle"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.Test_Detail_oracle"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.Test_Detail_oracle"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Person/List/{UserID}": {
+      "get": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "UserID",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.Test_Detail_oracle"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.Test_Detail_oracle"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.Test_Detail_oracle"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Person/detailLis/{ReportId}": {
+      "get": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "reportId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Person/PatientDetails/{patientId}": {
+      "get": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "patientId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.PatientInfo"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.PatientInfo"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.PatientInfo"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Person/recognition-status/{patientId}/{reportId}/{doctorId}": {
+      "get": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "patientId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "reportId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "doctorId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Person/apply-id/{patientId}/{reportId}/{doctorId}": {
+      "get": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "patientId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "reportId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "doctorId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Person/Spcmbc-No/{ApplyID}": {
+      "get": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "ApplyID",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Person/submit-recognition": {
+      "post": {
+        "tags": [
+          "Person"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Controllers.RecognitionRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Controllers.RecognitionRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Controllers.RecognitionRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Person/submit-batch-recognition": {
+      "post": {
+        "tags": [
+          "Person"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ReminderRecordRequest"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ReminderRecordRequest"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ReminderRecordRequest"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Person/upload-reminder-records": {
+      "post": {
+        "tags": [
+          "Person"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ReminderRecordRequest"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ReminderRecordRequest"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ReminderRecordRequest"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Person/upload-view-record": {
+      "post": {
+        "tags": [
+          "Person"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ViewRecordRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ViewRecordRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ViewRecordRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Person/PLupload-view-record": {
+      "post": {
+        "tags": [
+          "Person"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ViewRecordRequest"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ViewRecordRequest"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ViewRecordRequest"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Person/revoke-action": {
+      "post": {
+        "tags": [
+          "Person"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ReminderRecordRequest"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ReminderRecordRequest"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ReminderRecordRequest"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Person/undo-Recognition": {
+      "post": {
+        "tags": [
+          "Person"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.RecognitionRequest"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.RecognitionRequest"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.RecognitionRequest"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Person/upload-quote-log": {
+      "post": {
+        "tags": [
+          "Person"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ReminderRecordRequest"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ReminderRecordRequest"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ReminderRecordRequest"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Person/call-new-standard/{serviceMethod}": {
+      "post": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "serviceMethod",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { }
+            },
+            "text/json": {
+              "schema": { }
+            },
+            "application/*+json": {
+              "schema": { }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Controllers.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Person/call-new-S3112-v2/{serviceMethod}": {
+      "post": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "serviceMethod",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Controllers.PersonController_S3112V2Request"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Controllers.PersonController_S3112V2Request"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Controllers.PersonController_S3112V2Request"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Person/call-new-S4024/{serviceMethod}": {
+      "post": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "serviceMethod",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "patVisitType",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "operatorId",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "operatorName",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "outpno",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "idno",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "startDate",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "endDate",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { }
+            },
+            "text/json": {
+              "schema": { }
+            },
+            "application/*+json": {
+              "schema": { }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Person/call-new-S4008/{serviceMethod}": {
+      "post": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "serviceMethod",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Controllers.PersonController_S4008Request"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Controllers.PersonController_S4008Request"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Controllers.PersonController_S4008Request"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Person/call-new-S4009/{serviceMethod}": {
+      "post": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "serviceMethod",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "operatorType",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "operatorName",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "applyId",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "organizationName",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "equipmentId",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { }
+            },
+            "text/json": {
+              "schema": { }
+            },
+            "application/*+json": {
+              "schema": { }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Person/call-new-S4009-v2/{serviceMethod}": {
+      "post": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "serviceMethod",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Controllers.PersonController_S4009V2Request"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Controllers.PersonController_S4009V2Request"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Controllers.PersonController_S4009V2Request"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Person/call-new-S4010/{serviceMethod}": {
+      "post": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "serviceMethod",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "applyId",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "checker",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "default": "系统管理员"
+            }
+          },
+          {
+            "name": "reporter",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "default": "系统管理员"
+            }
+          },
+          {
+            "name": "equipmentId",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "reportId",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "doctorId",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "patientId",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Controllers.PersonController_S4010Request"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Controllers.PersonController_S4010Request"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Controllers.PersonController_S4010Request"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Person/call-new-S4011/{serviceMethod}": {
+      "post": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "serviceMethod",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Controllers.PersonController_S4011Request"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Controllers.PersonController_S4011Request"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Controllers.PersonController_S4011Request"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Person/call-new-S5006/{serviceMethod}": {
+      "post": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "serviceMethod",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "operatorName",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "applyStatus",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "default": "3"
+            }
+          },
+          {
+            "name": "exeProcess",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "default": "1"
+            }
+          },
+          {
+            "name": "exeRoom",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "default": "3"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { }
+            },
+            "text/json": {
+              "schema": { }
+            },
+            "application/*+json": {
+              "schema": { }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Person/call-new-S5008/{serviceMethod}": {
+      "post": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "serviceMethod",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Controllers.PersonController_S5008Request"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Controllers.PersonController_S5008Request"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Controllers.PersonController_S5008Request"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Person/call-new-S5009/{serviceMethod}": {
+      "post": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "serviceMethod",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Controllers.PersonController_S5009Request"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Controllers.PersonController_S5009Request"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Controllers.PersonController_S5009Request"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Person/test-connection": {
+      "get": {
+        "tags": [
+          "Person"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Products/raw-query": {
+      "get": {
+        "tags": [
+          "Products"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Products/dapper-test": {
+      "get": {
+        "tags": [
+          "Products"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Products/exists": {
+      "get": {
+        "tags": [
+          "Products"
+        ],
+        "parameters": [
+          {
+            "name": "userID",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "default": "lab"
+            }
+          },
+          {
+            "name": "dataCode",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Products/detail": {
+      "get": {
+        "tags": [
+          "Products"
+        ],
+        "parameters": [
+          {
+            "name": "reportId",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "userID",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "default": "lab"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Products/report-details/{TestReportNo}/{reportId}": {
+      "get": {
+        "tags": [
+          "Products"
+        ],
+        "parameters": [
+          {
+            "name": "TestReportNo",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "reportId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Products/microbial-culture/{TestReportNo}/{reportId}": {
+      "get": {
+        "tags": [
+          "Products"
+        ],
+        "parameters": [
+          {
+            "name": "TestReportNo",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "reportId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Products/drug-sensitivity-reports/{TestReportNo}/{reportId}": {
+      "get": {
+        "tags": [
+          "Products"
+        ],
+        "parameters": [
+          {
+            "name": "TestReportNo",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "reportId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Products/microbial-combined-report/{TestReportNo}/{reportId}": {
+      "get": {
+        "tags": [
+          "Products"
+        ],
+        "parameters": [
+          {
+            "name": "TestReportNo",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "reportId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Products/validate-sync-structure": {
+      "post": {
+        "tags": [
+          "Products"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Products/test-sync": {
+      "post": {
+        "tags": [
+          "Products"
+        ],
+        "parameters": [
+          {
+            "name": "tableName",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "default": "t_test_rec"
+            }
+          },
+          {
+            "name": "idColumn",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "default": "ID"
+            }
+          },
+          {
+            "name": "timestampColumn",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "default": "INSTOCK_TIME"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Products/dapper": {
+      "get": {
+        "tags": [
+          "Products"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.T_TEST_REC"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.T_TEST_REC"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.Models.T_TEST_REC"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Products/{id}": {
+      "get": {
+        "tags": [
+          "Products"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Models.T_TEST_REC"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Models.T_TEST_REC"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Models.T_TEST_REC"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Products"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Models.T_TEST_REC"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Models.T_TEST_REC"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Models.T_TEST_REC"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Products"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Products": {
+      "post": {
+        "tags": [
+          "Products"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Models.T_TEST_REC"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Models.T_TEST_REC"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MedicalReportSystem.Models.T_TEST_REC"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Models.T_TEST_REC"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Models.T_TEST_REC"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MedicalReportSystem.Models.T_TEST_REC"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Products/test-connection-with-timeout": {
+      "get": {
+        "tags": [
+          "Products"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Reports/open": {
+      "post": {
+        "tags": [
+          "Reports"
+        ],
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "GHId": {
+                    "type": "string",
+                    "default": ""
+                  },
+                  "PatientID": {
+                    "type": "string",
+                    "default": ""
+                  },
+                  "mode": {
+                    "type": "string",
+                    "default": "recognize"
+                  },
+                  "searchType": {
+                    "type": "string",
+                    "default": ""
+                  },
+                  "type": {
+                    "type": "string",
+                    "default": ""
+                  },
+                  "doctorId": {
+                    "type": "string",
+                    "default": ""
+                  },
+                  "feeSource": {
+                    "type": "string",
+                    "default": ""
+                  },
+                  "idCard": {
+                    "type": "string",
+                    "default": ""
+                  },
+                  "dataCode": {
+                    "type": "string",
+                    "default": ""
+                  },
+                  "json": {
+                    "type": "string",
+                    "default": ""
+                  }
+                }
+              },
+              "encoding": {
+                "GHId": {
+                  "style": "form"
+                },
+                "PatientID": {
+                  "style": "form"
+                },
+                "mode": {
+                  "style": "form"
+                },
+                "searchType": {
+                  "style": "form"
+                },
+                "type": {
+                  "style": "form"
+                },
+                "doctorId": {
+                  "style": "form"
+                },
+                "feeSource": {
+                  "style": "form"
+                },
+                "idCard": {
+                  "style": "form"
+                },
+                "dataCode": {
+                  "style": "form"
+                },
+                "json": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Reports/get-data": {
+      "get": {
+        "tags": [
+          "Reports"
+        ],
+        "parameters": [
+          {
+            "name": "fileId",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Reports/cleanup-file": {
+      "post": {
+        "tags": [
+          "Reports"
+        ],
+        "parameters": [
+          {
+            "name": "fileId",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Reports/detail/{userId}/{reportId}": {
+      "get": {
+        "tags": [
+          "Reports"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "reportId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Reports/list/{userId}": {
+      "get": {
+        "tags": [
+          "Reports"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Reports/detail/{reportId}": {
+      "get": {
+        "tags": [
+          "Reports"
+        ],
+        "parameters": [
+          {
+            "name": "reportId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MedicalReportSystem.WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "MedicalReportSystem.Controllers.ApiResponse`1[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "data": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MedicalReportSystem.Controllers.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "data": {
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MedicalReportSystem.Controllers.ApiResponse`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "data": {
+            "type": "string",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MedicalReportSystem.Controllers.OrderCopyController_ApiResponse`1[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MedicalReportSystem.Controllers.OrderCopyController_ReferenceRecordRequest": {
+        "type": "object",
+        "properties": {
+          "patientId": {
+            "type": "string",
+            "nullable": true
+          },
+          "doctorId": {
+            "type": "string",
+            "nullable": true
+          },
+          "reportId": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MedicalReportSystem.Controllers.PersonController_S3112V2Request": {
+        "type": "object",
+        "properties": {
+          "patientId": {
+            "type": "string",
+            "nullable": true
+          },
+          "patientVisitType": {
+            "type": "string",
+            "nullable": true
+          },
+          "homePageId": {
+            "type": "string",
+            "nullable": true
+          },
+          "sequenceNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "placerName": {
+            "type": "string",
+            "nullable": true
+          },
+          "applyDeptId": {
+            "type": "string",
+            "nullable": true
+          },
+          "executeDeptId": {
+            "type": "string",
+            "nullable": true
+          },
+          "itemType": {
+            "type": "string",
+            "nullable": true
+          },
+          "itemId": {
+            "type": "string",
+            "nullable": true
+          },
+          "itemName": {
+            "type": "string",
+            "nullable": true
+          },
+          "itemExecuteDeptId": {
+            "type": "string",
+            "nullable": true
+          },
+          "partsName": {
+            "type": "string",
+            "nullable": true
+          },
+          "methodName": {
+            "type": "string",
+            "nullable": true
+          },
+          "registrationNo": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MedicalReportSystem.Controllers.PersonController_S4008Request": {
+        "type": "object",
+        "properties": {
+          "patientId": {
+            "type": "string",
+            "nullable": true
+          },
+          "patientVisitType": {
+            "type": "string",
+            "nullable": true
+          },
+          "registrationNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "applyId": {
+            "type": "string",
+            "nullable": true
+          },
+          "placerName": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MedicalReportSystem.Controllers.PersonController_S4009V2Request": {
+        "type": "object",
+        "properties": {
+          "applyId": {
+            "type": "string",
+            "nullable": true
+          },
+          "operatorType": {
+            "type": "string",
+            "nullable": true
+          },
+          "specimenBarcodeNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "operatorName": {
+            "type": "string",
+            "nullable": true
+          },
+          "organizationName": {
+            "type": "string",
+            "nullable": true
+          },
+          "equipmentId": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MedicalReportSystem.Controllers.PersonController_S4010Request": {
+        "type": "object",
+        "properties": {
+          "reportData": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MedicalReportSystem.Models.T_testr_res_indicate_oracle"
+            },
+            "nullable": true
+          },
+          "additionalInfo": {
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MedicalReportSystem.Controllers.PersonController_S4011Request": {
+        "type": "object",
+        "properties": {
+          "applyId": {
+            "type": "string",
+            "nullable": true
+          },
+          "specimenBarcodeNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "operatorName": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MedicalReportSystem.Controllers.PersonController_S5008Request": {
+        "type": "object",
+        "properties": {
+          "applyId": {
+            "type": "string",
+            "nullable": true
+          },
+          "applyStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "reporterName": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkerName": {
+            "type": "string",
+            "nullable": true
+          },
+          "reportResults": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MedicalReportSystem.Services.NewStandardService_ReportResultItem"
+            },
+            "nullable": true
+          },
+          "reportFiles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MedicalReportSystem.Services.NewStandardService_ReportFileItem"
+            },
+            "nullable": true
+          },
+          "reportId": {
+            "type": "string",
+            "nullable": true
+          },
+          "patientId": {
+            "type": "string",
+            "nullable": true
+          },
+          "doctorId": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MedicalReportSystem.Controllers.PersonController_S5009Request": {
+        "type": "object",
+        "properties": {
+          "applyId": {
+            "type": "string",
+            "nullable": true
+          },
+          "operatorName": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MedicalReportSystem.Controllers.RecognitionRequest": {
+        "type": "object",
+        "properties": {
+          "patientId": {
+            "type": "string",
+            "nullable": true
+          },
+          "ghId": {
+            "type": "string",
+            "nullable": true
+          },
+          "reportId": {
+            "type": "string",
+            "nullable": true
+          },
+          "recognise": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "reportType": {
+            "type": "string",
+            "nullable": true
+          },
+          "czlxValue": {
+            "type": "string",
+            "nullable": true
+          },
+          "reasonCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "reasonName": {
+            "type": "string",
+            "nullable": true
+          },
+          "diagName": {
+            "type": "string",
+            "nullable": true
+          },
+          "doctorId": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MedicalReportSystem.Controllers.ReminderRecordRequest": {
+        "type": "object",
+        "properties": {
+          "patientId": {
+            "type": "string",
+            "nullable": true
+          },
+          "ghId": {
+            "type": "string",
+            "nullable": true
+          },
+          "reportId": {
+            "type": "string",
+            "nullable": true
+          },
+          "reportType": {
+            "type": "string",
+            "nullable": true
+          },
+          "orgCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "orgName": {
+            "type": "string",
+            "nullable": true
+          },
+          "reportName": {
+            "type": "string",
+            "nullable": true
+          },
+          "reportTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "searchType": {
+            "type": "string",
+            "nullable": true
+          },
+          "reportNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "projCategoryName": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkProjNameExp": {
+            "type": "string",
+            "nullable": true
+          },
+          "reasonCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "reasonName": {
+            "type": "string",
+            "nullable": true
+          },
+          "diagName": {
+            "type": "string",
+            "nullable": true
+          },
+          "idCardTypeCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "msg": {
+            "type": "string",
+            "nullable": true
+          },
+          "code": {
+            "type": "string",
+            "nullable": true
+          },
+          "request_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "doctorId": {
+            "type": "string",
+            "nullable": true
+          },
+          "orderId": {
+            "type": "string",
+            "nullable": true
+          },
+          "businessNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "citemId": {
+            "type": "string",
+            "nullable": true
+          },
+          "microbiaMark": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MedicalReportSystem.Controllers.ViewRecordRequest": {
+        "type": "object",
+        "properties": {
+          "patientId": {
+            "type": "string",
+            "nullable": true
+          },
+          "ghId": {
+            "type": "string",
+            "nullable": true
+          },
+          "reportId": {
+            "type": "string",
+            "nullable": true
+          },
+          "reportType": {
+            "type": "string",
+            "nullable": true
+          },
+          "orgCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "orgName": {
+            "type": "string",
+            "nullable": true
+          },
+          "reportName": {
+            "type": "string",
+            "nullable": true
+          },
+          "reportTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "viewTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "searchType": {
+            "type": "string",
+            "nullable": true
+          },
+          "reportNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "idCardTypeCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "businessNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "doctorId": {
+            "type": "string",
+            "nullable": true
+          },
+          "orderId": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MedicalReportSystem.Models.PatientInfo": {
+        "type": "object",
+        "properties": {
+          "patientId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "outpatientNumber": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "hospitalizationNumber": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "medicalCardNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "cardVerificationCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "feeType": {
+            "type": "string",
+            "nullable": true
+          },
+          "paymentMethod": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "gender": {
+            "type": "string",
+            "nullable": true
+          },
+          "age": {
+            "type": "string",
+            "nullable": true
+          },
+          "birthDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "birthPlace": {
+            "type": "string",
+            "nullable": true
+          },
+          "idNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "identity": {
+            "type": "string",
+            "nullable": true
+          },
+          "occupation": {
+            "type": "string",
+            "nullable": true
+          },
+          "ethnicity": {
+            "type": "string",
+            "nullable": true
+          },
+          "nationality": {
+            "type": "string",
+            "nullable": true
+          },
+          "region": {
+            "type": "string",
+            "nullable": true
+          },
+          "education": {
+            "type": "string",
+            "nullable": true
+          },
+          "maritalStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "homeAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "homePhone": {
+            "type": "string",
+            "nullable": true
+          },
+          "homePostalCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "contactName": {
+            "type": "string",
+            "nullable": true
+          },
+          "contactRelationship": {
+            "type": "string",
+            "nullable": true
+          },
+          "contactAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "contactPhone": {
+            "type": "string",
+            "nullable": true
+          },
+          "contractUnitId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "workUnit": {
+            "type": "string",
+            "nullable": true
+          },
+          "workPhone": {
+            "type": "string",
+            "nullable": true
+          },
+          "workPostalCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "workBank": {
+            "type": "string",
+            "nullable": true
+          },
+          "workAccount": {
+            "type": "string",
+            "nullable": true
+          },
+          "guarantor": {
+            "type": "string",
+            "nullable": true
+          },
+          "guaranteeAmount": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "guaranteeType": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "visitTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "visitStatus": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "consultationRoom": {
+            "type": "string",
+            "nullable": true
+          },
+          "hospitalizationCount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "currentDepartmentId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "currentWardId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "currentBedNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "admissionTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dischargeTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "insuranceType": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "registrationTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "deactivationTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "icCardNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "healthNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "medicalInsuranceNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "otherCertificates": {
+            "type": "string",
+            "nullable": true
+          },
+          "guardian": {
+            "type": "string",
+            "nullable": true
+          },
+          "queryPassword": {
+            "type": "string",
+            "nullable": true
+          },
+          "inHospital": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "locked": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "householdPostalCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "householdAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "householdAddressPostalCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "nativePlace": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "qq": {
+            "type": "string",
+            "nullable": true
+          },
+          "contactIdNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "homePageId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "patientType": {
+            "type": "string",
+            "nullable": true
+          },
+          "settlementMode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "remarks": {
+            "type": "string",
+            "nullable": true
+          },
+          "mobileNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "workAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "temporaryVisitFlag": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MedicalReportSystem.Models.Person": {
+        "required": [
+          "code",
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "parentId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "code": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string"
+          },
+          "name": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "shortCode": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "location": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "isLeaf": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "createTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "deleteTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "envType": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "managerId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "site": {
+            "maxLength": 3,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "sortOrder": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "lastModifiedTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "alias": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "locationCode": {
+            "maxLength": 4,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "resourceId": {
+            "maxLength": 36,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MedicalReportSystem.Models.T_CHECK_REC_oracle": {
+        "type": "object",
+        "properties": {
+          "tid": {
+            "type": "string",
+            "nullable": true
+          },
+          "applyTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "applDoctName": {
+            "type": "string",
+            "nullable": true
+          },
+          "applDoctNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "auditDoctName": {
+            "type": "string",
+            "nullable": true
+          },
+          "auditDoctNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "bedNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "biopsySite": {
+            "type": "string",
+            "nullable": true
+          },
+          "birthDate": {
+            "type": "string",
+            "nullable": true
+          },
+          "businessGenerTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "businessNo": {
+            "maxLength": 64,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "checkApplyDepartName": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkApplyDepartNameExp": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkApplyDepartNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkApplyDepartNoExp": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkApplyOrgName": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkAuditTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkDoctName": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkDoctNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkEquipModel": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkEquipNum": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkIndexResult": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkIndexUnit": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkMethodName": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkNormalRefQual": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkPartCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkPartName": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkProjCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkProjCodeExp": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkProjName": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkProjNameExp": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkRecNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkReportComment": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkReportDate": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkReportDepartCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkReportDepartCodeExp": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkReportDepartName": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkReportDepartNameExp": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkReportNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkReportOrgName": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkRes": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkResCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkResName": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkResObj": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkResQual": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkResSub": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkTypeCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkTypeName": {
+            "type": "string",
+            "nullable": true
+          },
+          "criticalState": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataNum": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "dataCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataName": {
+            "type": "string",
+            "nullable": true
+          },
+          "diagNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "diagTypeCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "diagTypeName": {
+            "type": "string",
+            "nullable": true
+          },
+          "frozen": {
+            "type": "string",
+            "nullable": true
+          },
+          "gatewayName": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "genderCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "genderName": {
+            "type": "string",
+            "nullable": true
+          },
+          "healthECode": {
+            "type": "string",
+            "nullable": true
+          },
+          "hospitalNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "id": {
+            "maxLength": 32,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "idCardTypeCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "idCardTypeName": {
+            "type": "string",
+            "nullable": true
+          },
+          "idCardValue": {
+            "type": "string",
+            "nullable": true
+          },
+          "imageExistMark": {
+            "type": "string",
+            "nullable": true
+          },
+          "imageNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "imageUidAddr": {
+            "type": "string",
+            "nullable": true
+          },
+          "immuNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "insertDatacenterTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "insertDatetime": {
+            "type": "string",
+            "nullable": true
+          },
+          "instockTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "instrumentName": {
+            "type": "string",
+            "nullable": true
+          },
+          "mtuRecLimitMark": {
+            "type": "string",
+            "nullable": true
+          },
+          "mtuRecMark": {
+            "type": "string",
+            "nullable": true
+          },
+          "normalRefLowerLimit": {
+            "type": "string",
+            "nullable": true
+          },
+          "normalRefUpperLimit": {
+            "type": "string",
+            "nullable": true
+          },
+          "orderRecFormNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "orgCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "orgName": {
+            "type": "string",
+            "nullable": true
+          },
+          "patNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "pathologicalNakedEye": {
+            "type": "string",
+            "nullable": true
+          },
+          "patientId": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "patientName": {
+            "type": "string",
+            "nullable": true
+          },
+          "patientOrgNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "reportClinicalDiag": {
+            "type": "string",
+            "nullable": true
+          },
+          "reportDoctName": {
+            "type": "string",
+            "nullable": true
+          },
+          "reportDoctNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "roomNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "speInspectMark": {
+            "type": "string",
+            "nullable": true
+          },
+          "surgFrPathDiagCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "surgFrPathDiagName": {
+            "type": "string",
+            "nullable": true
+          },
+          "symptomCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "symptomDescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "symptomName": {
+            "type": "string",
+            "nullable": true
+          },
+          "symptomStartTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "symptomStopTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "underPatholSee": {
+            "type": "string",
+            "nullable": true
+          },
+          "updateTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "uploadStatusMark": {
+            "type": "string",
+            "nullable": true
+          },
+          "wardName": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MedicalReportSystem.Models.T_MICROBE_BACTERIA_RES_oracle": {
+        "type": "object",
+        "properties": {
+          "tid": {
+            "type": "string",
+            "nullable": true
+          },
+          "bacteriaId": {
+            "type": "string",
+            "nullable": true
+          },
+          "bacteriaIndicateNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "bacteriaName": {
+            "type": "string",
+            "nullable": true
+          },
+          "bacteriaResultDescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "bacterRingNum": {
+            "type": "string",
+            "nullable": true
+          },
+          "businessGenerTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "businessNo": {
+            "maxLength": 64,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "colonyCount": {
+            "type": "string",
+            "nullable": true
+          },
+          "colonyForm": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataId": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataNum": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "deviceName": {
+            "type": "string",
+            "nullable": true
+          },
+          "deviceNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "foundWay": {
+            "type": "string",
+            "nullable": true
+          },
+          "gatewayName": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "id": {
+            "maxLength": 32,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "incubationCondition": {
+            "type": "string",
+            "nullable": true
+          },
+          "incubationTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "insertDatacenterTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "insertDatetime": {
+            "type": "string",
+            "nullable": true
+          },
+          "instockTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "medium": {
+            "type": "string",
+            "nullable": true
+          },
+          "multiBacteriaMark": {
+            "type": "string",
+            "nullable": true
+          },
+          "orgCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "orgName": {
+            "type": "string",
+            "nullable": true
+          },
+          "paperContainNum": {
+            "type": "string",
+            "nullable": true
+          },
+          "patientId": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "testBoardName": {
+            "type": "string",
+            "nullable": true
+          },
+          "testBoardNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "testReportNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "testResult": {
+            "type": "string",
+            "nullable": true
+          },
+          "testResultDescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "updateTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "testRecord": {
+            "$ref": "#/components/schemas/MedicalReportSystem.Models.T_TEST_REC"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MedicalReportSystem.Models.T_MICROBE_SUSCEPT_RES_oracle": {
+        "type": "object",
+        "properties": {
+          "tid": {
+            "type": "string",
+            "nullable": true
+          },
+          "bacteriaId": {
+            "type": "string",
+            "nullable": true
+          },
+          "bacteriaName": {
+            "type": "string",
+            "nullable": true
+          },
+          "bacteriostatRing": {
+            "type": "string",
+            "nullable": true
+          },
+          "bacteriostaticConcentrate": {
+            "type": "string",
+            "nullable": true
+          },
+          "businessGenerTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "businessNo": {
+            "maxLength": 64,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "dataId": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataNum": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "drugSusceptibilityCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "drugSusceptibilityName": {
+            "type": "string",
+            "nullable": true
+          },
+          "drugSusceptibleName": {
+            "type": "string",
+            "nullable": true
+          },
+          "drugSusceptibleNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "drugTestNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "expertRule": {
+            "type": "string",
+            "nullable": true
+          },
+          "gatewayName": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "id": {
+            "maxLength": 32,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "insertDatacenterTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "insertDatetime": {
+            "type": "string",
+            "nullable": true
+          },
+          "inspectionMethods": {
+            "type": "string",
+            "nullable": true
+          },
+          "instockTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "orgCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "orgName": {
+            "type": "string",
+            "nullable": true
+          },
+          "paperDrugContent": {
+            "type": "string",
+            "nullable": true
+          },
+          "paperDrugUnit": {
+            "type": "string",
+            "nullable": true
+          },
+          "patientId": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "referenceValue": {
+            "type": "string",
+            "nullable": true
+          },
+          "susceptibilityResultDescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "testReportNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "updateTime": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MedicalReportSystem.Models.T_TEST_REC": {
+        "type": "object",
+        "properties": {
+          "tid": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "acceptSampleTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "applicationTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "applDoctName": {
+            "type": "string",
+            "nullable": true
+          },
+          "applDoctNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "auditDoctName": {
+            "type": "string",
+            "nullable": true
+          },
+          "auditDoctNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "birthDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "businessGenerTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "businessNo": {
+            "maxLength": 64,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "diagNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "diagTypeCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "diagTypeName": {
+            "type": "string",
+            "nullable": true
+          },
+          "genderCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "genderName": {
+            "type": "string",
+            "nullable": true
+          },
+          "healthECode": {
+            "type": "string",
+            "nullable": true
+          },
+          "hospitalNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "idCardTypeCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "idCardTypeName": {
+            "type": "string",
+            "nullable": true
+          },
+          "idCardValue": {
+            "type": "string",
+            "nullable": true
+          },
+          "microbeTestMark": {
+            "type": "string",
+            "nullable": true
+          },
+          "orderRecFormNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "orgName": {
+            "type": "string",
+            "nullable": true
+          },
+          "orgCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "patientName": {
+            "type": "string",
+            "nullable": true
+          },
+          "patientOrgNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "reportDoctName": {
+            "type": "string",
+            "nullable": true
+          },
+          "reportDoctNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "reportTypeCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "reportTypeName": {
+            "type": "string",
+            "nullable": true
+          },
+          "sampleDoctName": {
+            "type": "string",
+            "nullable": true
+          },
+          "sampleTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "specimenCollSite": {
+            "type": "string",
+            "nullable": true
+          },
+          "specimenName": {
+            "type": "string",
+            "nullable": true
+          },
+          "specimenNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "specimenStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "speInspectMark": {
+            "type": "string",
+            "nullable": true
+          },
+          "testApplyDepartCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "testApplyDepartName": {
+            "type": "string",
+            "nullable": true
+          },
+          "testApplyDepartCodeExp": {
+            "type": "string",
+            "nullable": true
+          },
+          "testApplyDepartNameExp": {
+            "type": "string",
+            "nullable": true
+          },
+          "testApplyOrgName": {
+            "type": "string",
+            "nullable": true
+          },
+          "testDoctName": {
+            "type": "string",
+            "nullable": true
+          },
+          "testDoctNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "testProjCategoryCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "testProjCategoryName": {
+            "type": "string",
+            "nullable": true
+          },
+          "testRecTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "testReportComment": {
+            "type": "string",
+            "nullable": true
+          },
+          "testReportDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "testReportDepartCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "testReportDepartName": {
+            "type": "string",
+            "nullable": true
+          },
+          "testReportDepartCodeExp": {
+            "type": "string",
+            "nullable": true
+          },
+          "testReportDepartNameExp": {
+            "type": "string",
+            "nullable": true
+          },
+          "testReportNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "testReportOrgName": {
+            "type": "string",
+            "nullable": true
+          },
+          "testType": {
+            "type": "string",
+            "nullable": true
+          },
+          "updateTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "uploadStatusMark": {
+            "type": "string",
+            "nullable": true
+          },
+          "wardName": {
+            "type": "string",
+            "nullable": true
+          },
+          "insertDatetime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "instockTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "gatewayName": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "dataNum": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "insertDatacenterTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "id": {
+            "maxLength": 32,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "patientId": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "testAuditTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "reportClinialDiag": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataName": {
+            "type": "string",
+            "nullable": true
+          },
+          "mtuRecMark": {
+            "type": "string",
+            "nullable": true
+          },
+          "mtuRecLimitMark": {
+            "type": "string",
+            "nullable": true
+          },
+          "patNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "roomNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "bedNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "indicators": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MedicalReportSystem.Models.T_testr_res_indicate"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MedicalReportSystem.Models.T_TEST_REC_oracle": {
+        "type": "object",
+        "properties": {
+          "tid": {
+            "type": "string",
+            "nullable": true
+          },
+          "acceptSampleTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "applicationTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "applDoctName": {
+            "type": "string",
+            "nullable": true
+          },
+          "applDoctNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "auditDoctName": {
+            "type": "string",
+            "nullable": true
+          },
+          "auditDoctNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "birthDate": {
+            "type": "string",
+            "nullable": true
+          },
+          "businessGenerTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "businessNo": {
+            "maxLength": 64,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "diagNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "diagTypeCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "diagTypeName": {
+            "type": "string",
+            "nullable": true
+          },
+          "genderCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "genderName": {
+            "type": "string",
+            "nullable": true
+          },
+          "healthECode": {
+            "type": "string",
+            "nullable": true
+          },
+          "hospitalNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "idCardTypeCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "idCardTypeName": {
+            "type": "string",
+            "nullable": true
+          },
+          "idCardValue": {
+            "type": "string",
+            "nullable": true
+          },
+          "microbeTestMark": {
+            "type": "string",
+            "nullable": true
+          },
+          "orderRecFormNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "orgName": {
+            "type": "string",
+            "nullable": true
+          },
+          "orgCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "patientName": {
+            "type": "string",
+            "nullable": true
+          },
+          "patientOrgNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "reportDoctName": {
+            "type": "string",
+            "nullable": true
+          },
+          "reportDoctNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "reportTypeCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "reportTypeName": {
+            "type": "string",
+            "nullable": true
+          },
+          "sampleDoctName": {
+            "type": "string",
+            "nullable": true
+          },
+          "sampleTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "specimenCollSite": {
+            "type": "string",
+            "nullable": true
+          },
+          "specimenName": {
+            "type": "string",
+            "nullable": true
+          },
+          "specimenNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "specimenStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "speInspectMark": {
+            "type": "string",
+            "nullable": true
+          },
+          "testApplyDepartCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "testApplyDepartName": {
+            "type": "string",
+            "nullable": true
+          },
+          "testApplyDepartCodeExp": {
+            "type": "string",
+            "nullable": true
+          },
+          "testApplyDepartNameExp": {
+            "type": "string",
+            "nullable": true
+          },
+          "testApplyOrgName": {
+            "type": "string",
+            "nullable": true
+          },
+          "testDoctName": {
+            "type": "string",
+            "nullable": true
+          },
+          "testDoctNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "testProjCategoryCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "testProjCategoryName": {
+            "type": "string",
+            "nullable": true
+          },
+          "testRecTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "testReportComment": {
+            "type": "string",
+            "nullable": true
+          },
+          "testReportDate": {
+            "type": "string",
+            "nullable": true
+          },
+          "testReportDepartCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "testReportDepartName": {
+            "type": "string",
+            "nullable": true
+          },
+          "testReportDepartCodeExp": {
+            "type": "string",
+            "nullable": true
+          },
+          "testReportDepartNameExp": {
+            "type": "string",
+            "nullable": true
+          },
+          "testReportNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "testReportOrgName": {
+            "type": "string",
+            "nullable": true
+          },
+          "testType": {
+            "type": "string",
+            "nullable": true
+          },
+          "updateTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "uploadStatusMark": {
+            "type": "string",
+            "nullable": true
+          },
+          "wardName": {
+            "type": "string",
+            "nullable": true
+          },
+          "insertDatetime": {
+            "type": "string",
+            "nullable": true
+          },
+          "instockTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "gatewayName": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "dataNum": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "insertDatacenterTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "id": {
+            "maxLength": 32,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "patientId": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "testAuditTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "reportClinialDiag": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataName": {
+            "type": "string",
+            "nullable": true
+          },
+          "mtuRecMark": {
+            "type": "string",
+            "nullable": true
+          },
+          "mtuRecLimitMark": {
+            "type": "string",
+            "nullable": true
+          },
+          "patNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "roomNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "bedNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "indicators": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MedicalReportSystem.Models.T_testr_res_indicate"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MedicalReportSystem.Models.T_testr_res_indicate": {
+        "type": "object",
+        "properties": {
+          "tid": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "anomalyCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "anomalyName": {
+            "type": "string",
+            "nullable": true
+          },
+          "businessGenerTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "businessNo": {
+            "maxLength": 64,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "clinicalMeaningDesc": {
+            "type": "string",
+            "nullable": true
+          },
+          "criticalLowerLimit": {
+            "type": "string",
+            "nullable": true
+          },
+          "criticalSign": {
+            "type": "string",
+            "nullable": true
+          },
+          "criticalTimelySign": {
+            "type": "string",
+            "nullable": true
+          },
+          "criticalUpperLimit": {
+            "type": "string",
+            "nullable": true
+          },
+          "criticalValueRes": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataId": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataNum": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "dataCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataName": {
+            "type": "string",
+            "nullable": true
+          },
+          "equipmentCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "examItemCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "examItemName": {
+            "type": "string",
+            "nullable": true
+          },
+          "gatewayName": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "id": {
+            "maxLength": 32,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "insertDatacenterTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "insertDatetime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "inspectionMethods": {
+            "type": "string",
+            "nullable": true
+          },
+          "instockTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "instrumentCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "instrumentName": {
+            "type": "string",
+            "nullable": true
+          },
+          "loincCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "mtuRecLimitMark": {
+            "type": "string",
+            "nullable": true
+          },
+          "mtuRecMark": {
+            "type": "string",
+            "nullable": true
+          },
+          "normalRefLimit": {
+            "type": "string",
+            "nullable": true
+          },
+          "normalRefRes": {
+            "type": "string",
+            "nullable": true
+          },
+          "orgCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "orgName": {
+            "type": "string",
+            "nullable": true
+          },
+          "patientId": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "testIndexResult": {
+            "type": "string",
+            "nullable": true
+          },
+          "testIndexUnit": {
+            "type": "string",
+            "nullable": true
+          },
+          "testProjCodeExp": {
+            "type": "string",
+            "nullable": true
+          },
+          "testProjNameExp": {
+            "type": "string",
+            "nullable": true
+          },
+          "testReportNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "testResDescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "testResTypeName": {
+            "type": "string",
+            "nullable": true
+          },
+          "updateTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "testRecord": {
+            "$ref": "#/components/schemas/MedicalReportSystem.Models.T_TEST_REC"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MedicalReportSystem.Models.T_testr_res_indicate_oracle": {
+        "type": "object",
+        "properties": {
+          "TID": {
+            "type": "string",
+            "nullable": true
+          },
+          "anomaly_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "anomaly_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "business_gener_time": {
+            "type": "string",
+            "nullable": true
+          },
+          "business_no": {
+            "maxLength": 64,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "clinical_meaning_desc": {
+            "type": "string",
+            "nullable": true
+          },
+          "critical_lower_limit": {
+            "type": "string",
+            "nullable": true
+          },
+          "critical_sign": {
+            "type": "string",
+            "nullable": true
+          },
+          "critical_timely_sign": {
+            "type": "string",
+            "nullable": true
+          },
+          "critical_upper_limit": {
+            "type": "string",
+            "nullable": true
+          },
+          "critical_value_res": {
+            "type": "string",
+            "nullable": true
+          },
+          "data_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "data_num": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "dataCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataName": {
+            "type": "string",
+            "nullable": true
+          },
+          "equipment_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "exam_item_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "exam_item_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "gateway_name": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "ID": {
+            "maxLength": 32,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "insert_datacenter_time": {
+            "type": "string",
+            "nullable": true
+          },
+          "INSERT_DATETIME": {
+            "type": "string",
+            "nullable": true
+          },
+          "inspection_methods": {
+            "type": "string",
+            "nullable": true
+          },
+          "INSTOCK_TIME": {
+            "type": "string",
+            "nullable": true
+          },
+          "instrument_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "instrument_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "loinc_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "mtuRecLimitMark": {
+            "type": "string",
+            "nullable": true
+          },
+          "mtuRecMark": {
+            "type": "string",
+            "nullable": true
+          },
+          "normal_ref_limit": {
+            "type": "string",
+            "nullable": true
+          },
+          "normal_ref_res": {
+            "type": "string",
+            "nullable": true
+          },
+          "org_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "org_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "patient_id": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "test_index_result": {
+            "type": "string",
+            "nullable": true
+          },
+          "test_index_uint": {
+            "type": "string",
+            "nullable": true
+          },
+          "test_proj_code_exp": {
+            "type": "string",
+            "nullable": true
+          },
+          "test_proj_name_exp": {
+            "type": "string",
+            "nullable": true
+          },
+          "test_report_no": {
+            "type": "string",
+            "nullable": true
+          },
+          "test_res_descri": {
+            "type": "string",
+            "nullable": true
+          },
+          "test_res_type_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "update_time": {
+            "type": "string",
+            "nullable": true
+          },
+          "testRecord": {
+            "$ref": "#/components/schemas/MedicalReportSystem.Models.T_TEST_REC"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MedicalReportSystem.Models.Test_Detail_oracle": {
+        "type": "object",
+        "properties": {
+          "reports_TEST_REC": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MedicalReportSystem.Models.T_TEST_REC_oracle"
+            },
+            "nullable": true
+          },
+          "report_testr_res_indicate": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MedicalReportSystem.Models.T_testr_res_indicate_oracle"
+            },
+            "nullable": true
+          },
+          "report_TMICROBE_BACTERIA_RES": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MedicalReportSystem.Models.T_MICROBE_BACTERIA_RES_oracle"
+            },
+            "nullable": true
+          },
+          "report_TMICROBE_SUSCEPT_RES": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MedicalReportSystem.Models.T_MICROBE_SUSCEPT_RES_oracle"
+            },
+            "nullable": true
+          },
+          "report_CHECK_REC_oracle": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MedicalReportSystem.Models.T_CHECK_REC_oracle"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MedicalReportSystem.Services.NewStandardService_ReportFileItem": {
+        "type": "object",
+        "properties": {
+          "fileFormat": {
+            "type": "string",
+            "nullable": true
+          },
+          "fileName": {
+            "type": "string",
+            "nullable": true
+          },
+          "fileContent": {
+            "type": "string",
+            "nullable": true
+          },
+          "note": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MedicalReportSystem.Services.NewStandardService_ReportResultItem": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string",
+            "nullable": true
+          },
+          "content": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MedicalReportSystem.WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ThirdPartyConfigDto": {
+        "type": "object",
+        "properties": {
+          "baseUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "getReportEndpoint": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "JWT授权头，格式: Bearer {token}",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  }
+}

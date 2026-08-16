@@ -1,0 +1,798 @@
+[2025-10-09 15:54:29] 开始处理新标准服务调用
+服务方法: "patientInfo": {     "patientId": "964309",     "visitType": "2",     "visitId": "VISIT001",     "registerNo": "REG001"   }
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 204778945,
+        "dataCode": "002503070000000",
+        "OrderID": 204778945,
+        "patientSource": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-09-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 4645,
+        "citem_id": 176724,
+        "citem_name": "\u80BE\u529F4\u9879",
+        "exedept_id": 466,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "citem_id_cj": 14533,
+        "citem_name_cj": "\u91C7\u8840\u5BA4\u91C7\u8840",
+        "exedept_id_cj": 582
+      }
+    ]
+  }
+}
+错误: 不支持的服务方法: "patientInfo": {     "patientId": "964309",     "visitType": "2",     "visitId": "VISIT001",     "registerNo": "REG001"   }
+堆栈:    at MedicalReportSystem.Controllers.PersonController.CallNewStandardService(String serviceMethod, JsonElement requestJson) in E:\MedicalReportSystem\MedicalReportSystem\Controllers\PersonController.cs:line 1072
+[2025-10-09 15:57:51] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 204778945,
+        "dataCode": "002503070000000",
+        "OrderID": 204778945,
+        "patientSource": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-09-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 4645,
+        "citem_id": 176724,
+        "citem_name": "\u80BE\u529F4\u9879",
+        "exedept_id": 466,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "citem_id_cj": 14533,
+        "citem_name_cj": "\u91C7\u8840\u5BA4\u91C7\u8840",
+        "exedept_id_cj": 582
+      }
+    ]
+  }
+}
+错误: 不支持的服务方法: S3112
+堆栈:    at MedicalReportSystem.Controllers.PersonController.CallNewStandardService(String serviceMethod, JsonElement requestJson) in E:\MedicalReportSystem\MedicalReportSystem\Controllers\PersonController.cs:line 1072
+[2025-10-09 15:58:09] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 204778945,
+        "dataCode": "002503070000000",
+        "OrderID": 204778945,
+        "patientSource": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-09-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 4645,
+        "citem_id": 176724,
+        "citem_name": "\u80BE\u529F4\u9879",
+        "exedept_id": 466,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "citem_id_cj": 14533,
+        "citem_name_cj": "\u91C7\u8840\u5BA4\u91C7\u8840",
+        "exedept_id_cj": 582
+      }
+    ]
+  }
+}
+错误: 不支持的服务方法: S3112
+堆栈:    at MedicalReportSystem.Controllers.PersonController.CallNewStandardService(String serviceMethod, JsonElement requestJson) in E:\MedicalReportSystem\MedicalReportSystem\Controllers\PersonController.cs:line 1072
+[2025-10-09 15:58:16] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 204778945,
+        "dataCode": "002503070000000",
+        "OrderID": 204778945,
+        "patientSource": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-09-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 4645,
+        "citem_id": 176724,
+        "citem_name": "\u80BE\u529F4\u9879",
+        "exedept_id": 466,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "citem_id_cj": 14533,
+        "citem_name_cj": "\u91C7\u8840\u5BA4\u91C7\u8840",
+        "exedept_id_cj": 582
+      }
+    ]
+  }
+}
+[2025-10-09 15:59:58] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 204778945,
+        "dataCode": "002503070000000",
+        "OrderID": 204778945,
+        "patientSource": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-09-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 4645,
+        "citem_id": 176724,
+        "citem_name": "\u80BE\u529F4\u9879",
+        "exedept_id": 466,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "citem_id_cj": 14533,
+        "citem_name_cj": "\u91C7\u8840\u5BA4\u91C7\u8840",
+        "exedept_id_cj": 582
+      }
+    ]
+  }
+}
+错误: 处理订单信息失败: 报告检查结果上传失败: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Controllers.PersonController.S3112(JsonElement requestJson)
+   at MedicalReportSystem.Controllers.PersonController.CallNewStandardService(String serviceMethod, JsonElement requestJson)
+[2025-10-09 16:08:51] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 204778945,
+        "dataCode": "002503070000000",
+        "OrderID": 204778945,
+        "patientSource": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-09-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 4645,
+        "citem_id": 176724,
+        "citem_name": "\u80BE\u529F4\u9879",
+        "exedept_id": 466,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "citem_id_cj": 14533,
+        "citem_name_cj": "\u91C7\u8840\u5BA4\u91C7\u8840",
+        "exedept_id_cj": 582
+      }
+    ]
+  }
+}
+错误: 处理订单信息失败: 报告检查结果上传失败: 构建检查结果请求数据失败: The requested operation requires an element of type 'String', but the target element has type 'Number'.
+堆栈:    at MedicalReportSystem.Controllers.PersonController.S3112(JsonElement requestJson)
+   at MedicalReportSystem.Controllers.PersonController.CallNewStandardService(String serviceMethod, JsonElement requestJson)
+[2025-10-09 16:35:47] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 204778945,
+        "dataCode": "002503070000000",
+        "OrderID": 204778945,
+        "patientSource": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-09-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 4645,
+        "citem_id": 176724,
+        "citem_name": "\u80BE\u529F4\u9879",
+        "exedept_id": 466,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "citem_id_cj": 14533,
+        "citem_name_cj": "\u91C7\u8840\u5BA4\u91C7\u8840",
+        "exedept_id_cj": 582
+      }
+    ]
+  }
+}
+错误: 处理订单信息失败: 报告检查结果上传失败: 构建检查结果请求数据失败: The requested operation requires an element of type 'String', but the target element has type 'Number'.
+堆栈:    at MedicalReportSystem.Controllers.PersonController.S3112(JsonElement requestJson)
+   at MedicalReportSystem.Controllers.PersonController.CallNewStandardService(String serviceMethod, JsonElement requestJson)
+[2025-10-09 16:36:41] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 204778945,
+        "dataCode": "002503070000000",
+        "OrderID": 204778945,
+        "patientSource": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-09-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 4645,
+        "citem_id": 176724,
+        "citem_name": "\u80BE\u529F4\u9879",
+        "exedept_id": 466,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "citem_id_cj": 14533,
+        "citem_name_cj": "\u91C7\u8840\u5BA4\u91C7\u8840",
+        "exedept_id_cj": 582
+      }
+    ]
+  }
+}
+错误: 处理订单信息失败: 报告检查结果上传失败: 构建检查结果请求数据失败: The requested operation requires an element of type 'String', but the target element has type 'Number'.
+堆栈:    at MedicalReportSystem.Controllers.PersonController.S3112(JsonElement requestJson)
+   at MedicalReportSystem.Controllers.PersonController.CallNewStandardService(String serviceMethod, JsonElement requestJson)
+[2025-10-09 16:37:50] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 204778945,
+        "dataCode": "002503070000000",
+        "OrderID": 204778945,
+        "patientSource": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-09-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 4645,
+        "citem_id": 176724,
+        "citem_name": "\u80BE\u529F4\u9879",
+        "exedept_id": 466,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "citem_id_cj": 14533,
+        "citem_name_cj": "\u91C7\u8840\u5BA4\u91C7\u8840",
+        "exedept_id_cj": 582
+      }
+    ]
+  }
+}
+错误: 处理订单信息失败: 报告检查结果上传失败: 构建检查结果请求数据失败: The requested operation requires an element of type 'String', but the target element has type 'Number'.
+堆栈:    at MedicalReportSystem.Controllers.PersonController.S3112(JsonElement requestJson)
+   at MedicalReportSystem.Controllers.PersonController.CallNewStandardService(String serviceMethod, JsonElement requestJson)
+[2025-10-09 16:48:22] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 204778945,
+        "dataCode": "002503070000000",
+        "OrderID": 204778945,
+        "patientSource": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-09-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 4645,
+        "citem_id": 176724,
+        "citem_name": "\u80BE\u529F4\u9879",
+        "exedept_id": 466,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "citem_id_cj": 14533,
+        "citem_name_cj": "\u91C7\u8840\u5BA4\u91C7\u8840",
+        "exedept_id_cj": 582
+      }
+    ]
+  }
+}
+错误: 处理订单信息失败: 报告检查结果上传失败: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Controllers.PersonController.S3112(JsonElement requestJson)
+   at MedicalReportSystem.Controllers.PersonController.CallNewStandardService(String serviceMethod, JsonElement requestJson)
+[2025-10-09 17:05:15] 开始处理新标准服务调用
+服务方法: S3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 204778945,
+        "dataCode": "002503070000000",
+        "OrderID": 204778945,
+        "patientSource": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-09-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 4645,
+        "citem_id": 176724,
+        "citem_name": "\u80BE\u529F4\u9879",
+        "exedept_id": 466,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "citem_id_cj": 14533,
+        "citem_name_cj": "\u91C7\u8840\u5BA4\u91C7\u8840",
+        "exedept_id_cj": 582
+      }
+    ]
+  }
+}
+[2025-10-09 17:50:27] 开始处理新标准服务调用
+服务方法: s3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 204778945,
+        "dataCode": "002503070000000",
+        "OrderID": 204778945,
+        "patientSource": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-09-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 4645,
+        "citem_id": 176724,
+        "citem_name": "\u80BE\u529F4\u9879",
+        "exedept_id": 466,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "citem_id_cj": 14533,
+        "citem_name_cj": "\u91C7\u8840\u5BA4\u91C7\u8840",
+        "exedept_id_cj": 582
+      }
+    ]
+  }
+}
+错误: 处理订单信息失败: 报告检查结果上传失败: 构建检查结果请求数据失败: The requested operation requires an element of type 'String', but the target element has type 'Number'.
+堆栈:    at MedicalReportSystem.Controllers.PersonController.S3112(JsonElement requestJson) in E:\MedicalReportSystem\MedicalReportSystem\Controllers\PersonController.cs:line 1151
+   at MedicalReportSystem.Controllers.PersonController.CallNewStandardService(String serviceMethod, JsonElement requestJson) in E:\MedicalReportSystem\MedicalReportSystem\Controllers\PersonController.cs:line 1064
+[2025-10-09 17:50:57] 开始处理新标准服务调用
+服务方法: s3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 204778945,
+        "dataCode": "002503070000000",
+        "OrderID": 204778945,
+        "patientSource": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-09-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 4645,
+        "citem_id": 176724,
+        "citem_name": "\u80BE\u529F4\u9879",
+        "exedept_id": 466,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "citem_id_cj": 14533,
+        "citem_name_cj": "\u91C7\u8840\u5BA4\u91C7\u8840",
+        "exedept_id_cj": 582
+      }
+    ]
+  }
+}
+错误: 处理订单信息失败: 报告检查结果上传失败: 构建检查结果请求数据失败: The requested operation requires an element of type 'String', but the target element has type 'Number'.
+堆栈:    at MedicalReportSystem.Controllers.PersonController.S3112(JsonElement requestJson)
+   at MedicalReportSystem.Controllers.PersonController.CallNewStandardService(String serviceMethod, JsonElement requestJson)
+[2025-10-09 17:51:59] 开始处理新标准服务调用
+服务方法: s3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 204778945,
+        "dataCode": "002503070000000",
+        "OrderID": 204778945,
+        "patientSource": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-09-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 4645,
+        "citem_id": 176724,
+        "citem_name": "\u80BE\u529F4\u9879",
+        "exedept_id": 466,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "citem_id_cj": 14533,
+        "citem_name_cj": "\u91C7\u8840\u5BA4\u91C7\u8840",
+        "exedept_id_cj": 582
+      }
+    ]
+  }
+}
+错误: 处理订单信息失败: 报告检查结果上传失败: 构建检查结果请求数据失败: The requested operation requires an element of type 'String', but the target element has type 'Number'.
+堆栈:    at MedicalReportSystem.Controllers.PersonController.S3112(JsonElement requestJson)
+   at MedicalReportSystem.Controllers.PersonController.CallNewStandardService(String serviceMethod, JsonElement requestJson)
+[2025-10-09 17:52:16] 开始处理新标准服务调用
+服务方法: s3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 204778945,
+        "dataCode": "002503070000000",
+        "OrderID": 204778945,
+        "patientSource": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-09-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 4645,
+        "citem_id": 176724,
+        "citem_name": "\u80BE\u529F4\u9879",
+        "exedept_id": 466,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "citem_id_cj": 14533,
+        "citem_name_cj": "\u91C7\u8840\u5BA4\u91C7\u8840",
+        "exedept_id_cj": 582
+      }
+    ]
+  }
+}
+错误: 处理订单信息失败: 报告检查结果上传失败: 构建检查结果请求数据失败: The requested operation requires an element of type 'String', but the target element has type 'Number'.
+堆栈:    at MedicalReportSystem.Controllers.PersonController.S3112(JsonElement requestJson)
+   at MedicalReportSystem.Controllers.PersonController.CallNewStandardService(String serviceMethod, JsonElement requestJson)
+[2025-10-09 17:52:50] 开始处理新标准服务调用
+服务方法: s3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 204778945,
+        "dataCode": "002503070000000",
+        "OrderID": 204778945,
+        "patientSource": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-09-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 4645,
+        "citem_id": 176724,
+        "citem_name": "\u80BE\u529F4\u9879",
+        "exedept_id": 466,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "citem_id_cj": 14533,
+        "citem_name_cj": "\u91C7\u8840\u5BA4\u91C7\u8840",
+        "exedept_id_cj": 582
+      }
+    ]
+  }
+}
+[2025-10-09 19:22:59] 开始处理新标准服务调用
+服务方法: s3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 204778945,
+        "dataCode": "002503070000000",
+        "OrderID": 204778945,
+        "patientSource": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-09-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 4645,
+        "citem_id": 176724,
+        "citem_name": "\u80BE\u529F4\u9879",
+        "exedept_id": 466,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "citem_id_cj": 14533,
+        "citem_name_cj": "\u91C7\u8840\u5BA4\u91C7\u8840",
+        "exedept_id_cj": 582
+      }
+    ]
+  }
+}
+[2025-10-09 20:46:57] 开始处理新标准服务调用
+服务方法: s3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 204778945,
+        "dataCode": "002503070000000",
+        "OrderID": 204778945,
+        "patientSource": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-09-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 4645,
+        "citem_id": 176724,
+        "citem_name": "\u80BE\u529F4\u9879",
+        "exedept_id": 466,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "citem_id_cj": 14533,
+        "citem_name_cj": "\u91C7\u8840\u5BA4\u91C7\u8840",
+        "exedept_id_cj": 582
+      }
+    ]
+  }
+}
+错误: 处理订单信息失败: 报告检查结果上传失败: 构建检查结果请求数据失败: The JSON value could not be converted to System.String. Path: $[0].sno | LineNumber: 10 | BytePositionInLine: 16.
+堆栈:    at MedicalReportSystem.Controllers.PersonController.S3112(JsonElement requestJson) in E:\MedicalReportSystem\MedicalReportSystem\Controllers\PersonController.cs:line 1151
+   at MedicalReportSystem.Controllers.PersonController.CallNewStandardService(String serviceMethod, JsonElement requestJson) in E:\MedicalReportSystem\MedicalReportSystem\Controllers\PersonController.cs:line 1064
+[2025-10-09 20:52:28] 开始处理新标准服务调用
+服务方法: s3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 204778945,
+        "dataCode": "002503070000000",
+        "OrderID": 204778945,
+        "patientSource": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-09-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 4645,
+        "citem_id": 176724,
+        "citem_name": "\u80BE\u529F4\u9879",
+        "exedept_id": 466,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "citem_id_cj": 14533,
+        "citem_name_cj": "\u91C7\u8840\u5BA4\u91C7\u8840",
+        "exedept_id_cj": 582
+      }
+    ]
+  }
+}
+[2025-10-09 21:05:24] 开始处理新标准服务调用
+服务方法: s3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 204778945,
+        "dataCode": "002503070000000",
+        "OrderID": 204778945,
+        "patientSource": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-09-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 4645,
+        "citem_id": 176724,
+        "citem_name": "\u80BE\u529F4\u9879",
+        "exedept_id": 466,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "citem_id_cj": 14533,
+        "citem_name_cj": "\u91C7\u8840\u5BA4\u91C7\u8840",
+        "exedept_id_cj": 582
+      }
+    ]
+  }
+}
+错误: 处理订单信息失败: 报告检查结果上传失败: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Controllers.PersonController.S3112(JsonElement requestJson) in E:\MedicalReportSystem\MedicalReportSystem\Controllers\PersonController.cs:line 1151
+   at MedicalReportSystem.Controllers.PersonController.CallNewStandardService(String serviceMethod, JsonElement requestJson) in E:\MedicalReportSystem\MedicalReportSystem\Controllers\PersonController.cs:line 1064
+[2025-10-09 21:05:57] 开始处理新标准服务调用
+服务方法: s3112
+请求参数: {
+  "input": {
+    "req_info": [
+      {
+        "orderId": 204778945,
+        "dataCode": "002503070000000",
+        "OrderID": 204778945,
+        "patientSource": 1,
+        "patientId": 4602748,
+        "homePageId": "",
+        "operationType": "02",
+        "treatmentCategory": "C",
+        "sno": 1,
+        "order_expidate_type ": 1,
+        "apply_time": "2025-09-28T08:35:00.000Z",
+        "placer_name": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+        "apply_dept_id": 4645,
+        "citem_id": 176724,
+        "citem_name": "\u80BE\u529F4\u9879",
+        "exedept_id": 466,
+        "emg_sign": 0,
+        "order_drask": "",
+        "fee_source": 1,
+        "citem_type": "C",
+        "parts_name": "\u8840\u6DB2",
+        "rmethod_name": "",
+        "lspcm_name": "\u8840\u6DB2",
+        "citem_id_cj": 14533,
+        "citem_name_cj": "\u91C7\u8840\u5BA4\u91C7\u8840",
+        "exedept_id_cj": 582
+      }
+    ]
+  }
+}

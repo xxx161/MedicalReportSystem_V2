@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>检验检查互认报告系统</title>
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/reminder.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 顶部患者信息栏 -->
+        <div class="patient-header">
+            <div class="patient-info">
+                <h2>患者基本信息</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-label">姓名：</span>
+                        <span id="patient-name" class="info-value">-</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">性别：</span>
+                        <span id="patient-gender" class="info-value">-</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">年龄：</span>
+                        <span id="patient-age" class="info-value">-</span>
+                    </div>
+                    <!--<div class="info-item">
+                        <span class="info-label">电话：</span>
+                        <span id="patient-phone" class="info-value">-</span>
+                    </div>-->
+                    <div class="info-item">
+                        <span class="info-label">电话：</span>
+                        <span id="patient-phone" class="info-value">-</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">身份证：</span>
+                        <span id="patient-id" class="info-value">-</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">地址：</span>
+                        <span id="patient-address" class="info-value">-</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="report-type-switcher">
+            <button id="lab-switch" class="active">检验报告</button>
+            <button id="exam-switch">检查报告</button>
+        </div>
+        <div class="report-container">
+            <!-- 左侧检验项目列表 -->
+            <div class="report-list">
+                <div id="reportItems" class="items-container">
+                    <!-- 将通过JS动态生成 -->
+                </div>
+            </div>
+            <div class="report-details">
+                <div id="reportDetails">
+                    <!-- 动态内容将由JavaScript填充 -->
+                    <div class="loading-spinner"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 互认提醒图标 -->
+    <div class="reminder-icon" id="reminderIcon">
+        <span>🔔</span>
+        <span class="reminder-badge" id="reminderCount">0</span>
+    </div>
+    <!-- 互认提醒弹窗 -->
+    <div class="reminder-popup" id="reminderPopup">
+        <div class="reminder-header">
+            <div class="reminder-title">互认提醒</div>
+            <button class="close-btn" id="closeReminder">&times;</button>
+        </div>
+        <div class="reminder-list" id="reminderList">
+            <div class="no-reminders">正在加载提醒...</div>
+        </div>
+    </div>
+    <script src="/js/site.js"></script>
+    <script src="/js/reason-dialog.js"></script>
+</body>
+</html>

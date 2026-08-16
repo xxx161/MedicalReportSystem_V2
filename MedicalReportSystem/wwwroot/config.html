@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>第三方API配置</title>
+    <style>
+        .config-form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="config-form">
+        <h2>第三方API配置</h2>
+        <div class="form-group">
+            <label for="baseUrl">基础地址:</label>
+            <input type="url" id="baseUrl" placeholder="https://api.thirdparty.com">
+        </div>
+        <div class="form-group">
+            <label for="getReportEndpoint">获取报告接口路径:</label>
+            <input type="text" id="getReportEndpoint" placeholder="api/Data/{reportId}">
+        </div>
+        <button onclick="saveConfig()">保存配置</button>
+        <div id="message" style="margin-top: 15px;"></div>
+    </div>
+
+    <script>
+        // 加载当前配置
+        async function loadConfig() {
+            const response = await fetch('/api/config/thirdparty');
+            if (response.ok) {
+                const config = await response.json();
+                document.getElementById('baseUrl').value = config.baseUrl;
+                document.getElementById('getReportEndpoint').value = config.getReportEndpoint;
+            }
+        }
+
+        // 保存配置
+        async function saveConfig() {
+            const config = {
+                baseUrl: document.getElementById('baseUrl').value,
+                getReportEndpoint: document.getElementById('getReportEndpoint').value
+            };
+
+            const response = await fetch('/api/config/thirdparty', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(config)
+            });
+
+            const message = document.getElementById('message');
+            if (response.ok) {
+                message.textContent = '配置保存成功！';
+                message.style.color = 'green';
+            } else {
+                message.textContent = '保存失败：' + (await response.text());
+                message.style.color = 'red';
+            }
+        }
+
+        // 页面加载时读取配置
+        window.onload = loadConfig;
+    </script>
+</body>
+</html>

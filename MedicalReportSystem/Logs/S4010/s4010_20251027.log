@@ -1,0 +1,578 @@
+[2025-10-27 09:21:34] 开始S4010操作
+申请单ID: 5555
+请求数据条数: 2
+构建的S4010请求: {
+  "input": {
+    "apply_info": {
+      "apply_id": "5555",
+      "chk_time": "2025-10-27 09:23:59",
+      "chkin_ps": "卢志远",
+      "chkin_time": "2025-10-27 09:22:59",
+      "chkr": "系统管理员",
+      "eq_id": "1751",
+      "report_time": "2025-10-27 09:23:59",
+      "rpt_type": "0",
+      "rptr": "系统管理员",
+      "spcm_bc_no": "1105555",
+      "spcm_clct_time": "2025-10-27 09:23:59"
+    },
+    "head": {
+      "bizno": "S4010",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-10-27 09:24:37",
+      "action_no": "482cf93b-a596-4da5-8570-2c9959f21937"
+    },
+    "rpt_info": [
+      {
+        "apply_id": "5555",
+        "loitem_cname": "",
+        "loitem_id": "",
+        "loitem_rv": "",
+        "loitem_unit": "",
+        "oaflag": "1",
+        "order_rpt_result": "",
+        "seq": "1"
+      },
+      {
+        "apply_id": "5555",
+        "loitem_cname": "",
+        "loitem_id": "",
+        "loitem_rv": "",
+        "loitem_unit": "",
+        "oaflag": "1",
+        "order_rpt_result": "",
+        "seq": "2"
+      }
+    ]
+  }
+}
+错误: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Services.NewStandardService.CallInspectionFindingApi[TRequest](TRequest request) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 773
+   at MedicalReportSystem.Services.NewStandardService.S4010(JsonElement requestJson, String serviceMethod, String applyId, String checker, String reporter, String equipmentId) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 227
+[2025-10-27 10:34:08] 开始S4010操作
+申请单ID: 213123
+请求数据条数: 1
+附加信息JSON: {"input":{"ack_info":{"exe_status":"A","err_msg":""},"apply_info":[{"apply_id":"206111087,206111088","spcm_bc_no":"110206111087","pid":"4602748","outpno":"2505150066","pat_name":"\u5362\u5FD7\u8FDC","pat_sex":"\u7537","pat_age":"70\u5C81","apply_dept_id":"518","apply_dept_name":"\u76AE\u80A4\u79D1","exedept_id":"466","exedept_name":"\u533B\u5B66\u68C0\u9A8C\u79D1","order_content":"(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B","citem_id":"259015","lspcm_name":"\u8840\u6DB2","emg_sign":"0","tube_code":"11","tube_name":"\u8840\u5E38\u89C4\u7BA1","label_test_color":"16751052","coll_taken":"1.8ml","tube_spec":"12*75mm"}],"head":{"bizno":"S4024","sysno":"FGN-FGN","tarno":"ZLHIS","time":"2025-10-23 15:46:57","action_no":"2a5dfc88-3252-4c50-bf51-2bb3d54d15a1"}}}
+构建的S4010请求: {
+  "input": {
+    "apply_info": {
+      "apply_id": "213123",
+      "chk_time": "2025-10-27 10:34:08",
+      "chkin_ps": "卢志远",
+      "chkin_time": "2025-10-27 10:33:08",
+      "chkr": "系统管理员",
+      "eq_id": "1233",
+      "report_time": "2025-10-27 10:34:08",
+      "rpt_type": "0",
+      "rptr": "系统管理员",
+      "spcm_bc_no": "110206111087",
+      "spcm_clct_time": "2025-10-27 10:34:08"
+    },
+    "head": {
+      "bizno": "S4010",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-10-27 10:34:08",
+      "action_no": "166d50ff-7a48-4150-a0a8-5029c027eba8"
+    },
+    "rpt_info": [
+      {
+        "apply_id": "213123",
+        "loitem_cname": "string",
+        "loitem_id": "string",
+        "loitem_rv": "string",
+        "loitem_unit": "string",
+        "oaflag": "1",
+        "order_rpt_result": "string",
+        "seq": "1"
+      }
+    ]
+  }
+}
+错误: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Services.NewStandardService.CallInspectionFindingApi[TRequest](TRequest request) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 813
+   at MedicalReportSystem.Services.NewStandardService.S4010(JsonElement requestJson, JsonElement additionalInfoJson, String serviceMethod, String applyId, String checker, String reporter, String equipmentId) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 229
+[2025-10-27 10:38:09] 开始S4010操作
+申请单ID: 213123
+请求数据条数: 1
+附加信息JSON: {"input":{"ack_info":{"exe_status":"A","err_msg":""},"apply_info":[{"apply_id":"206111087,206111088","spcm_bc_no":"110206111087","pid":"4602748","outpno":"2505150066","pat_name":"\u5362\u5FD7\u8FDC","pat_sex":"\u7537","pat_age":"70\u5C81","apply_dept_id":"518","apply_dept_name":"\u76AE\u80A4\u79D1","exedept_id":"466","exedept_name":"\u533B\u5B66\u68C0\u9A8C\u79D1","order_content":"(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B","citem_id":"259015","lspcm_name":"\u8840\u6DB2","emg_sign":"0","tube_code":"11","tube_name":"\u8840\u5E38\u89C4\u7BA1","label_test_color":"16751052","coll_taken":"1.8ml","tube_spec":"12*75mm"}],"head":{"bizno":"S4024","sysno":"FGN-FGN","tarno":"ZLHIS","time":"2025-10-23 15:46:57","action_no":"2a5dfc88-3252-4c50-bf51-2bb3d54d15a1"}}}
+构建的S4010请求: {
+  "input": {
+    "apply_info": {
+      "apply_id": "213123",
+      "chk_time": "2025-10-27 10:38:09",
+      "chkin_ps": "卢志远",
+      "chkin_time": "2025-10-27 10:37:09",
+      "chkr": "系统管理员",
+      "eq_id": "1233",
+      "report_time": "2025-10-27 10:38:09",
+      "rpt_type": "0",
+      "rptr": "系统管理员",
+      "spcm_bc_no": "110206111087",
+      "spcm_clct_time": "2025-10-27 10:38:09"
+    },
+    "head": {
+      "bizno": "S4010",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-10-27 10:38:09",
+      "action_no": "c9a462df-1748-49a2-81b6-0855b05d3287"
+    },
+    "rpt_info": [
+      {
+        "apply_id": "213123",
+        "loitem_cname": "string",
+        "loitem_id": "string",
+        "loitem_rv": "string",
+        "loitem_unit": "string",
+        "oaflag": "1",
+        "order_rpt_result": "string",
+        "seq": "1"
+      }
+    ]
+  }
+}
+错误: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Services.NewStandardService.CallInspectionFindingApi[TRequest](TRequest request) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 813
+   at MedicalReportSystem.Services.NewStandardService.S4010(JsonElement requestJson, JsonElement additionalInfoJson, String serviceMethod, String applyId, String checker, String reporter, String equipmentId) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 229
+[2025-10-27 11:08:09] 开始S4010操作
+申请单ID: 123213
+请求数据条数: 2
+附加信息JSON: {"input":{"ack_info":{"exe_status":"A","err_msg":""},"apply_info":[{"apply_id":"206111087,206111088","spcm_bc_no":"110206111087","pid":"4602748","outpno":"2505150066","pat_name":"\u5362\u5FD7\u8FDC","pat_sex":"\u7537","pat_age":"70\u5C81","apply_dept_id":"518","apply_dept_name":"\u76AE\u80A4\u79D1","exedept_id":"466","exedept_name":"\u533B\u5B66\u68C0\u9A8C\u79D1","order_content":"(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B","citem_id":"259015","lspcm_name":"\u8840\u6DB2","emg_sign":"0","tube_code":"11","tube_name":"\u8840\u5E38\u89C4\u7BA1","label_test_color":"16751052","coll_taken":"1.8ml","tube_spec":"12*75mm"}],"head":{"bizno":"S4024","sysno":"FGN-FGN","tarno":"ZLHIS","time":"2025-10-23 15:46:57","action_no":"2a5dfc88-3252-4c50-bf51-2bb3d54d15a1"}}}
+构建的S4010请求: {
+  "input": {
+    "apply_info": {
+      "apply_id": "123213",
+      "chk_time": "2025-10-27 11:19:27",
+      "chkin_ps": "卢志远",
+      "chkin_time": "2025-10-27 11:18:27",
+      "chkr": "系统管理员",
+      "eq_id": "12312",
+      "report_time": "2025-10-27 11:19:27",
+      "rpt_type": "0",
+      "rptr": "系统管理员",
+      "spcm_bc_no": "110206111087",
+      "spcm_clct_time": "2025-10-27 11:19:27"
+    },
+    "head": {
+      "bizno": "S4010",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-10-27 11:21:27",
+      "action_no": "de9a4744-1388-4dee-8870-dbb78745800c"
+    },
+    "rpt_info": [
+      {
+        "apply_id": "123213",
+        "loitem_cname": "血小板分布宽度",
+        "loitem_id": "S30024",
+        "loitem_rv": "9.5-17.6",
+        "loitem_unit": "fL",
+        "oaflag": "2",
+        "order_rpt_result": "7.8",
+        "seq": "1"
+      },
+      {
+        "apply_id": "123213",
+        "loitem_cname": "嗜酸性粒细胞计数",
+        "loitem_id": "S30025",
+        "loitem_rv": "0.02-0.52",
+        "loitem_unit": "10^9/L",
+        "oaflag": "1",
+        "order_rpt_result": "0.04",
+        "seq": "2"
+      }
+    ]
+  }
+}
+错误: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Services.NewStandardService.CallInspectionFindingApi[TRequest](TRequest request) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 813
+   at MedicalReportSystem.Services.NewStandardService.S4010(JsonElement requestJson, JsonElement additionalInfoJson, String serviceMethod, String applyId, String checker, String reporter, String equipmentId) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 229
+[2025-10-27 11:31:27] 开始S4010操作
+申请单ID: 123
+请求数据条数: 1
+附加信息JSON: {"input":{"ack_info":{"exe_status":"A","err_msg":""},"apply_info":[{"apply_id":"206111087,206111088","spcm_bc_no":"110206111087","pid":"4602748","outpno":"2505150066","pat_name":"\u5362\u5FD7\u8FDC","pat_sex":"\u7537","pat_age":"70\u5C81","apply_dept_id":"518","apply_dept_name":"\u76AE\u80A4\u79D1","exedept_id":"466","exedept_name":"\u533B\u5B66\u68C0\u9A8C\u79D1","order_content":"(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B","citem_id":"259015","lspcm_name":"\u8840\u6DB2","emg_sign":"0","tube_code":"11","tube_name":"\u8840\u5E38\u89C4\u7BA1","label_test_color":"16751052","coll_taken":"1.8ml","tube_spec":"12*75mm"}],"head":{"bizno":"S4024","sysno":"FGN-FGN","tarno":"ZLHIS","time":"2025-10-23 15:46:57","action_no":"2a5dfc88-3252-4c50-bf51-2bb3d54d15a1"}}}
+构建的S4010请求: {
+  "input": {
+    "apply_info": {
+      "apply_id": "123",
+      "chk_time": "2025-10-27 11:31:28",
+      "chkin_ps": "卢志远",
+      "chkin_time": "2025-10-27 11:30:28",
+      "chkr": "系统管理员",
+      "eq_id": "1232133",
+      "report_time": "2025-10-27 11:31:28",
+      "rpt_type": "0",
+      "rptr": "系统管理员",
+      "spcm_bc_no": "110206111087",
+      "spcm_clct_time": "2025-10-27 11:31:28"
+    },
+    "head": {
+      "bizno": "S4010",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-10-27 11:31:28",
+      "action_no": "84ade301-5727-419b-9017-f3669a0ddcfd"
+    },
+    "rpt_info": [
+      {
+        "apply_id": "123",
+        "loitem_cname": "string",
+        "loitem_id": "string",
+        "loitem_rv": "string",
+        "loitem_unit": "string",
+        "oaflag": "1",
+        "order_rpt_result": "string",
+        "seq": "1"
+      }
+    ]
+  }
+}
+错误: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Services.NewStandardService.CallInspectionFindingApi[TRequest](TRequest request) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 813
+   at MedicalReportSystem.Services.NewStandardService.S4010(JsonElement requestJson, JsonElement additionalInfoJson, String serviceMethod, String applyId, String checker, String reporter, String equipmentId) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 229
+[2025-10-27 11:37:09] 开始S4010操作
+申请单ID: 123
+请求数据条数: 0
+附加信息JSON: {"input":{"ack_info":{"exe_status":"A","err_msg":""},"apply_info":[{"apply_id":"206111087,206111088","spcm_bc_no":"110206111087","pid":"4602748","outpno":"2505150066","pat_name":"\u5362\u5FD7\u8FDC","pat_sex":"\u7537","pat_age":"70\u5C81","apply_dept_id":"518","apply_dept_name":"\u76AE\u80A4\u79D1","exedept_id":"466","exedept_name":"\u533B\u5B66\u68C0\u9A8C\u79D1","order_content":"(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B","citem_id":"259015","lspcm_name":"\u8840\u6DB2","emg_sign":"0","tube_code":"11","tube_name":"\u8840\u5E38\u89C4\u7BA1","label_test_color":"16751052","coll_taken":"1.8ml","tube_spec":"12*75mm"}],"head":{"bizno":"S4024","sysno":"FGN-FGN","tarno":"ZLHIS","time":"2025-10-23 15:46:57","action_no":"2a5dfc88-3252-4c50-bf51-2bb3d54d15a1"}}}
+构建的S4010请求: {
+  "input": {
+    "apply_info": {
+      "apply_id": "123",
+      "chk_time": "2025-10-27 11:37:10",
+      "chkin_ps": "卢志远",
+      "chkin_time": "2025-10-27 11:36:10",
+      "chkr": "系统管理员",
+      "eq_id": "1232133",
+      "report_time": "2025-10-27 11:37:10",
+      "rpt_type": "0",
+      "rptr": "系统管理员",
+      "spcm_bc_no": "110206111087",
+      "spcm_clct_time": "2025-10-27 11:37:10"
+    },
+    "head": {
+      "bizno": "S4010",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-10-27 11:37:10",
+      "action_no": "d274d65b-7856-466e-b654-c912bc8bb043"
+    },
+    "rpt_info": []
+  }
+}
+错误: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Services.NewStandardService.CallInspectionFindingApi[TRequest](TRequest request) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 813
+   at MedicalReportSystem.Services.NewStandardService.S4010(JsonElement requestJson, JsonElement additionalInfoJson, String serviceMethod, String applyId, String checker, String reporter, String equipmentId) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 229
+[2025-10-27 11:39:21] 开始S4010操作
+申请单ID: 123
+请求数据条数: 1
+附加信息JSON: "string"
+构建的S4010请求: {
+  "input": {
+    "apply_info": {
+      "apply_id": "123",
+      "chk_time": "2025-10-27 11:39:22",
+      "chkin_ps": "",
+      "chkin_time": "2025-10-27 11:38:22",
+      "chkr": "系统管理员",
+      "eq_id": "1232133",
+      "report_time": "2025-10-27 11:39:22",
+      "rpt_type": "0",
+      "rptr": "系统管理员",
+      "spcm_bc_no": "",
+      "spcm_clct_time": "2025-10-27 11:39:22"
+    },
+    "head": {
+      "bizno": "S4010",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-10-27 11:39:22",
+      "action_no": "9c0b81b2-ef26-4c80-a218-e0b78e62727f"
+    },
+    "rpt_info": [
+      {
+        "apply_id": "123",
+        "loitem_cname": "string",
+        "loitem_id": "string",
+        "loitem_rv": "string",
+        "loitem_unit": "string",
+        "oaflag": "1",
+        "order_rpt_result": "string",
+        "seq": "1"
+      }
+    ]
+  }
+}
+错误: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Services.NewStandardService.CallInspectionFindingApi[TRequest](TRequest request) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 813
+   at MedicalReportSystem.Services.NewStandardService.S4010(JsonElement requestJson, JsonElement additionalInfoJson, String serviceMethod, String applyId, String checker, String reporter, String equipmentId) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 229
+[2025-10-27 11:55:41] 开始S4010操作
+申请单ID: 12334
+请求数据条数: 2
+附加信息JSON: {"input":{"ack_info":{"exe_status":"A","err_msg":""},"apply_info":[{"apply_id":"206111087,206111088","spcm_bc_no":"110206111087","pid":"4602748","outpno":"2505150066","pat_name":"\u5362\u5FD7\u8FDC","pat_sex":"\u7537","pat_age":"70\u5C81","apply_dept_id":"518","apply_dept_name":"\u76AE\u80A4\u79D1","exedept_id":"466","exedept_name":"\u533B\u5B66\u68C0\u9A8C\u79D1","order_content":"(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B","citem_id":"259015","lspcm_name":"\u8840\u6DB2","emg_sign":"0","tube_code":"11","tube_name":"\u8840\u5E38\u89C4\u7BA1","label_test_color":"16751052","coll_taken":"1.8ml","tube_spec":"12*75mm"}],"head":{"bizno":"S4024","sysno":"FGN-FGN","tarno":"ZLHIS","time":"2025-10-23 15:46:57","action_no":"2a5dfc88-3252-4c50-bf51-2bb3d54d15a1"}}}
+[2025-10-27 14:31:12] 开始S4010操作
+申请单ID: 12233
+reportData条数: 2
+附加信息JSON: "string"
+构建的S4010请求: {
+  "input": {
+    "apply_info": {
+      "apply_id": "12233",
+      "chk_time": "2025-10-27 14:31:12",
+      "chkin_ps": "卢志远",
+      "chkin_time": "2025-10-27 14:30:12",
+      "chkr": "系统管理员",
+      "eq_id": "2323",
+      "report_time": "2025-10-27 14:31:12",
+      "rpt_type": "0",
+      "rptr": "系统管理员",
+      "spcm_bc_no": "11012233",
+      "spcm_clct_time": "2025-10-27 14:31:12"
+    },
+    "head": {
+      "bizno": "S4010",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-10-27 14:31:12",
+      "action_no": "f8440e85-526f-4bbb-8bd8-69380de7a38e"
+    },
+    "rpt_info": [
+      {
+        "apply_id": "12233",
+        "loitem_cname": "",
+        "loitem_id": "",
+        "loitem_rv": "",
+        "loitem_unit": "",
+        "oaflag": "1",
+        "order_rpt_result": "",
+        "seq": "1"
+      },
+      {
+        "apply_id": "12233",
+        "loitem_cname": "",
+        "loitem_id": "",
+        "loitem_rv": "",
+        "loitem_unit": "",
+        "oaflag": "1",
+        "order_rpt_result": "",
+        "seq": "2"
+      }
+    ]
+  }
+}
+错误: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Services.NewStandardService.CallInspectionFindingApi[TRequest](TRequest request) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 812
+   at MedicalReportSystem.Services.NewStandardService.S4010(List`1 reportData, JsonElement additionalInfoJson, String serviceMethod, String applyId, String checker, String reporter, String equipmentId) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 229
+[2025-10-27 14:35:50] 开始S4010操作
+申请单ID: 12233
+reportData条数: 2
+附加信息JSON: {"input":{"ack_info":{"exe_status":"A","err_msg":""},"apply_info":[{"apply_id":"206111087,206111088","spcm_bc_no":"110206111087","pid":"4602748","outpno":"2505150066","pat_name":"\u5362\u5FD7\u8FDC","pat_sex":"\u7537","pat_age":"70\u5C81","apply_dept_id":"518","apply_dept_name":"\u76AE\u80A4\u79D1","exedept_id":"466","exedept_name":"\u533B\u5B66\u68C0\u9A8C\u79D1","order_content":"(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B","citem_id":"259015","lspcm_name":"\u8840\u6DB2","emg_sign":"0","tube_code":"11","tube_name":"\u8840\u5E38\u89C4\u7BA1","label_test_color":"16751052","coll_taken":"1.8ml","tube_spec":"12*75mm"}],"head":{"bizno":"S4024","sysno":"FGN-FGN","tarno":"ZLHIS","time":"2025-10-23 15:46:57","action_no":"2a5dfc88-3252-4c50-bf51-2bb3d54d15a1"}}}
+构建的S4010请求: {
+  "input": {
+    "apply_info": {
+      "apply_id": "12233",
+      "chk_time": "2025-10-27 14:35:51",
+      "chkin_ps": "卢志远",
+      "chkin_time": "2025-10-27 14:34:51",
+      "chkr": "系统管理员",
+      "eq_id": "2323",
+      "report_time": "2025-10-27 14:35:51",
+      "rpt_type": "0",
+      "rptr": "系统管理员",
+      "spcm_bc_no": "110206111087",
+      "spcm_clct_time": "2025-10-27 14:35:51"
+    },
+    "head": {
+      "bizno": "S4010",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-10-27 14:35:51",
+      "action_no": "b51e04b0-513d-4483-94f6-7a71aa2f617d"
+    },
+    "rpt_info": [
+      {
+        "apply_id": "12233",
+        "loitem_cname": "",
+        "loitem_id": "",
+        "loitem_rv": "",
+        "loitem_unit": "",
+        "oaflag": "1",
+        "order_rpt_result": "",
+        "seq": "1"
+      },
+      {
+        "apply_id": "12233",
+        "loitem_cname": "",
+        "loitem_id": "",
+        "loitem_rv": "",
+        "loitem_unit": "",
+        "oaflag": "1",
+        "order_rpt_result": "",
+        "seq": "2"
+      }
+    ]
+  }
+}
+错误: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Services.NewStandardService.CallInspectionFindingApi[TRequest](TRequest request) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 812
+   at MedicalReportSystem.Services.NewStandardService.S4010(List`1 reportData, JsonElement additionalInfoJson, String serviceMethod, String applyId, String checker, String reporter, String equipmentId) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 229
+[2025-10-27 15:00:30] 开始S4010操作
+申请单ID: 2323
+reportData条数: 2
+附加信息JSON: {"input":{"ack_info":{"exe_status":"A","err_msg":""},"apply_info":[{"apply_id":"206111087,206111088","spcm_bc_no":"110206111087","pid":"4602748","outpno":"2505150066","pat_name":"\u5362\u5FD7\u8FDC","pat_sex":"\u7537","pat_age":"70\u5C81","apply_dept_id":"518","apply_dept_name":"\u76AE\u80A4\u79D1","exedept_id":"466","exedept_name":"\u533B\u5B66\u68C0\u9A8C\u79D1","order_content":"(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B","citem_id":"259015","lspcm_name":"\u8840\u6DB2","emg_sign":"0","tube_code":"11","tube_name":"\u8840\u5E38\u89C4\u7BA1","label_test_color":"16751052","coll_taken":"1.8ml","tube_spec":"12*75mm"}],"head":{"bizno":"S4024","sysno":"FGN-FGN","tarno":"ZLHIS","time":"2025-10-23 15:46:57","action_no":"2a5dfc88-3252-4c50-bf51-2bb3d54d15a1"}}}
+构建的S4010请求: {
+  "input": {
+    "apply_info": {
+      "apply_id": "2323",
+      "chk_time": "2025-10-27 15:04:29",
+      "chkin_ps": "卢志远",
+      "chkin_time": "2025-10-27 15:03:29",
+      "chkr": "系统管理员",
+      "eq_id": "2323",
+      "report_time": "2025-10-27 15:04:29",
+      "rpt_type": "0",
+      "rptr": "系统管理员",
+      "spcm_bc_no": "110206111087",
+      "spcm_clct_time": "2025-10-27 15:04:29"
+    },
+    "head": {
+      "bizno": "S4010",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-10-27 15:04:29",
+      "action_no": "505543a7-6800-4e83-b16c-ce6332541006"
+    },
+    "rpt_info": [
+      {
+        "apply_id": "2323",
+        "loitem_cname": "血小板分布宽度",
+        "loitem_id": "0101031",
+        "loitem_rv": "9.5-17.6",
+        "loitem_unit": "fL",
+        "oaflag": "2",
+        "order_rpt_result": "7.8",
+        "seq": "1"
+      },
+      {
+        "apply_id": "2323",
+        "loitem_cname": "嗜酸性粒细胞计数",
+        "loitem_id": "0101010",
+        "loitem_rv": "0.02-0.52",
+        "loitem_unit": "10^9/L",
+        "oaflag": "1",
+        "order_rpt_result": "0.04",
+        "seq": "2"
+      }
+    ]
+  }
+}
+错误: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Services.NewStandardService.CallInspectionFindingApi[TRequest](TRequest request) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 812
+   at MedicalReportSystem.Services.NewStandardService.S4010(List`1 reportData, JsonElement additionalInfoJson, String serviceMethod, String applyId, String checker, String reporter, String equipmentId) in E:\MedicalReportSystem\MedicalReportSystem\Services\NewStandardService.cs:line 229
+[2025-10-27 20:38:23] 开始S4010操作
+申请单ID: 23
+reportData条数: 2
+附加信息JSON: {"input":{"ack_info":{"exe_status":"A","err_msg":""},"apply_info":[{"apply_id":"206111087,206111088","spcm_bc_no":"110206111087","pid":"4602748","outpno":"2505150066","pat_name":"\u5362\u5FD7\u8FDC","pat_sex":"\u7537","pat_age":"70\u5C81","apply_dept_id":"518","apply_dept_name":"\u76AE\u80A4\u79D1","exedept_id":"466","exedept_name":"\u533B\u5B66\u68C0\u9A8C\u79D1","order_content":"(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B","citem_id":"259015","lspcm_name":"\u8840\u6DB2","emg_sign":"0","tube_code":"11","tube_name":"\u8840\u5E38\u89C4\u7BA1","label_test_color":"16751052","coll_taken":"1.8ml","tube_spec":"12*75mm"}],"head":{"bizno":"S4024","sysno":"FGN-FGN","tarno":"ZLHIS","time":"2025-10-23 15:46:57","action_no":"2a5dfc88-3252-4c50-bf51-2bb3d54d15a1"}}}
+构建的S4010请求: {
+  "input": {
+    "apply_info": {
+      "apply_id": "23",
+      "chk_time": "2025-10-27 20:38:24",
+      "chkin_ps": "卢志远",
+      "chkin_time": "2025-10-27 20:37:24",
+      "chkr": "系统管理员",
+      "eq_id": "123",
+      "report_time": "2025-10-27 20:38:24",
+      "rpt_type": "0",
+      "rptr": "系统管理员",
+      "spcm_bc_no": "110206111087",
+      "spcm_clct_time": "2025-10-27 20:38:24"
+    },
+    "head": {
+      "bizno": "S4112",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-10-27 20:38:24",
+      "action_no": "0b394e70-b6f6-4fa1-a3a9-6a815662db7c"
+    },
+    "rpt_info": [
+      {
+        "apply_id": "23",
+        "loitem_cname": "血小板分布宽度",
+        "loitem_id": "0101031",
+        "loitem_rv": "9.5-17.6",
+        "loitem_unit": "fL",
+        "oaflag": "2",
+        "order_rpt_result": "7.8",
+        "seq": "1"
+      },
+      {
+        "apply_id": "23",
+        "loitem_cname": "嗜酸性粒细胞计数",
+        "loitem_id": "0101010",
+        "loitem_rv": "0.02-0.52",
+        "loitem_unit": "10^9/L",
+        "oaflag": "1",
+        "order_rpt_result": "0.04",
+        "seq": "2"
+      }
+    ]
+  }
+}
+错误: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Services.NewStandardService.CallInspectionFindingApi[TRequest](TRequest request)
+   at MedicalReportSystem.Services.NewStandardService.S4010(List`1 reportData, JsonElement additionalInfoJson, String serviceMethod, String applyId, String checker, String reporter, String equipmentId)
+[2025-10-27 20:42:57] 开始S4010操作
+申请单ID: 123
+reportData条数: 2
+附加信息JSON: {"input":{"ack_info":{"exe_status":"A","err_msg":""},"apply_info":[{"apply_id":"206111087,206111088","spcm_bc_no":"110206111087","pid":"4602748","outpno":"2505150066","pat_name":"\u5362\u5FD7\u8FDC","pat_sex":"\u7537","pat_age":"70\u5C81","apply_dept_id":"518","apply_dept_name":"\u76AE\u80A4\u79D1","exedept_id":"466","exedept_name":"\u533B\u5B66\u68C0\u9A8C\u79D1","order_content":"(\u9662\u5916\u7ED3\u679C\u4E92\u8BA4\u9879)\u5168\u8840\u7EC6\u80DE\u8BA1\u6570\u002B\u4E94\u5206\u7C7B\u68C0\u6D4B","citem_id":"259015","lspcm_name":"\u8840\u6DB2","emg_sign":"0","tube_code":"11","tube_name":"\u8840\u5E38\u89C4\u7BA1","label_test_color":"16751052","coll_taken":"1.8ml","tube_spec":"12*75mm"}],"head":{"bizno":"S4024","sysno":"FGN-FGN","tarno":"ZLHIS","time":"2025-10-23 15:46:57","action_no":"2a5dfc88-3252-4c50-bf51-2bb3d54d15a1"}}}
+构建的S4010请求: {
+  "input": {
+    "apply_info": {
+      "apply_id": "123",
+      "chk_time": "2025-10-27 20:42:59",
+      "chkin_ps": "卢志远",
+      "chkin_time": "2025-10-27 20:41:59",
+      "chkr": "系统管理员",
+      "eq_id": "3123",
+      "report_time": "2025-10-27 20:42:59",
+      "rpt_type": "0",
+      "rptr": "系统管理员",
+      "spcm_bc_no": "110206111087",
+      "spcm_clct_time": "2025-10-27 20:42:59"
+    },
+    "head": {
+      "bizno": "S4010",
+      "sysno": "JKPT",
+      "tarno": "ZLHIS",
+      "time": "2025-10-27 20:42:59",
+      "action_no": "d787b30f-a36c-494f-b51b-389433084c7e"
+    },
+    "rpt_info": [
+      {
+        "apply_id": "123",
+        "loitem_cname": "血小板分布宽度",
+        "loitem_id": "0101031",
+        "loitem_rv": "9.5-17.6",
+        "loitem_unit": "fL",
+        "oaflag": "1",
+        "order_rpt_result": "7.8",
+        "seq": "1"
+      },
+      {
+        "apply_id": "123",
+        "loitem_cname": "嗜酸性粒细胞计数",
+        "loitem_id": "0101010",
+        "loitem_rv": "0.02-0.52",
+        "loitem_unit": "10^9/L",
+        "oaflag": "1",
+        "order_rpt_result": "0.04",
+        "seq": "2"
+      }
+    ]
+  }
+}
+错误: 调用检查结果API失败: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10.10.1.46:8077)
+堆栈:    at MedicalReportSystem.Services.NewStandardService.CallInspectionFindingApi[TRequest](TRequest request)
+   at MedicalReportSystem.Services.NewStandardService.S4010(List`1 reportData, JsonElement additionalInfoJson, String serviceMethod, String applyId, String checker, String reporter, String equipmentId)

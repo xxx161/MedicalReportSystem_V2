@@ -1,0 +1,7 @@
+{
+  "BaseUrl": "http://10.10.1.46:8092",
+  "ApiEndpoints": {
+    "GetReport": "GETCODE"
+  },
+  "PostParameters": null
+}

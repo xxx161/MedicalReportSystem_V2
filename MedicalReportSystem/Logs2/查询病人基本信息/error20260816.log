@@ -1,0 +1,2 @@
+查询病人基本信息失败 | GHID: null, error: Oracle数据库连接失败: ORA-50000: Connection request timed out. 请检查连接字符串和数据库服务状态
+查询病人基本信息失败 | GHID: null, error: Oracle数据库连接失败: ORA-50000: Connection request timed out. 请检查连接字符串和数据库服务状态
