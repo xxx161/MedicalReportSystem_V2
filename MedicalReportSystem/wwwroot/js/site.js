@@ -15,7 +15,7 @@ let DoctorName = '';//医生姓名
 let RegistrationNo = '';//挂号单号
 let RegistrationID = '';//挂号ID
 let OutpatientNo = '';//门诊号
-let dataCode = '';
+let dataCode = '';//地址栏传入
 let microbiaMark = '';//微生物标记
 // 页面加载初始化
 document.addEventListener('DOMContentLoaded', async function () {

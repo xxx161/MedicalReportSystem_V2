@@ -7,32 +7,40 @@
       "RelativeMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|solutionrelative:medicalreportsystem\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|e:\\medicalreportsystem\\medicalreportsystem\\wwwroot\\order-copy.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|solutionrelative:medicalreportsystem\\wwwroot\\order-copy.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|e:\\medicalreportsystem\\medicalreportsystem\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|solutionrelative:medicalreportsystem\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|e:\\medicalreportsystem\\medicalreportsystem\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|solutionrelative:medicalreportsystem\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|e:\\medicalreportsystem\\medicalreportsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|solutionrelative:medicalreportsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|e:\\medicalreportsystem\\medicalreportsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|solutionrelative:medicalreportsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|e:\\medicalreportsystem\\medicalreportsystem\\models\\config\\remindersettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|solutionrelative:medicalreportsystem\\models\\config\\remindersettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|e:\\medicalreportsystem\\medicalreportsystem\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|solutionrelative:medicalreportsystem\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|e:\\medicalreportsystem\\medicalreportsystem\\services\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|solutionrelative:medicalreportsystem\\services\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|e:\\medicalreportsystem\\medicalreportsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|solutionrelative:medicalreportsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|e:\\medicalreportsystem\\medicalreportsystem\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|solutionrelative:medicalreportsystem\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|e:\\medicalreportsystem\\medicalreportsystem\\wwwroot\\js\\reason-dialog.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|solutionrelative:medicalreportsystem\\wwwroot\\js\\reason-dialog.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|e:\\medicalreportsystem\\medicalreportsystem\\wwwroot\\order-copy.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|solutionrelative:medicalreportsystem\\wwwroot\\order-copy.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|e:\\medicalreportsystem\\medicalreportsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|solutionrelative:medicalreportsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|e:\\medicalreportsystem\\medicalreportsystem\\services\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|solutionrelative:medicalreportsystem\\services\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|e:\\medicalreportsystem\\medicalreportsystem\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|e:\\medicalreportsystem\\medicalreportsystem\\services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|solutionrelative:medicalreportsystem\\services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|e:\\medicalreportsystem\\medicalreportsystem\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|solutionrelative:medicalreportsystem\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|e:\\medicalreportsystem\\medicalreportsystem\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -109,10 +113,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|e:\\medicalreportsystem\\medicalreportsystem\\medicalreportsystem.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|solutionrelative:medicalreportsystem\\medicalreportsystem.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|e:\\medicalreportsystem\\medicalreportsystem\\models\\config\\remindersettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|solutionrelative:medicalreportsystem\\models\\config\\remindersettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -122,24 +122,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 27,
+          "SelectedChildIndex": 29,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "E:\\MedicalReportSystem\\MedicalReportSystem\\appsettings.Development.json",
               "RelativeDocumentMoniker": "MedicalReportSystem\\appsettings.Development.json",
               "ToolTip": "E:\\MedicalReportSystem\\MedicalReportSystem\\appsettings.Development.json",
               "RelativeToolTip": "MedicalReportSystem\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-08-16T13:09:32.509Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "WebApiConfig.cs",
               "DocumentMoniker": "E:\\MedicalReportSystem\\MedicalReportSystem\\Services\\WebApiConfig.cs",
               "RelativeDocumentMoniker": "MedicalReportSystem\\Services\\WebApiConfig.cs",
@@ -147,12 +155,11 @@
               "RelativeToolTip": "MedicalReportSystem\\Services\\WebApiConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-16T13:09:28.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-16T13:09:28.641Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Class.cs",
               "DocumentMoniker": "E:\\MedicalReportSystem\\MedicalReportSystem\\Services\\Class.cs",
               "RelativeDocumentMoniker": "MedicalReportSystem\\Services\\Class.cs",
@@ -164,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "DatabaseSyncService.cs",
               "DocumentMoniker": "E:\\MedicalReportSystem\\MedicalReportSystem\\Services\\DatabaseSyncService.cs",
               "RelativeDocumentMoniker": "MedicalReportSystem\\Services\\DatabaseSyncService.cs",
@@ -176,7 +183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "OrderCopyController.cs",
               "DocumentMoniker": "E:\\MedicalReportSystem\\MedicalReportSystem\\Controllers\\OrderCopyController.cs",
               "RelativeDocumentMoniker": "MedicalReportSystem\\Controllers\\OrderCopyController.cs",
@@ -184,12 +191,11 @@
               "RelativeToolTip": "MedicalReportSystem\\Controllers\\OrderCopyController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-13T14:15:41.773Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-13T14:15:41.773Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "order-copy.js",
               "DocumentMoniker": "E:\\MedicalReportSystem\\MedicalReportSystem\\wwwroot\\js\\order-copy.js",
               "RelativeDocumentMoniker": "MedicalReportSystem\\wwwroot\\js\\order-copy.js",
@@ -197,12 +203,11 @@
               "RelativeToolTip": "MedicalReportSystem\\wwwroot\\js\\order-copy.js",
               "ViewState": "AgIAAAYDAAAAAAAAAAAEwCsDAABiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-04-13T14:09:21.379Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-13T14:09:21.379Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "order-copy.css",
               "DocumentMoniker": "E:\\MedicalReportSystem\\MedicalReportSystem\\wwwroot\\css\\order-copy.css",
               "RelativeDocumentMoniker": "MedicalReportSystem\\wwwroot\\css\\order-copy.css",
@@ -214,7 +219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "order-copy.html",
               "DocumentMoniker": "E:\\MedicalReportSystem\\MedicalReportSystem\\wwwroot\\order-copy.html",
               "RelativeDocumentMoniker": "MedicalReportSystem\\wwwroot\\order-copy.html",
@@ -222,12 +227,11 @@
               "RelativeToolTip": "MedicalReportSystem\\wwwroot\\order-copy.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-04-13T14:01:37.522Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-13T14:01:37.522Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "MedicalReportSystem",
               "DocumentMoniker": "E:\\MedicalReportSystem\\MedicalReportSystem\\MedicalReportSystem.csproj",
               "RelativeDocumentMoniker": "MedicalReportSystem\\MedicalReportSystem.csproj",
@@ -238,20 +242,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "site.css",
               "DocumentMoniker": "E:\\MedicalReportSystem\\MedicalReportSystem\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "MedicalReportSystem\\wwwroot\\css\\site.css",
               "ToolTip": "E:\\MedicalReportSystem\\MedicalReportSystem\\wwwroot\\css\\site.css",
               "RelativeToolTip": "MedicalReportSystem\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAFEDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFEDAAAAAAAAAAAAAGIDAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2026-04-13T11:36:02.083Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "T_TEST_REC.cs",
               "DocumentMoniker": "E:\\MedicalReportSystem\\MedicalReportSystem\\Models\\T_TEST_REC.cs",
               "RelativeDocumentMoniker": "MedicalReportSystem\\Models\\T_TEST_REC.cs",
@@ -263,19 +267,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 2,
               "Title": "ReminderSettings.cs",
               "DocumentMoniker": "E:\\MedicalReportSystem\\MedicalReportSystem\\Models\\Config\\ReminderSettings.cs",
               "RelativeDocumentMoniker": "MedicalReportSystem\\Models\\Config\\ReminderSettings.cs",
               "ToolTip": "E:\\MedicalReportSystem\\MedicalReportSystem\\Models\\Config\\ReminderSettings.cs",
               "RelativeToolTip": "MedicalReportSystem\\Models\\Config\\ReminderSettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T02:03:56.83Z"
+              "WhenOpened": "2026-01-30T02:03:56.83Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "ConfigController.cs",
               "DocumentMoniker": "E:\\MedicalReportSystem\\MedicalReportSystem\\Controllers\\ConfigController.cs",
               "RelativeDocumentMoniker": "MedicalReportSystem\\Controllers\\ConfigController.cs",
@@ -287,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "config.html",
               "DocumentMoniker": "E:\\MedicalReportSystem\\MedicalReportSystem\\wwwroot\\config.html",
               "RelativeDocumentMoniker": "MedicalReportSystem\\wwwroot\\config.html",
@@ -299,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "reason-dialog.js",
               "DocumentMoniker": "E:\\MedicalReportSystem\\MedicalReportSystem\\wwwroot\\js\\reason-dialog.js",
               "RelativeDocumentMoniker": "MedicalReportSystem\\wwwroot\\js\\reason-dialog.js",
@@ -312,7 +317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "ReportService.cs",
               "DocumentMoniker": "E:\\MedicalReportSystem\\MedicalReportSystem\\Services\\ReportService.cs",
               "RelativeDocumentMoniker": "MedicalReportSystem\\Services\\ReportService.cs",
@@ -324,7 +329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "E:\\MedicalReportSystem\\MedicalReportSystem\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "MedicalReportSystem\\Controllers\\ProductsController.cs",
@@ -349,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "FileStorageController.cs",
               "DocumentMoniker": "E:\\MedicalReportSystem\\MedicalReportSystem\\Controllers\\FileStorageController.cs",
               "RelativeDocumentMoniker": "MedicalReportSystem\\Controllers\\FileStorageController.cs",
@@ -361,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "FileCleanupService.cs",
               "DocumentMoniker": "E:\\MedicalReportSystem\\MedicalReportSystem\\Services\\FileCleanupService.cs",
               "RelativeDocumentMoniker": "MedicalReportSystem\\Services\\FileCleanupService.cs",
@@ -373,7 +378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "FileDataStorageService.cs",
               "DocumentMoniker": "E:\\MedicalReportSystem\\MedicalReportSystem\\Services\\FileDataStorageService.cs",
               "RelativeDocumentMoniker": "MedicalReportSystem\\Services\\FileDataStorageService.cs",
@@ -381,12 +386,11 @@
               "RelativeToolTip": "MedicalReportSystem\\Services\\FileDataStorageService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUCAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T14:32:51.864Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-28T14:32:51.864Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\MedicalReportSystem\\MedicalReportSystem\\Program.cs",
               "RelativeDocumentMoniker": "MedicalReportSystem\\Program.cs",
@@ -394,12 +398,11 @@
               "RelativeToolTip": "MedicalReportSystem\\Program.cs",
               "ViewState": "AgIAAEcAAAAAAAAAAAAqwHgAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T12:35:14.953Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-28T12:35:14.953Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "NewStandardService.cs",
               "DocumentMoniker": "E:\\MedicalReportSystem\\MedicalReportSystem\\Services\\NewStandardService.cs",
               "RelativeDocumentMoniker": "MedicalReportSystem\\Services\\NewStandardService.cs",
@@ -407,12 +410,11 @@
               "RelativeToolTip": "MedicalReportSystem\\Services\\NewStandardService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8GAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T09:53:09.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-28T09:53:09.944Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "OracleSyncService.cs",
               "DocumentMoniker": "E:\\MedicalReportSystem\\MedicalReportSystem\\Services\\OracleSyncService.cs",
               "RelativeDocumentMoniker": "MedicalReportSystem\\Services\\OracleSyncService.cs",
@@ -424,7 +426,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "ReportsController.cs",
               "DocumentMoniker": "E:\\MedicalReportSystem\\MedicalReportSystem\\Controllers\\ReportsController.cs",
               "RelativeDocumentMoniker": "MedicalReportSystem\\Controllers\\ReportsController.cs",
@@ -432,12 +434,11 @@
               "RelativeToolTip": "MedicalReportSystem\\Controllers\\ReportsController.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAAABUAAABsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T08:26:05.195Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-28T08:26:05.195Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "PersonService.cs",
               "DocumentMoniker": "E:\\MedicalReportSystem\\MedicalReportSystem\\Services\\PersonService.cs",
               "RelativeDocumentMoniker": "MedicalReportSystem\\Services\\PersonService.cs",
@@ -445,18 +446,17 @@
               "RelativeToolTip": "MedicalReportSystem\\Services\\PersonService.cs",
               "ViewState": "AgIAAK0HAAAAAAAAAAAawOAHAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-27T17:37:58.722Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-27T17:37:58.722Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 1,
               "Title": "PersonController.cs",
               "DocumentMoniker": "E:\\MedicalReportSystem\\MedicalReportSystem\\Controllers\\PersonController.cs",
               "RelativeDocumentMoniker": "MedicalReportSystem\\Controllers\\PersonController.cs",
               "ToolTip": "E:\\MedicalReportSystem\\MedicalReportSystem\\Controllers\\PersonController.cs",
               "RelativeToolTip": "MedicalReportSystem\\Controllers\\PersonController.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAJUBAABUAAAAAAAAAA==",
+              "ViewState": "AgIAALUHAAAAAAAAAAAswMgHAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-27T17:37:52.193Z",
               "EditorCaption": ""
@@ -467,9 +467,9 @@
               "Title": "site.js",
               "DocumentMoniker": "E:\\MedicalReportSystem\\MedicalReportSystem\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "MedicalReportSystem\\wwwroot\\js\\site.js",
-              "ToolTip": "E:\\MedicalReportSystem\\MedicalReportSystem\\wwwroot\\js\\site.js*",
-              "RelativeToolTip": "MedicalReportSystem\\wwwroot\\js\\site.js*",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAAwJwAAAAEAAAAAAAAAA==",
+              "ToolTip": "E:\\MedicalReportSystem\\MedicalReportSystem\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "MedicalReportSystem\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAHYFAAAAAAAAAAAswJYFAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-12-27T17:24:51.53Z",
               "EditorCaption": ""

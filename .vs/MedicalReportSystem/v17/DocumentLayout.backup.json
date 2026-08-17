@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "E:\\MedicalReportSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|e:\\medicalreportsystem\\medicalreportsystem\\wwwroot\\order-copy.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|solutionrelative:medicalreportsystem\\wwwroot\\order-copy.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|e:\\medicalreportsystem\\medicalreportsystem\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|solutionrelative:medicalreportsystem\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|e:\\medicalreportsystem\\medicalreportsystem\\wwwroot\\order-copy.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|solutionrelative:medicalreportsystem\\wwwroot\\order-copy.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8856990-2D94-4FCE-B73C-5054A916EC73}|MedicalReportSystem\\MedicalReportSystem.csproj|e:\\medicalreportsystem\\medicalreportsystem\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -122,7 +122,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 27,
           "Children": [
             {
               "$type": "Document",
@@ -184,7 +184,8 @@
               "RelativeToolTip": "MedicalReportSystem\\Controllers\\OrderCopyController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-13T14:15:41.773Z"
+              "WhenOpened": "2026-04-13T14:15:41.773Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -196,7 +197,8 @@
               "RelativeToolTip": "MedicalReportSystem\\wwwroot\\js\\order-copy.js",
               "ViewState": "AgIAAAYDAAAAAAAAAAAEwCsDAABiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-04-13T14:09:21.379Z"
+              "WhenOpened": "2026-04-13T14:09:21.379Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -212,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "order-copy.html",
               "DocumentMoniker": "E:\\MedicalReportSystem\\MedicalReportSystem\\wwwroot\\order-copy.html",
               "RelativeDocumentMoniker": "MedicalReportSystem\\wwwroot\\order-copy.html",
@@ -379,7 +381,8 @@
               "RelativeToolTip": "MedicalReportSystem\\Services\\FileDataStorageService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUCAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T14:32:51.864Z"
+              "WhenOpened": "2025-12-28T14:32:51.864Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -404,7 +407,8 @@
               "RelativeToolTip": "MedicalReportSystem\\Services\\NewStandardService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8GAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T09:53:09.944Z"
+              "WhenOpened": "2025-12-28T09:53:09.944Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -428,7 +432,8 @@
               "RelativeToolTip": "MedicalReportSystem\\Controllers\\ReportsController.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAAABUAAABsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T08:26:05.195Z"
+              "WhenOpened": "2025-12-28T08:26:05.195Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -440,7 +445,8 @@
               "RelativeToolTip": "MedicalReportSystem\\Services\\PersonService.cs",
               "ViewState": "AgIAAK0HAAAAAAAAAAAawOAHAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-27T17:37:58.722Z"
+              "WhenOpened": "2025-12-27T17:37:58.722Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -452,17 +458,18 @@
               "RelativeToolTip": "MedicalReportSystem\\Controllers\\PersonController.cs",
               "ViewState": "AgIAADAAAAAAAAAAAAAAAJUBAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-27T17:37:52.193Z"
+              "WhenOpened": "2025-12-27T17:37:52.193Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "site.js",
               "DocumentMoniker": "E:\\MedicalReportSystem\\MedicalReportSystem\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "MedicalReportSystem\\wwwroot\\js\\site.js",
-              "ToolTip": "E:\\MedicalReportSystem\\MedicalReportSystem\\wwwroot\\js\\site.js",
-              "RelativeToolTip": "MedicalReportSystem\\wwwroot\\js\\site.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "ToolTip": "E:\\MedicalReportSystem\\MedicalReportSystem\\wwwroot\\js\\site.js*",
+              "RelativeToolTip": "MedicalReportSystem\\wwwroot\\js\\site.js*",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAwJwAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-12-27T17:24:51.53Z",
               "EditorCaption": ""
